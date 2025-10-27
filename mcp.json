@@ -1,0 +1,13 @@
+{
+	"servers": {
+		"pylance": {
+			"type": "stdio",
+			"command": "uvx",
+			"args": [
+				"pylance==0.38.2"
+			],
+			"env": {}
+		}
+	},
+	"inputs": []
+}
