@@ -1,0 +1,59 @@
+(defsrc
+     f1   f2   f3   f4   f5   f6   f7   f8   f9   f10  f11  f12   prtsc ins   del      home  end pgup  pgdn   
+  `    1    2    3    4    5    6    7    8    9    0    -    +    bspc                   nlck kp/  kp*  
+  tab  q    w    e    r    t    y    u    i    o    p    [    ]    \                      kp7  kp8  kp9  
+  esc  a    s    d    f    g    h    j    k    l    ;    '   ret                          kp4  kp5  kp6
+  lsft z    x    c    v    b    n    m    ,    .    /    rsft                  up         kp1  kp2  kp3  
+  lctl     rmet lalt           spc       ralt       rctl                 lft   down  rght kp0  kp.      kprt
+)
+
+(deflayer qwerty   
+      f1   f2   f3   f4   f5   f6   f7   f8   f9   f10  f11  f12   prtsc ins   del      home  end pgup  pgdn   
+  `    1    2    3    4    5    6    7    8    9    0    -    +    bspc                   nlck kp/  kp*  
+  tab  q    w    e    r    t    y    u    i    o    p    [    ]    \                      kp7  kp8  kp9  
+  esc  @aC @sS  @dM  @fA   g    h   @jA  @kM  @lS @;C    '   ret                          kp4  kp5  kp6
+  lsft z    x    c    v    b    n    m    ,    .    /    rsft                  up         kp1  kp2  kp3  
+  lctl     rmet lalt           spc       ralt       rctl                 lft   down  rght kp0  kp.      kprt
+)
+#|
+(deflayer Num  
+  _     S-1   S-2   S-3   S-4   S-5   _     _     S-6   S-7   S-8   S-9   S-0   S-`    
+  =     1     2     3     4     5     _     _     6     7     8     9     0     S-`
+  _     S--   -     +     [     ]     _     _     S-[   S-]   ;     S-;   S-\
+  _     _     _     _     _     _     _     _     _     _     _     _
+  _     _     _              _              _     _     _
+)
+
+(deflayer Nav 
+  _     _    home  up    end   pgup  _     _     _     _     _     _     _    _    
+  =     @ml  left  down  rght  pgdn  _     _     _     _     _     _     _    _
+  _     _    _     _     _     _     _     _     _     _     _     _     _
+  _     _    _     _     _     _     _     _     _     _     _     _
+  _     _    _              _              _     _     _
+)
+
+(defalias
+  bNum (tap-hold 200 200 bspc (layer-toggle Num))
+  sNav (tap-hold 200 200 spc (layer-toggle Nav))
+)
+|#
+
+(defalias
+  aC (tap-hold 200 200 a lctl)
+  sS (tap-hold 200 200 s lsft)
+  dM (tap-hold 200 200 d lmet)
+  fA (tap-hold 200 200 f lalt)
+
+  jA (tap-hold 200 200 j lalt)
+  kM (tap-hold 200 200 k rmet)
+  lS (tap-hold 200 200 l lsft)
+  ;C (tap-hold 200 200 ; lctl)
+)
+
+#|
+
+(defalias
+  ml (macro home S-end)
+)
+
+|#

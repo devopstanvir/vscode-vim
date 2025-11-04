@@ -1,0 +1,21 @@
+{
+  "version": 3,
+  "requesterUsername": "devopstanvir",
+  "requesterAvatarIconUri": {
+    "$mid": 1,
+    "path": "/u/237455656",
+    "scheme": "https",
+    "authority": "avatars.githubusercontent.com",
+    "query": "v=4"
+  },
+  "responderUsername": "GitHub Copilot",
+  "responderAvatarIconUri": {
+    "id": "copilot"
+  },
+  "initialLocation": "panel",
+  "requests": [],
+  "sessionId": "8c0c3398-4d07-4c6f-9d38-95e40944dec5",
+  "creationDate": 1761561292255,
+  "isImported": false,
+  "lastMessageDate": 1761561292255
+}

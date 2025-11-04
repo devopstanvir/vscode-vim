@@ -1,0 +1,155 @@
+{
+    "telemetry.machineId": "4ea5ff5d393c14a55336690bc38cd588ae8e2f9bd467a288c3a6a0b6563b44ea",
+    "telemetry.sqmId": "{53053F14-04F1-4948-AB92-F3E96C65EAB2}",
+    "telemetry.devDeviceId": "ed495ece-d3bb-4ea6-a0c9-06c12146f28d",
+    "backupWorkspaces": {
+        "workspaces": [],
+        "folders": [],
+        "emptyWindows": [
+            {
+                "backupFolder": "1762185447596"
+            }
+        ]
+    },
+    "windowControlHeight": 42,
+    "profileAssociations": {
+        "workspaces": {
+            "file:///c%3A/Users/WALTON/Desktop/home-master": "__default__profile__",
+            "file:///c%3A/Users/WALTON/Desktop": "__default__profile__",
+            "file://wsl.localhost/Debian/home/t/.local/share/nvim/lazy/dashboard-nvim": "__default__profile__",
+            "file:///c%3A/Program%20Files/mpv": "__default__profile__",
+            "file:///c%3A/Program%20Files/mpv/script-opts": "__default__profile__",
+            "file:///c%3A/Users/WALTON/Pictures": "__default__profile__",
+            "file:///c%3A/Users/WALTON/AppData/Roaming/qutebrowser.bak/config": "__default__profile__",
+            "file:///c%3A/Users/WALTON/Downloads": "__default__profile__",
+            "file:///c%3A/Users/WALTON/Documents/Arduino/libraries/HID-Project/.github": "__default__profile__",
+            "file:///c%3A/Users/WALTON": "__default__profile__",
+            "file:///c%3A/Users/WALTON/Documents": "__default__profile__",
+            "file:///d%3A/mpv": "__default__profile__",
+            "file:///c%3A/Users/WALTON/Documents/mpv": "__default__profile__",
+            "vscode-remote://wsl%2Bdebian/home/t/.config/nvim": "__default__profile__",
+            "file://wsl.localhost/Debian/home/t/.config/nvim/lua": "__default__profile__",
+            "file://wsl.localhost/Debian/home/t/.config/nvim": "__default__profile__",
+            "vscode-remote://wsl%2Bdebian/bin": "__default__profile__",
+            "vscode-remote://wsl%2Bdebian/": "__default__profile__",
+            "file:///c%3A/Users/WALTON/.doom.d": "__default__profile__"
+        },
+        "emptyWindows": {
+            "1762185447596": "__default__profile__"
+        }
+    },
+    "theme": "vs-dark",
+    "themeBackground": "#2d353b",
+    "windowSplash": {
+        "zoomLevel": 1,
+        "baseTheme": "vs-dark",
+        "colorInfo": {
+            "foreground": "#9aa79d",
+            "background": "#2d353b",
+            "editorBackground": "#2d353b",
+            "titleBarBackground": "#2d353b",
+            "titleBarBorder": "#2d353b",
+            "activityBarBackground": "#2d353b",
+            "activityBarBorder": "#2d353b",
+            "sideBarBackground": "#2d353b",
+            "statusBarBackground": "#060410",
+            "statusBarBorder": "#2d353b",
+            "statusBarNoFolderBackground": "#5139a0"
+        },
+        "layoutInfo": {
+            "sideBarSide": "left",
+            "editorPartMinWidth": 220,
+            "titleBarHeight": 35,
+            "activityBarWidth": 48,
+            "sideBarWidth": 0,
+            "auxiliaryBarWidth": 0,
+            "statusBarHeight": 22,
+            "windowBorder": false
+        }
+    },
+    "windowsState": {
+        "lastActiveWindow": {
+            "backupPath": "C:\\Users\\WALTON\\AppData\\Roaming\\Code\\Backups\\1762185447596",
+            "uiState": {
+                "mode": 0,
+                "x": 0,
+                "y": 0,
+                "width": 768,
+                "height": 816
+            }
+        },
+        "openedWindows": []
+    },
+    "windowSplashWorkspaceOverride": {
+        "layoutInfo": {
+            "sideBarWidth": 300,
+            "auxiliaryBarWidth": 300,
+            "workspaces": {
+                "1d21aaabadfc4f15fa977de8e22c1aa6": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": true
+                },
+                "1553c8144e251725d8d8b07b73ad2be9": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": true
+                },
+                "221e084a83c5c07b8869463efcda8b02": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": true
+                },
+                "394b94dc54e9cfc6bbd22019c95af4f5": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": true
+                },
+                "32199820c0d30baebc3a26f0ec3e6b09": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": true
+                },
+                "f9376ad549f3b762471e4bb50a639afc": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
+                },
+                "3e8222ea406980ee3af6b54d57c3af5f": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": true
+                },
+                "2f9e30413e2d3388faca9f8dface175e": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
+                },
+                "dc4fe96c02e23f1d06052b03bf1b118f": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": true
+                },
+                "a40f6ef1cfaae664d8618768d521bcea": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": true
+                },
+                "a4a8645f35a40b032c884e3db7ad2f6d": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": true
+                },
+                "84b22c48124c570a36823689b03a58b1": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": true
+                },
+                "a2e732cebb414cc6617875417fd05cee": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": true
+                },
+                "e4f4fa0273aa6db31eb1dd3fb5417193": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": true
+                },
+                "56e67e6dea5e959c33799ca7f0814b84": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": true
+                },
+                "a369d117cec13cb5ffbf843bb3f3dc79": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": true
+                }
+            }
+        }
+    }
+}

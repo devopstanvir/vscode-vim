@@ -1,0 +1,89 @@
+{
+
+
+    "workbench.colorCustomizations": {
+		"editorCursor.foreground": "#A052FF",
+		"terminalCursor.foreground": "#A052FF",
+        "statusBar.background" : "#060410",
+        "statusBar.noFolderBackground" : "#5139a0",
+        "statusBar.debuggingBackground": "#e3051e"
+    },
+    "vscode_custom_css.imports": [
+  "file:///C:/Users/WALTON/AppData/Roaming/Code/User/CursorTrails/index.js"
+],
+    "python.languageServer": "Pylance",
+    "python.analysis.completeFunctionParens": true,
+    "security.allowedUNCHosts": [
+        "wsl.localhost"
+    ],
+    "editor.fontFamily": "CascadiaCode, Fira Code,JetBrainsMono Nerd Font",
+    "projectManager.git.baseFolders": [
+      "C:\\Users\\WALTON\\Documents\\workspace",
+      "",
+      ""
+    ],
+
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.codeActionsOnSave": {
+    "source.addMissingImports": "always",
+    "source.organizeImports": "always"
+    },
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.cursorSurroundingLines": 5,
+  "editor.fontWeight": "300",
+  "editor.inlineSuggest.enabled": true,
+  "editor.lineNumbers": "relative",
+  "editor.smoothScrolling": true,
+  "editor.stickyScroll.enabled": true,
+  "editor.suggest.insertMode": "replace",
+  "editor.suggestFontSize": 14,
+  "editor.wordWrap": "on",
+  "errorLens.fontStyleItalic": true,
+  "everforest.italicKeywords": true,
+  "extensions.autoUpdate": "onlyEnabledExtensions",
+  "files.exclude": {
+    "**/node_modules": true
+  },
+  "prettier.semi": false,
+  "prettier.singleAttributePerLine": true,
+  "prettier.singleQuote": true,
+  "prettier.trailingComma": "all",
+  "projectManager.sortList": "Recent",
+  "sortJSON.orderOverride": [
+    "name",
+    "version",
+    "main",
+    "module",
+    "types",
+    "typings",
+    "files",
+    "publishConfig",
+    "repository",
+    "scripts",
+    "prefix",
+    "description",
+    "body"
+  ],
+  "sortJSON.orderUnderride": [
+    "resolutions",
+    "dependencies",
+    "devDependencies",
+    "peerDependencies",
+    "cSpell.userWords"
+  ],
+  "typescript.preferences.importModuleSpecifier": "relative",
+  "update.showReleaseNotes": false,

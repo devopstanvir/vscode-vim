@@ -1,0 +1,289 @@
+{
+  "version": 3,
+  "requesterUsername": "devopstanvir",
+  "requesterAvatarIconUri": {
+    "$mid": 1,
+    "path": "/u/237455656",
+    "scheme": "https",
+    "authority": "avatars.githubusercontent.com",
+    "query": "v=4"
+  },
+  "responderUsername": "GitHub Copilot",
+  "responderAvatarIconUri": {
+    "id": "copilot"
+  },
+  "initialLocation": "panel",
+  "requests": [
+    {
+      "requestId": "request_8d94004f-9a7f-411f-9737-499200ae3cdd",
+      "message": {
+        "parts": [
+          {
+            "range": {
+              "start": 0,
+              "endExclusive": 1188
+            },
+            "editorRange": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 17,
+              "endColumn": 43
+            },
+            "text": "23:01:10.9058 [INFO] kanata v1.9.0 starting\r\n23:01:10.9060 [INFO] using LLHOOK+SendInput for keyboard IO\r\n23:01:10.9407 [WARN] No defcfg is defined. Consider whether the process-unmapped-keys defcfg option should be yes vs. no. Adding defcfg with process-unmapped-keys defined will remove this warning.\r\n23:01:10.9444 [ERROR]   x Error in configuration\r\n   ,-[kanata.kbd:3:1]\r\n 3 |   `    1    2    3    4    5    6    7    8    9    0    -    +    bspc                   nlck kp/  kp*  kp-\r\n 4 |   tab  q    w    e    r    t    y    u    i    o    p    [    ]    \\                      kp7  kp8  kp9  kp+\r\n   :                                                                                                          ^|^\r\n   :                                                                                                           `-- Error here\r\n 5 |   esc  a    s    d    f    g    h    j    k    l    ;    '   ret                          kp4  kp5  kp6\r\n   `----\r\n  help: Repeat declaration of key in defsrc: \"kp+\"\r\n\r\n        For more info, see the configuration guide:\r\n        https://github.com/jtroo/kanata/blob/main/docs/config.adoc\r\n\r\n23:01:10.9507 [ERROR] failed to parse file",
+            "kind": "text"
+          }
+        ],
+        "text": "23:01:10.9058 [INFO] kanata v1.9.0 starting\r\n23:01:10.9060 [INFO] using LLHOOK+SendInput for keyboard IO\r\n23:01:10.9407 [WARN] No defcfg is defined. Consider whether the process-unmapped-keys defcfg option should be yes vs. no. Adding defcfg with process-unmapped-keys defined will remove this warning.\r\n23:01:10.9444 [ERROR]   x Error in configuration\r\n   ,-[kanata.kbd:3:1]\r\n 3 |   `    1    2    3    4    5    6    7    8    9    0    -    +    bspc                   nlck kp/  kp*  kp-\r\n 4 |   tab  q    w    e    r    t    y    u    i    o    p    [    ]    \\                      kp7  kp8  kp9  kp+\r\n   :                                                                                                          ^|^\r\n   :                                                                                                           `-- Error here\r\n 5 |   esc  a    s    d    f    g    h    j    k    l    ;    '   ret                          kp4  kp5  kp6\r\n   `----\r\n  help: Repeat declaration of key in defsrc: \"kp+\"\r\n\r\n        For more info, see the configuration guide:\r\n        https://github.com/jtroo/kanata/blob/main/docs/config.adoc\r\n\r\n23:01:10.9507 [ERROR] failed to parse file"
+      },
+      "variableData": {
+        "variables": [
+          {
+            "kind": "file",
+            "id": "vscode.implicit.file",
+            "name": "file:kanata.kbd",
+            "value": {
+              "$mid": 1,
+              "fsPath": "c:\\Program Files\\Kanata\\kanata.kbd",
+              "_sep": 1,
+              "external": "file:///c%3A/Program%20Files/Kanata/kanata.kbd",
+              "path": "/C:/Program Files/Kanata/kanata.kbd",
+              "scheme": "file"
+            },
+            "modelDescription": "User's active file"
+          }
+        ]
+      },
+      "response": [
+        {
+          "kind": "thinking",
+          "value": "**Identifying key duplication error**\n\nIt seems the error is indicating a key repeat issue in the defsrc: \"kp+\" has been declared twice. I wonder if one instance is exact and the other has trailing spaces. I'll have to inspect the file closely, particularly the first line where the defsrc header lists keys. If 'kp+' appears multiple times in different lines, it might be causing the issue. To resolve this, I think the best approach is to rename one instance to a unique identifier.",
+          "id": "lWsKa7fb1LAtoVV27D2F7PFGtHCNiDBO5fLwBJW0iyxalJ5r4RfNTUNm1EUi3j9VGqTmmFcZYOsqEZyMdLX8An7XRgeTuKZwI4Pv81oOPJeZCUB/jGI8flydcF9SYS5c0YSorlJaVcR7o2YzW+TAibacv6UFSAG+xP1dVLkYVxYJY6LAPo6D40o3ZmdUyKhcieZoE+5UAZkPAkDK2f2n9GxkeTmVrtalF24w0x+ZV5b+oaHAOGgBoIcmiS8jq043TbtwZpRY1zFNSM7sbH4bYXasmtSr2LG+vSABfz4FVJpAAPzzl72erblSh/1VewZobnaJYDu1cW+B/9C2L25Qm5V9j3eJpOzQ5zOYyryRjdr9RHyFcDyeuzvMU+RnXHza4QJ5uBOyr7O2REokmFlXL6FpKA=="
+        },
+        {
+          "kind": "thinking",
+          "value": "",
+          "id": "9iMjArVgLuZ8+mCR+teyHdHB+ETsCgNm0o9PbK+J0eWrdVrV9VTS+lVIoKybj+DT4fQCHhhUhHyhnISzsxdVGbkN3F3yHfDlJcHsr0K3cmswEG2qS1Q2qt8ZUDZ8+0i0WFd8zz/7pm2t0ARVgJVj+X7WDaiqq3Nti3t2ipnj76gXC0b7S0lImI1clntssiqQqUzpZwd/KwLo5MAldGBwokjNb9BfIWufMaUznKiRiU1/xWQVoFhWODdhek99TFt/Plr6sqUqscvvzrjjVuuVyhaxok/k8YYcFIRX47P4OD1PkZ2+FcvxP10v9nciRmjTPaU3CcSx2VVOaBH9Tx09Cq9yJPwaDo6ThjGg6pGSLRjMpWmPy8pSRAYnqpgkBzUCOWKwSVFjujhZQPVETGg5qPEiyg=="
+        },
+        {
+          "kind": "thinking",
+          "value": "**Troubleshooting key duplication error**\n\nThe error indicates an issue with 'kp+' on line 4, which suggests I'll need to search the file for this key. I considered editing the defsrc to change one of the 'kp+' instances, but that's not the whole solution. I suspect the real issue comes from the defsrc header listing multiple keys. Since the error clearly focuses on 'kp+', it seems best to provide instructions to find and rename the duplicate 'kp+' to something unique or remove it entirely. I'll ensure to include a code block with the corrected defsrc.",
+          "id": "VLvSF2CyIdsAqnoyuRp5NNyQ3L/DjuLZl62z0SE2KW/T84+1LmkGettyAjAmHjnMnv6o3qvJXSCMApEeL3BYTllbSIcuUUCQX6QWfKhCwARSjqO6y9+id3ekH6e1omU5TpM6iipgqQnYpSHj4OtzlZ0p0h48xEMBi5o8WuuJGabY9QZ9YQbx6Jf9jRzEQ1SRgipjNFAW5CIl2ahMx/AwG9UzILbS1OzH733tND0GUIftHRxoASGmBWXn7nM0z2mp98Sz1Ht94vOyoEJMWyT45AKS1oj5M/57eWTox+gxTAiJKol5ojN0E3sNVsztQuN904wksnJ0MiOa0GV7wtegnNzAegDZ/uUmhDvmqm1GwZBAEOK76Ntxe2beRhoNgDuFNcjgvutHjkVkEyC9oSbXeXklKQ=="
+        },
+        {
+          "kind": "thinking",
+          "value": "",
+          "id": "9YLgDsSsq6NAEf1mLiV4w7DOxs6lcQpCzjBVDJNeqiN4Ky/uYaiGYq8D/20f4/oOHYA1Gx9CJQsYptCYMoKwrQ+NPxws7I9mxxc6L8bwiIYcSJId7uOLEB2ft33wd2AIXTmgbwt5kpvEBfwJKf7M455iHHPxC5K4CvonetBx5yxJ9ZpG9LvQ2mBrGCty5+acS6mnHBIxJn9jn82O8Yml+XnFnHRWwvp+z7Li5KG10B88/gJcBBmDhMkeU3HOhteDdCBLPWjJc2Q2o6fwffoJdiG0KUp2WXBxVK0Pt8B505a0Yl1j6wVn5IPBtbIy0ptbhyFenzvZzx6mwc94l0bhfBx/S5RoW2CaH5fHjB5oT4rNs5drwP08VzPBMK7pmE1wyTktYrxgTFlc83yoV538UTlZxw=="
+        },
+        {
+          "kind": "thinking",
+          "value": "**Proposing corrected defsrc mapping**\n\nI think I found the duplication issue in the defsrc; it looks like \"kp+\" appears in both the header and the third row. To resolve this, I should suggest a corrected mapping where each numeric keypad key is listed only once. In a typical layout, ‘kp+’ might span two rows, but in the defsrc, it’s important to only declare it once. We can represent the tall key with a placeholder like '_' in one of its positions to adhere to the specification.",
+          "id": "N+Cgheg3GYuYFgKE6KW87uSOFbxIUrHNCqirIelQZQ+rDWNYwEcEgCwHIPsRWKauBEm3Gtymzn9iLywciq9vlOHJTiZycQrX+jW7tgoIjeRD1pzCljxkw8isykmdcPPD32PWtKwPwws4zw6LoK1zSTzdHz40MBcJtokl8TFX5YqrsdF7yKSMCyzG93YymyFdrc+ODLZK47oI53rfpMGM/8jd9NkOGKPQbSXy3yTsW8xvdPWN3EPP1qL5pyYX826F17F1xCKzT0Daz7yv7WEcpstjx4475+JJivCyxUZv3Oys5h3gvsz/oWiJK1+NikAOYoR5BnZ+vhdk2NRUCnQPdxQc5kna/gCWPov9O4/CP4j2+j3XCYkjrENBxcuFftPEKCGf+vWilra1zkhJtxzudSsZOA=="
+        },
+        {
+          "kind": "thinking",
+          "value": "",
+          "id": "FT7qkPtbs3RMP1ZedapxDlTVJHRliUwKsnjM/RwQKmSdnreKAnITuo7WCNqZQ+OT0+LC+HrYvThli2oLwUreibMsTyylGCCgoBTSQBETat3T/AA2OKDmXPGn+tgTgwUSfUcJjNTdBylgp/pCcNIb0n57u0cbI5V9KiRaWwhBiFnM3TwV6GJ+QJ4kWMvPPptcuydpOYe8rq7kF1rFEx+luv7u8UkfLV2y8aIHwah0A16Fc5v0ViEauC8devhLlKGiStbikF31OkMdc/wE0ucjvJ/36gDP/yeiU8MYFR2IeBc3eOWompOV2bCUOaPu82EGsWofAJPWAco2hqCf3VNjgl5WK6wRECGIjR9fKfrpVwOZO4H3WHzA7qMtyfUPJYz21CAQBLeTjIDg8lGDxU80EuZ9sg=="
+        },
+        {
+          "kind": "thinking",
+          "value": "**Correcting defsrc for key duplication**\n\nI remember that some keyboard configuration formats allow 'kp+' to be listed only once, with an underscore '_' as a placeholder for any duplicates. In the provided defsrc, 'kp+' is likely present in both the row containing 'kp7...kp+' and possibly in the last row, which also includes 'kp1 kp2 kp3'. To fix this, I should replace the second occurrence of 'kp+' with '_' in the defsrc. I’ll include a code block with the corrected defsrc to show exactly what needs to be changed.",
+          "id": "LAk1DiFNqWWma/5phvDyVJlazjUv9ahzCg0myeM+CL4HebSI52w622Rwiep97oV7k24pEcuDbvV5xmg2aMe5S1+N3B8Lieat95E92Te4lnIe8uvn4nQGK78ErYjBmMU72n3o6JWEqDSXuv7b5KIeov9rI8D1yQVrtl84VCP/2VreBI9KDBndQJ6qksA5VmbJsB6MAV1KeknhYIKSTisAIP/butu/3TofmI9gUx50dRsB7I+UyrnPGR7J5jnmxTFwWlGtJcSUrZv4J1O+COWfDca1sHX4uzo7U11p+AI3Gmih1HmaZ+sfqs1NZNQ7PVFI8Sfe49wIABoVhowfD0th6vFfDLd4f1A28hG8PhuK/8AgJsH7sOt2IawTWszIDKMHECcG1BYptPNwgD4+k6S39I5vQw=="
+        },
+        {
+          "kind": "thinking",
+          "value": "",
+          "id": "jjGg2v8ksNTEmexkbAxwW7zN9KDu22tByrllxQYYaoHSn6n+QTIYkeTYq9W5R0tQlVtHx8dDD7oPwM8urDL9h4Cka1GN+LZzIY3O1uMYpSIEHbQcTtgAXKf47W9gF6XVcfdQcdU4NnjInB25aai/JBR9Q6CHyEkpm3UAmlBKzbxhzlKYU/UnexQHoHox5I5L7V5/LB23un5m6s7zM9mKfgAGuWuFsVCpBD7ecc+YiOLrvyBgW4N+nGB4EUMGrrFMvdjspuyWJlOtVNJYEHk97Br2TDS0EQrluYF8zmvsz77FG7OjaauBI58Bk92Dq9uoyynnIKKhF6b8y5C4B3JqjBSRNTNv/USKGfXFmo6bO2l0IKNYTz2q4/BgYnZB/Wdm8A/Qpin/moOReIrKuFEgb4Z89g=="
+        },
+        {
+          "value": "You have a duplicate key name in the defsrc block: \"kp+\" is declared twice. Either remove or replace the second occurrence with \"_\" (placeholder for an empty cell / spanned key). To locate duplicates, run this in PowerShell:\n\n4 backticks text\n// c:\\Program ",
+          "supportThemeIcons": false,
+          "supportHtml": false
+        },
+        {
+          "kind": "inlineReference",
+          "inlineReference": {
+            "$mid": 1,
+            "fsPath": "c:\\Program Files\\Kanata\\kanata.kbd",
+            "_sep": 1,
+            "external": "file:///c%3A/Program%20Files/Kanata/kanata.kbd",
+            "path": "/C:/Program Files/Kanata/kanata.kbd",
+            "scheme": "file"
+          }
+        },
+        {
+          "value": "\nSelect-String -Path \"c:\\Program Files\\Kanata\\kanata.kbd\" -Pattern \"kp\\+\" -AllMatches | ForEach-Object { $_.LineNumber, $_.Line }\n4 backticks\n\nExample fix — replace the second kp+ in the defsrc with \"_\" (showing the edited fragment):\n\n4 backticks text\n// filepath: c:\\Program ",
+          "supportThemeIcons": false,
+          "supportHtml": false
+        },
+        {
+          "kind": "inlineReference",
+          "inlineReference": {
+            "$mid": 1,
+            "fsPath": "c:\\Program Files\\Kanata\\kanata.kbd",
+            "_sep": 1,
+            "external": "file:///c%3A/Program%20Files/Kanata/kanata.kbd",
+            "path": "/C:/Program Files/Kanata/kanata.kbd",
+            "scheme": "file"
+          }
+        },
+        {
+          "value": "\n// ...existing code...\n(defsrc\n     f1   f2   f3   f4   f5   f6   f7   f8   f9   f10  f11  f12   prtsc ins   del      home  end pgup  pgdn   \n  `    1    2    3    4    5    6    7    8    9    0    -    +    bspc                   nlck kp/  kp*  kp-\n  tab  q    w    e    r    t    y    u    i    o    p    [    ]    \\                      kp7  kp8  kp9  _\n  esc  a    s    d    f    g    h    j    k    l    ;    '   ret                          kp4  kp5  kp6\n  lsft z    x    c    v    b    n    m    ,    .    /    rsft                  up         kp1  kp2  kp3  \n  lctl     rmet lalt           spc       ralt  _    rctl                 lft   down  rght kp0  kp.      kprt\n)\n// ...existing code...\n4 backticks\n\nAfter making that change, restart kanata — the parser error should be resolved.",
+          "supportThemeIcons": false,
+          "supportHtml": false
+        }
+      ],
+      "responseId": "response_b8a6cdf6-94f0-49c6-bb23-cca9ca99f209",
+      "result": {
+        "timings": {
+          "firstProgress": 58150,
+          "totalElapsed": 64695
+        },
+        "metadata": {
+          "codeBlocks": [],
+          "toolCallRounds": [
+            {
+              "response": "You have a duplicate key name in the defsrc block: \"kp+\" is declared twice. Either remove or replace the second occurrence with \"_\" (placeholder for an empty cell / spanned key). To locate duplicates, run this in PowerShell:\n\n4 backticks text\n// c:\\Program Files\\Kanata\\kanata.kbd\nSelect-String -Path \"c:\\Program Files\\Kanata\\kanata.kbd\" -Pattern \"kp\\+\" -AllMatches | ForEach-Object { $_.LineNumber, $_.Line }\n4 backticks\n\nExample fix — replace the second kp+ in the defsrc with \"_\" (showing the edited fragment):\n\n4 backticks text\n// filepath: c:\\Program Files\\Kanata\\kanata.kbd\n// ...existing code...\n(defsrc\n     f1   f2   f3   f4   f5   f6   f7   f8   f9   f10  f11  f12   prtsc ins   del      home  end pgup  pgdn   \n  `    1    2    3    4    5    6    7    8    9    0    -    +    bspc                   nlck kp/  kp*  kp-\n  tab  q    w    e    r    t    y    u    i    o    p    [    ]    \\                      kp7  kp8  kp9  _\n  esc  a    s    d    f    g    h    j    k    l    ;    '   ret                          kp4  kp5  kp6\n  lsft z    x    c    v    b    n    m    ,    .    /    rsft                  up         kp1  kp2  kp3  \n  lctl     rmet lalt           spc       ralt  _    rctl                 lft   down  rght kp0  kp.      kprt\n)\n// ...existing code...\n4 backticks\n\nAfter making that change, restart kanata — the parser error should be resolved.",
+              "toolCalls": [],
+              "toolInputRetry": 0,
+              "id": "5c97b18b-2086-4a75-9bc1-f65f98014b78",
+              "statefulMarker": "3QFA3Okxzk7D3MMWAg5GwzUrErLTAPZ85Nz/Z/0+BkU93qwuBhB6SiuwCRLOcuF/mpHQRec6pBFZatEYg+LZeNexunCby19fdaTqsrKDfxxQrxm9aYK5FBh0s+/rYjz5ziuHJ6wcVp0quflZbBN+fRaQJ9KDsNr49rfE7cfA9jyL3Z/NiaPiu07rPHFQrjrs7ZuLem2ci0ZuCjih6JdhboRgXcLzhHX8vzE9mGqI93aTBYCY7Eic3y9u1tq2/mSEmXD2Ya6tJ0lKeOOq3hlQRFLsDGhtaoF/qyVjJmouxVqsvd9ezcWEwOiqAFaxlSnsq0OAOp/xAyQzmIEEPkw3YspJ4wF0/CgSVIJHfgToBqFXVD+qDcMlRXJ/w8UKy43J7nzmErzJ0QQ4rwwO4VZvnz7YlaF7",
+              "thinking": {
+                "id": "/mJpyNUE8QQLzybhqa2R9uUrKggYz+cmkpyw3Gbn0Qt2bDQm1zVki2Pvs3XQkiYYIMH4TuL3LnCArIcPJQvFvagwjvx1Fdr3KqjdvzzlhsStCkvntJ3aopY6EeqxL7dL2PNpTrrRF+BanA2PwqTmhe7KZFbi1u3JBqG8HTpzDO266yDyJLuUnzzz+sMgZfCBcIGvGcsV1rBE7JtSFRuC3O/ngH7yMfrGqxStOq+5XJjhe29mpP2dxNvOiITYEucMc4sUPT2QDDVZGBTXz/CuPN9by8oEdooA3OF4Iwor/KR5+FHxRs/QF+TlPX0bYQJGzXdA9mMl1G34XuUJ8+Smv1I8jzei81qf+6OQxoHd8mPKEhY8xesoiAcNxCbmWgjs36+VZvcbtkNMAVH21aAgkGrMXg==",
+                "text": "**Identifying key duplication error**\n\nIt seems the error is indicating a key repeat issue in the defsrc: \"kp+\" has been declared twice. I wonder if one instance is exact and the other has trailing spaces. I'll have to inspect the file closely, particularly the first line where the defsrc header lists keys. If 'kp+' appears multiple times in different lines, it might be causing the issue. To resolve this, I think the best approach is to rename one instance to a unique identifier.**Troubleshooting key duplication error**\n\nThe error indicates an issue with 'kp+' on line 4, which suggests I'll need to search the file for this key. I considered editing the defsrc to change one of the 'kp+' instances, but that's not the whole solution. I suspect the real issue comes from the defsrc header listing multiple keys. Since the error clearly focuses on 'kp+', it seems best to provide instructions to find and rename the duplicate 'kp+' to something unique or remove it entirely. I'll ensure to include a code block with the corrected defsrc.**Proposing corrected defsrc mapping**\n\nI think I found the duplication issue in the defsrc; it looks like \"kp+\" appears in both the header and the third row. To resolve this, I should suggest a corrected mapping where each numeric keypad key is listed only once. In a typical layout, ‘kp+’ might span two rows, but in the defsrc, it’s important to only declare it once. We can represent the tall key with a placeholder like '_' in one of its positions to adhere to the specification.**Correcting defsrc for key duplication**\n\nI remember that some keyboard configuration formats allow 'kp+' to be listed only once, with an underscore '_' as a placeholder for any duplicates. In the provided defsrc, 'kp+' is likely present in both the row containing 'kp7...kp+' and possibly in the last row, which also includes 'kp1 kp2 kp3'. To fix this, I should replace the second occurrence of 'kp+' with '_' in the defsrc. I’ll include a code block with the corrected defsrc to show exactly what needs to be changed.",
+                "encrypted": "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",
+                "tokens": 2752
+              }
+            }
+          ],
+          "modelMessageId": "86ab67cb-2d7b-491e-923a-0813603726eb",
+          "responseId": "0391fa9f-8b0a-4ee5-ab4a-c6eaa5f6628e",
+          "sessionId": "6b23603c-b28d-4d2c-a690-2b6e6ee8b03a",
+          "agentId": "github.copilot.default"
+        },
+        "details": "GPT-5 mini • 0.9x"
+      },
+      "followups": [],
+      "isCanceled": false,
+      "agent": {
+        "extensionId": {
+          "value": "GitHub.copilot-chat",
+          "_lower": "github.copilot-chat"
+        },
+        "extensionVersion": "0.32.3",
+        "publisherDisplayName": "GitHub",
+        "extensionPublisherId": "GitHub",
+        "extensionDisplayName": "GitHub Copilot Chat",
+        "id": "github.copilot.default",
+        "description": "Ask or edit in context",
+        "metadata": {
+          "themeIcon": {
+            "id": "copilot"
+          },
+          "hasFollowups": false,
+          "helpTextPrefix": "You can ask me general programming questions, or chat with the following participants which have specialized expertise and can perform actions:",
+          "helpTextPostfix": {
+            "value": "To have a great conversation, ask me questions as if I was a real programmer:\n\n* **Show me the code** you want to talk about by having the files open and selecting the most important lines.\n* **Make refinements** by asking me follow-up questions, adding clarifications, providing errors, etc.\n* **Review my suggested code** and tell me about issues or improvements, so I can iterate on it.\n\nYou can also ask me questions about your editor selection by [starting an inline chat session](command:inlineChat.start).\n\nLearn more about [GitHub Copilot](https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted) in [Visual Studio Code](https://code.visualstudio.com/docs/copilot/overview). Or explore the [Copilot walkthrough](command:github.copilot.open.walkthrough).",
+            "isTrusted": {
+              "enabledCommands": [
+                "inlineChat.start",
+                "github.copilot.open.walkthrough"
+              ]
+            },
+            "supportThemeIcons": false,
+            "supportHtml": false,
+            "uris": {
+              "command:inlineChat.start": {
+                "$mid": 1,
+                "path": "inlineChat.start",
+                "scheme": "command"
+              },
+              "https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted": {
+                "$mid": 1,
+                "path": "/copilot/using-github-copilot/getting-started-with-github-copilot",
+                "scheme": "https",
+                "authority": "docs.github.com",
+                "query": "tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted"
+              },
+              "https://code.visualstudio.com/docs/copilot/overview": {
+                "$mid": 1,
+                "path": "/docs/copilot/overview",
+                "scheme": "https",
+                "authority": "code.visualstudio.com"
+              },
+              "command:github.copilot.open.walkthrough": {
+                "$mid": 1,
+                "path": "github.copilot.open.walkthrough",
+                "scheme": "command"
+              }
+            }
+          },
+          "supportIssueReporting": false,
+          "requester": {
+            "name": "devopstanvir",
+            "icon": {
+              "$mid": 1,
+              "path": "/u/237455656",
+              "scheme": "https",
+              "authority": "avatars.githubusercontent.com",
+              "query": "v=4"
+            }
+          }
+        },
+        "name": "GitHubCopilot",
+        "fullName": "GitHub Copilot",
+        "isDefault": true,
+        "locations": [
+          "panel"
+        ],
+        "modes": [
+          "ask"
+        ],
+        "slashCommands": [],
+        "disambiguation": [
+          {
+            "category": "generate_code_sample",
+            "description": "The user wants to generate code snippets without referencing the contents of the current workspace. This category does not include generating entire projects.",
+            "examples": [
+              "Write an example of computing a SHA256 hash."
+            ]
+          },
+          {
+            "category": "add_feature_to_file",
+            "description": "The user wants to change code in a file that is provided in their request, without referencing the contents of the current workspace. This category does not include generating entire projects.",
+            "examples": [
+              "Add a refresh button to the table widget."
+            ]
+          },
+          {
+            "category": "question_about_specific_files",
+            "description": "The user has a question about a specific file or code snippet that they have provided as part of their query, and the question does not require additional workspace context to answer.",
+            "examples": [
+              "What does this file do?"
+            ]
+          }
+        ]
+      },
+      "contentReferences": [
+        {
+          "kind": "reference",
+          "reference": {
+            "$mid": 1,
+            "fsPath": "c:\\Program Files\\Kanata\\kanata.kbd",
+            "_sep": 1,
+            "external": "file:///c%3A/Program%20Files/Kanata/kanata.kbd",
+            "path": "/C:/Program Files/Kanata/kanata.kbd",
+            "scheme": "file"
+          }
+        }
+      ],
+      "codeCitations": [],
+      "timestamp": 1761584689282,
+      "modelId": "copilot/auto"
+    }
+  ],
+  "sessionId": "63415c07-40bd-407c-8117-e4582a6668ce",
+  "creationDate": 1761584675606,
+  "isImported": false,
+  "lastMessageDate": 1761584689283,
+  "customTitle": "Kanata keyboard configuration error troubleshooting"
+}

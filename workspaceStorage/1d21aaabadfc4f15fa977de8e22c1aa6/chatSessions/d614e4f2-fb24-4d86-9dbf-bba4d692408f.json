@@ -1,0 +1,224 @@
+{
+  "version": 3,
+  "requesterUsername": "devopstanvir",
+  "requesterAvatarIconUri": {
+    "$mid": 1,
+    "path": "/u/237455656",
+    "scheme": "https",
+    "authority": "avatars.githubusercontent.com",
+    "query": "v=4"
+  },
+  "responderUsername": "GitHub Copilot",
+  "responderAvatarIconUri": {
+    "id": "copilot"
+  },
+  "initialLocation": "editor",
+  "requests": [
+    {
+      "requestId": "request_8131d592-39b9-4068-9482-8b25a2be4157",
+      "message": {
+        "parts": [
+          {
+            "range": {
+              "start": 0,
+              "endExclusive": 20
+            },
+            "editorRange": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 1,
+              "endColumn": 21
+            },
+            "text": "print a hello world ",
+            "kind": "text"
+          }
+        ],
+        "text": "print a hello world "
+      },
+      "variableData": {
+        "variables": []
+      },
+      "response": [
+        {
+          "kind": "textEditGroup",
+          "uri": {
+            "$mid": 1,
+            "fsPath": "c:\\Users\\WALTON\\Desktop\\hello.py",
+            "_sep": 1,
+            "external": "file:///c%3A/Users/WALTON/Desktop/hello.py",
+            "path": "/c:/Users/WALTON/Desktop/hello.py",
+            "scheme": "file"
+          },
+          "edits": [
+            [
+              {
+                "text": "print(\"Hello, world!\")",
+                "range": {
+                  "startLineNumber": 2,
+                  "startColumn": 1,
+                  "endLineNumber": 2,
+                  "endColumn": 1
+                }
+              }
+            ],
+            []
+          ],
+          "state": {
+            "sha1": "ba8ab5a0280b953aa97435ff8946cbcbb2755a27",
+            "applied": 1
+          }
+        }
+      ],
+      "responseId": "response_0e6f6b21-4f72-48f4-bdcd-c800aac671f5",
+      "result": {
+        "timings": {
+          "totalElapsed": 792
+        },
+        "metadata": {
+          "codeBlocks": [],
+          "toolCallRounds": [
+            {
+              "response": "```\nprint(\"Hello, world!\")\n```",
+              "toolCalls": [],
+              "toolInputRetry": 0,
+              "id": "d65e3392-4100-4c61-8924-789b467b9c21"
+            }
+          ],
+          "modelMessageId": "b152ad91-f911-4c9a-9026-3d9975616467",
+          "responseId": "586cce44-405e-4938-8be4-f28240973963",
+          "sessionId": "cac5eb30-6e57-4df7-973d-9d76b1e2c6a5",
+          "agentId": "github.copilot.editor"
+        },
+        "details": "GPT-4.1 • 1x"
+      },
+      "followups": [],
+      "isCanceled": false,
+      "agent": {
+        "extensionId": {
+          "value": "GitHub.copilot-chat",
+          "_lower": "github.copilot-chat"
+        },
+        "extensionVersion": "0.32.0",
+        "publisherDisplayName": "GitHub",
+        "extensionPublisherId": "GitHub",
+        "extensionDisplayName": "GitHub Copilot Chat",
+        "id": "github.copilot.editor",
+        "description": "Ask or edit in context",
+        "when": "!config.inlineChat.enableV2 && !config.github.copilot.chat.advanced.inlineChat2",
+        "metadata": {
+          "themeIcon": {
+            "id": "copilot"
+          },
+          "hasFollowups": false,
+          "supportIssueReporting": false
+        },
+        "name": "Copilot",
+        "fullName": "GitHub Copilot",
+        "isDefault": true,
+        "locations": [
+          "editor"
+        ],
+        "modes": [
+          "ask"
+        ],
+        "slashCommands": [
+          {
+            "name": "generate",
+            "description": "Generate new code",
+            "disambiguation": [
+              {
+                "category": "generate",
+                "description": "Generate new code",
+                "examples": [
+                  "Add a function that returns the sum of two numbers"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "edit",
+            "description": "Edit the selected code in your active editor",
+            "disambiguation": [
+              {
+                "category": "edit",
+                "description": "Make changes to existing code",
+                "examples": [
+                  "Change this method to use async/await"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "doc",
+            "description": "Add documentation comment for this symbol",
+            "disambiguation": [
+              {
+                "category": "doc",
+                "description": "Add documentation comment for this symbol",
+                "examples": [
+                  "Add jsdoc to this method"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "fix",
+            "description": "Propose a fix for the problems in the selected code",
+            "disambiguation": [
+              {
+                "category": "fix",
+                "description": "Propose a fix for the problems in the selected code",
+                "examples": [
+                  "There is a problem in this code. Rewrite the code to show it with the bug fixed."
+                ]
+              }
+            ]
+          },
+          {
+            "name": "explain",
+            "description": "Explain how the code in your active editor works",
+            "disambiguation": [
+              {
+                "category": "explain",
+                "description": "Explain how the code in your active editor works",
+                "examples": [
+                  "Write an explanation for the code above as paragraphs of text."
+                ]
+              }
+            ]
+          },
+          {
+            "name": "tests",
+            "description": "Generate unit tests for the selected code",
+            "disambiguation": [
+              {
+                "category": "tests",
+                "description": "Generate unit tests for the selected code. The user does not want to fix their existing tests.",
+                "examples": [
+                  "Write a set of detailed unit test functions for the code above."
+                ]
+              }
+            ]
+          }
+        ],
+        "disambiguation": [
+          {
+            "category": "unknown",
+            "description": "Intent of this command is unclear or is not related to information technologies",
+            "examples": [
+              "Add a dog to this comment."
+            ]
+          }
+        ]
+      },
+      "contentReferences": [],
+      "codeCitations": [],
+      "timestamp": 1760360428161,
+      "modelId": "copilot/gpt-4.1"
+    }
+  ],
+  "sessionId": "d614e4f2-fb24-4d86-9dbf-bba4d692408f",
+  "creationDate": 1760360426821,
+  "isImported": false,
+  "lastMessageDate": 1760360428161
+}

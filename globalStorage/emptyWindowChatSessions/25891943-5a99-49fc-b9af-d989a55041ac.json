@@ -1,0 +1,917 @@
+{
+  "version": 3,
+  "requesterUsername": "devopstanvir",
+  "requesterAvatarIconUri": {
+    "$mid": 1,
+    "path": "/u/237455656",
+    "scheme": "https",
+    "authority": "avatars.githubusercontent.com",
+    "query": "v=4"
+  },
+  "responderUsername": "GitHub Copilot",
+  "responderAvatarIconUri": {
+    "id": "copilot"
+  },
+  "initialLocation": "editor",
+  "requests": [
+    {
+      "requestId": "request_08c568c0-bcac-456e-afc7-c94886dc36b5",
+      "message": {
+        "parts": [
+          {
+            "range": {
+              "start": 0,
+              "endExclusive": 14
+            },
+            "editorRange": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 1,
+              "endColumn": 15
+            },
+            "text": "remove notepad",
+            "kind": "text"
+          }
+        ],
+        "text": "remove notepad"
+      },
+      "variableData": {
+        "variables": []
+      },
+      "response": [
+        {
+          "kind": "textEditGroup",
+          "uri": {
+            "$mid": 1,
+            "fsPath": "c:\\Users\\WALTON\\Downloads\\ahk-enhanced-script.ahk",
+            "_sep": 1,
+            "external": "file:///c%3A/Users/WALTON/Downloads/ahk-enhanced-script.ahk",
+            "path": "/C:/Users/WALTON/Downloads/ahk-enhanced-script.ahk",
+            "scheme": "file"
+          },
+          "edits": [
+            [
+              {
+                "text": "    \"vscode\", {",
+                "range": {
+                  "startLineNumber": 8,
+                  "startColumn": 1,
+                  "endLineNumber": 8,
+                  "endColumn": 17
+                }
+              }
+            ],
+            [
+              {
+                "text": "        title: \"Visual Studio Code\",",
+                "range": {
+                  "startLineNumber": 9,
+                  "startColumn": 1,
+                  "endLineNumber": 9,
+                  "endColumn": 26
+                }
+              }
+            ],
+            [
+              {
+                "text": "        exe: \"Code.exe\",",
+                "range": {
+                  "startLineNumber": 10,
+                  "startColumn": 1,
+                  "endLineNumber": 10,
+                  "endColumn": 28
+                }
+              }
+            ],
+            [
+              {
+                "text": "        path: \"C:\\Users\\WALTON\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe\"",
+                "range": {
+                  "startLineNumber": 11,
+                  "startColumn": 1,
+                  "endLineNumber": 11,
+                  "endColumn": 28
+                }
+              }
+            ],
+            [
+              {
+                "text": "    \"explorer\", {",
+                "range": {
+                  "startLineNumber": 13,
+                  "startColumn": 1,
+                  "endLineNumber": 13,
+                  "endColumn": 16
+                }
+              }
+            ],
+            [
+              {
+                "text": "        title: \"File Explorer\",",
+                "range": {
+                  "startLineNumber": 14,
+                  "startColumn": 1,
+                  "endLineNumber": 14,
+                  "endColumn": 37
+                }
+              }
+            ],
+            [
+              {
+                "text": "        exe: \"explorer.exe\",",
+                "range": {
+                  "startLineNumber": 15,
+                  "startColumn": 1,
+                  "endLineNumber": 15,
+                  "endColumn": 25
+                }
+              }
+            ],
+            [
+              {
+                "text": "        path: \"explorer.exe\"",
+                "range": {
+                  "startLineNumber": 16,
+                  "startColumn": 1,
+                  "endLineNumber": 16,
+                  "endColumn": 82
+                }
+              }
+            ],
+            [
+              {
+                "text": "    \"terminal\", {",
+                "range": {
+                  "startLineNumber": 18,
+                  "startColumn": 1,
+                  "endLineNumber": 18,
+                  "endColumn": 18
+                }
+              }
+            ],
+            [
+              {
+                "text": "        title: \"Windows Terminal\",",
+                "range": {
+                  "startLineNumber": 19,
+                  "startColumn": 1,
+                  "endLineNumber": 19,
+                  "endColumn": 32
+                }
+              }
+            ],
+            [
+              {
+                "text": "        exe: \"WindowsTerminal.exe\",",
+                "range": {
+                  "startLineNumber": 20,
+                  "startColumn": 1,
+                  "endLineNumber": 20,
+                  "endColumn": 29
+                }
+              }
+            ],
+            [
+              {
+                "text": "        path: \"wt.exe\"",
+                "range": {
+                  "startLineNumber": 21,
+                  "startColumn": 1,
+                  "endLineNumber": 21,
+                  "endColumn": 29
+                }
+              }
+            ],
+            [
+              {
+                "text": "    \"chrome\", {",
+                "range": {
+                  "startLineNumber": 23,
+                  "startColumn": 1,
+                  "endLineNumber": 23,
+                  "endColumn": 18
+                }
+              }
+            ],
+            [
+              {
+                "text": "        title: \"Google Chrome\",",
+                "range": {
+                  "startLineNumber": 24,
+                  "startColumn": 1,
+                  "endLineNumber": 24,
+                  "endColumn": 35
+                }
+              }
+            ],
+            [
+              {
+                "text": "        exe: \"chrome.exe\",",
+                "range": {
+                  "startLineNumber": 25,
+                  "startColumn": 1,
+                  "endLineNumber": 25,
+                  "endColumn": 36
+                }
+              }
+            ],
+            [
+              {
+                "text": "        path: \"C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe\"",
+                "range": {
+                  "startLineNumber": 26,
+                  "startColumn": 1,
+                  "endLineNumber": 26,
+                  "endColumn": 23
+                }
+              }
+            ],
+            [
+              {
+                "text": "    \"excel\", {",
+                "range": {
+                  "startLineNumber": 28,
+                  "startColumn": 1,
+                  "endLineNumber": 28,
+                  "endColumn": 16
+                }
+              }
+            ],
+            [
+              {
+                "text": "        title: \"Excel\",",
+                "range": {
+                  "startLineNumber": 29,
+                  "startColumn": 1,
+                  "endLineNumber": 29,
+                  "endColumn": 32
+                }
+              }
+            ],
+            [
+              {
+                "text": "        exe: \"EXCEL.EXE\",",
+                "range": {
+                  "startLineNumber": 30,
+                  "startColumn": 1,
+                  "endLineNumber": 30,
+                  "endColumn": 27
+                }
+              }
+            ],
+            [
+              {
+                "text": "        path: \"C:\\Program Files\\Microsoft Office\\root\\Office16\\EXCEL.EXE\"",
+                "range": {
+                  "startLineNumber": 31,
+                  "startColumn": 1,
+                  "endLineNumber": 31,
+                  "endColumn": 76
+                }
+              }
+            ],
+            [
+              {
+                "text": "    \"word\", {",
+                "range": {
+                  "startLineNumber": 33,
+                  "startColumn": 1,
+                  "endLineNumber": 33,
+                  "endColumn": 15
+                }
+              }
+            ],
+            [
+              {
+                "text": "        title: \"Word\",",
+                "range": {
+                  "startLineNumber": 34,
+                  "startColumn": 1,
+                  "endLineNumber": 34,
+                  "endColumn": 24
+                }
+              }
+            ],
+            [
+              {
+                "text": "        exe: \"WINWORD.EXE\",",
+                "range": {
+                  "startLineNumber": 35,
+                  "startColumn": 1,
+                  "endLineNumber": 35,
+                  "endColumn": 26
+                }
+              }
+            ],
+            [
+              {
+                "text": "        path: \"C:\\Program Files\\Microsoft Office\\root\\Office16\\WINWORD.EXE\"",
+                "range": {
+                  "startLineNumber": 36,
+                  "startColumn": 1,
+                  "endLineNumber": 36,
+                  "endColumn": 74
+                }
+              }
+            ],
+            [
+              {
+                "text": "    }",
+                "range": {
+                  "startLineNumber": 37,
+                  "startColumn": 1,
+                  "endLineNumber": 37,
+                  "endColumn": 7
+                }
+              }
+            ],
+            [
+              {
+                "text": ")",
+                "range": {
+                  "startLineNumber": 38,
+                  "startColumn": 1,
+                  "endLineNumber": 38,
+                  "endColumn": 14
+                }
+              }
+            ],
+            [
+              {
+                "text": "",
+                "range": {
+                  "startLineNumber": 39,
+                  "startColumn": 1,
+                  "endLineNumber": 39,
+                  "endColumn": 23
+                }
+              }
+            ],
+            [
+              {
+                "text": "; ========================================",
+                "range": {
+                  "startLineNumber": 40,
+                  "startColumn": 1,
+                  "endLineNumber": 40,
+                  "endColumn": 28
+                }
+              }
+            ],
+            [
+              {
+                "text": "; System Hotkeys",
+                "range": {
+                  "startLineNumber": 41,
+                  "startColumn": 1,
+                  "endLineNumber": 41,
+                  "endColumn": 76
+                }
+              }
+            ],
+            [
+              {
+                "text": "; ========================================",
+                "range": {
+                  "startLineNumber": 42,
+                  "startColumn": 1,
+                  "endLineNumber": 42,
+                  "endColumn": 6
+                }
+              }
+            ],
+            [
+              {
+                "text": "#+r::ReloadScript()",
+                "range": {
+                  "startLineNumber": 43,
+                  "startColumn": 1,
+                  "endLineNumber": 43,
+                  "endColumn": 2
+                }
+              }
+            ],
+            [
+              {
+                "text": "#+e::EditScript()",
+                "range": {
+                  "startLineNumber": 44,
+                  "startColumn": 1,
+                  "endLineNumber": 44,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "#q::SmartCloseWindow()",
+                "range": {
+                  "startLineNumber": 45,
+                  "startColumn": 1,
+                  "endLineNumber": 45,
+                  "endColumn": 43
+                }
+              }
+            ],
+            [
+              {
+                "text": "#Esc::ExitApp",
+                "range": {
+                  "startLineNumber": 46,
+                  "startColumn": 1,
+                  "endLineNumber": 46,
+                  "endColumn": 17
+                }
+              }
+            ],
+            [
+              {
+                "text": "",
+                "range": {
+                  "startLineNumber": 47,
+                  "startColumn": 1,
+                  "endLineNumber": 47,
+                  "endColumn": 43
+                }
+              }
+            ],
+            [
+              {
+                "text": "; ========================================",
+                "range": {
+                  "startLineNumber": 48,
+                  "startColumn": 1,
+                  "endLineNumber": 48,
+                  "endColumn": 20
+                }
+              }
+            ],
+            [
+              {
+                "text": "; Key Remapping",
+                "range": {
+                  "startLineNumber": 49,
+                  "startColumn": 1,
+                  "endLineNumber": 49,
+                  "endColumn": 18
+                }
+              }
+            ],
+            [
+              {
+                "text": "; ========================================",
+                "range": {
+                  "startLineNumber": 50,
+                  "startColumn": 1,
+                  "endLineNumber": 50,
+                  "endColumn": 23
+                }
+              }
+            ],
+            [
+              {
+                "text": "CapsLock::Esc",
+                "range": {
+                  "startLineNumber": 51,
+                  "startColumn": 1,
+                  "endLineNumber": 51,
+                  "endColumn": 14
+                }
+              }
+            ],
+            [
+              {
+                "text": "; Esc::CapsLock  ; Uncomment to swap instead of just remapping",
+                "range": {
+                  "startLineNumber": 52,
+                  "startColumn": 1,
+                  "endLineNumber": 52,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "",
+                "range": {
+                  "startLineNumber": 53,
+                  "startColumn": 1,
+                  "endLineNumber": 53,
+                  "endColumn": 43
+                }
+              }
+            ],
+            [
+              {
+                "text": "; ========================================",
+                "range": {
+                  "startLineNumber": 54,
+                  "startColumn": 1,
+                  "endLineNumber": 54,
+                  "endColumn": 16
+                }
+              }
+            ],
+            [
+              {
+                "text": "; Application Shortcuts",
+                "range": {
+                  "startLineNumber": 55,
+                  "startColumn": 1,
+                  "endLineNumber": 55,
+                  "endColumn": 43
+                }
+              }
+            ],
+            [
+              {
+                "text": "; ========================================",
+                "range": {
+                  "startLineNumber": 56,
+                  "startColumn": 1,
+                  "endLineNumber": 56,
+                  "endColumn": 14
+                }
+              }
+            ],
+            [
+              {
+                "text": "#v::RunOrFocusApp(APP_CONFIG[\"vscode\"])",
+                "range": {
+                  "startLineNumber": 57,
+                  "startColumn": 1,
+                  "endLineNumber": 57,
+                  "endColumn": 63
+                }
+              }
+            ],
+            [
+              {
+                "text": "#f::RunOrFocusApp(APP_CONFIG[\"explorer\"])",
+                "range": {
+                  "startLineNumber": 58,
+                  "startColumn": 1,
+                  "endLineNumber": 58,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "#t::RunOrFocusApp(APP_CONFIG[\"terminal\"])",
+                "range": {
+                  "startLineNumber": 59,
+                  "startColumn": 1,
+                  "endLineNumber": 59,
+                  "endColumn": 43
+                }
+              }
+            ],
+            [
+              {
+                "text": "#b::RunOrFocusApp(APP_CONFIG[\"chrome\"])",
+                "range": {
+                  "startLineNumber": 60,
+                  "startColumn": 1,
+                  "endLineNumber": 60,
+                  "endColumn": 24
+                }
+              }
+            ],
+            [
+              {
+                "text": "#e::RunOrFocusApp(APP_CONFIG[\"excel\"])",
+                "range": {
+                  "startLineNumber": 61,
+                  "startColumn": 1,
+                  "endLineNumber": 61,
+                  "endColumn": 43
+                }
+              }
+            ],
+            [
+              {
+                "text": "#w::RunOrFocusApp(APP_CONFIG[\"word\"])",
+                "range": {
+                  "startLineNumber": 62,
+                  "startColumn": 1,
+                  "endLineNumber": 62,
+                  "endColumn": 41
+                }
+              }
+            ],
+            [
+              {
+                "text": "",
+                "range": {
+                  "startLineNumber": 63,
+                  "startColumn": 1,
+                  "endLineNumber": 63,
+                  "endColumn": 40
+                }
+              }
+            ],
+            [
+              {
+                "text": "; Additional productivity shortcuts",
+                "range": {
+                  "startLineNumber": 64,
+                  "startColumn": 1,
+                  "endLineNumber": 64,
+                  "endColumn": 42
+                }
+              }
+            ],
+            [
+              {
+                "text": "#c::RunCalculator()",
+                "range": {
+                  "startLineNumber": 65,
+                  "startColumn": 1,
+                  "endLineNumber": 65,
+                  "endColumn": 42
+                }
+              }
+            ],
+            [
+              {
+                "text": "#s::RunSnippingTool()",
+                "range": {
+                  "startLineNumber": 66,
+                  "startColumn": 1,
+                  "endLineNumber": 66,
+                  "endColumn": 40
+                }
+              }
+            ],
+            [
+              {
+                "text": "#+s::RunSystemSettings()",
+                "range": {
+                  "startLineNumber": 67,
+                  "startColumn": 1,
+                  "endLineNumber": 67,
+                  "endColumn": 39
+                }
+              }
+            ],
+            [
+              {
+                "text": "#m::ToggleAllWindowsMinimize()",
+                "range": {
+                  "startLineNumber": 68,
+                  "startColumn": 1,
+                  "endLineNumber": 68,
+                  "endColumn": 38
+                }
+              }
+            ],
+            [
+              {
+                "text": "; Window management shortcuts",
+                "range": {
+                  "startLineNumber": 70,
+                  "startColumn": 1,
+                  "endLineNumber": 70,
+                  "endColumn": 36
+                }
+              }
+            ],
+            [
+              {
+                "text": "#Left::SnapWindowLeft()",
+                "range": {
+                  "startLineNumber": 71,
+                  "startColumn": 1,
+                  "endLineNumber": 71,
+                  "endColumn": 20
+                }
+              }
+            ],
+            [
+              {
+                "text": "#Right::SnapWindowRight()",
+                "range": {
+                  "startLineNumber": 72,
+                  "startColumn": 1,
+                  "endLineNumber": 72,
+                  "endColumn": 22
+                }
+              }
+            ],
+            [
+              {
+                "text": "#Up::MaximizeWindow()",
+                "range": {
+                  "startLineNumber": 73,
+                  "startColumn": 1,
+                  "endLineNumber": 73,
+                  "endColumn": 25
+                }
+              }
+            ],
+            [
+              {
+                "text": "#Down::RestoreOrMinimizeWindow()",
+                "range": {
+                  "startLineNumber": 74,
+                  "startColumn": 1,
+                  "endLineNumber": 74,
+                  "endColumn": 31
+                }
+              }
+            ],
+            [
+              {
+                "text": "#+Left::MoveToMonitor(\"left\")",
+                "range": {
+                  "startLineNumber": 75,
+                  "startColumn": 1,
+                  "endLineNumber": 75,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "#+Right::MoveToMonitor(\"right\")",
+                "range": {
+                  "startLineNumber": 76,
+                  "startColumn": 1,
+                  "endLineNumber": 76,
+                  "endColumn": 30
+                }
+              }
+            ],
+            [
+              {
+                "text": "",
+                "range": {
+                  "startLineNumber": 77,
+                  "startColumn": 1,
+                  "endLineNumber": 83,
+                  "endColumn": 1
+                }
+              }
+            ],
+            []
+          ],
+          "state": {
+            "sha1": "7ff406c74dc33b611deca7bdc851bc5a1dedbd7c",
+            "applied": 2
+          }
+        }
+      ],
+      "responseId": "response_b7203752-2a3c-4bb9-af34-864650b9465d",
+      "result": {
+        "timings": {
+          "totalElapsed": 5180
+        },
+        "metadata": {
+          "codeBlocks": [],
+          "toolCallRounds": [
+            {
+              "response": "```plaintext\n; ========================================\n; Configuration Section\n; ========================================\nglobal APP_CONFIG := Map(\n    \"vscode\", {\n        title: \"Visual Studio Code\",\n        exe: \"Code.exe\",\n        path: \"C:\\Users\\WALTON\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe\"\n    },\n    \"explorer\", {\n        title: \"File Explorer\",\n        exe: \"explorer.exe\",\n        path: \"explorer.exe\"\n    },\n    \"terminal\", {\n        title: \"Windows Terminal\",\n        exe: \"WindowsTerminal.exe\",\n        path: \"wt.exe\"\n    },\n    \"chrome\", {\n        title: \"Google Chrome\",\n        exe: \"chrome.exe\",\n        path: \"C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe\"\n    },\n    \"excel\", {\n        title: \"Excel\",\n        exe: \"EXCEL.EXE\",\n        path: \"C:\\Program Files\\Microsoft Office\\root\\Office16\\EXCEL.EXE\"\n    },\n    \"word\", {\n        title: \"Word\",\n        exe: \"WINWORD.EXE\",\n        path: \"C:\\Program Files\\Microsoft Office\\root\\Office16\\WINWORD.EXE\"\n    }\n)\n\n; ========================================\n; System Hotkeys\n; ========================================\n#+r::ReloadScript()\n#+e::EditScript()\n#q::SmartCloseWindow()\n#Esc::ExitApp\n\n; ========================================\n; Key Remapping\n; ========================================\nCapsLock::Esc\n; Esc::CapsLock  ; Uncomment to swap instead of just remapping\n\n; ========================================\n; Application Shortcuts\n; ========================================\n#v::RunOrFocusApp(APP_CONFIG[\"vscode\"])\n#f::RunOrFocusApp(APP_CONFIG[\"explorer\"])\n#t::RunOrFocusApp(APP_CONFIG[\"terminal\"])\n#b::RunOrFocusApp(APP_CONFIG[\"chrome\"])\n#e::RunOrFocusApp(APP_CONFIG[\"excel\"])\n#w::RunOrFocusApp(APP_CONFIG[\"word\"])\n\n; Additional productivity shortcuts\n#c::RunCalculator()\n#s::RunSnippingTool()\n#+s::RunSystemSettings()\n#m::ToggleAllWindowsMinimize()\n\n; Window management shortcuts\n#Left::SnapWindowLeft()\n#Right::SnapWindowRight()\n#Up::MaximizeWindow()\n#Down::RestoreOrMinimizeWindow()\n#+Left::MoveToMonitor(\"left\")\n#+Right::MoveToMonitor(\"right\")\n```",
+              "toolCalls": [],
+              "toolInputRetry": 0,
+              "id": "0e8ddc33-bd10-4b03-afd9-b0f0ab203edb"
+            }
+          ],
+          "modelMessageId": "11b76c3a-61a5-4169-a155-53850405b255",
+          "responseId": "60c631eb-daa4-4ec3-8e1b-2dbe9d92c755",
+          "sessionId": "09662d7b-2236-44aa-af1a-f5ba5738b323",
+          "agentId": "github.copilot.editor"
+        },
+        "details": "GPT-4.1 • 1x"
+      },
+      "followups": [],
+      "isCanceled": false,
+      "agent": {
+        "extensionId": {
+          "value": "GitHub.copilot-chat",
+          "_lower": "github.copilot-chat"
+        },
+        "extensionVersion": "0.32.0",
+        "publisherDisplayName": "GitHub",
+        "extensionPublisherId": "GitHub",
+        "extensionDisplayName": "GitHub Copilot Chat",
+        "id": "github.copilot.editor",
+        "description": "Ask or edit in context",
+        "when": "!config.inlineChat.enableV2 && !config.github.copilot.chat.advanced.inlineChat2",
+        "metadata": {
+          "themeIcon": {
+            "id": "copilot"
+          },
+          "hasFollowups": false,
+          "supportIssueReporting": false
+        },
+        "name": "Copilot",
+        "fullName": "GitHub Copilot",
+        "isDefault": true,
+        "locations": [
+          "editor"
+        ],
+        "modes": [
+          "ask"
+        ],
+        "slashCommands": [
+          {
+            "name": "generate",
+            "description": "Generate new code",
+            "disambiguation": [
+              {
+                "category": "generate",
+                "description": "Generate new code",
+                "examples": [
+                  "Add a function that returns the sum of two numbers"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "edit",
+            "description": "Edit the selected code in your active editor",
+            "disambiguation": [
+              {
+                "category": "edit",
+                "description": "Make changes to existing code",
+                "examples": [
+                  "Change this method to use async/await"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "doc",
+            "description": "Add documentation comment for this symbol",
+            "disambiguation": [
+              {
+                "category": "doc",
+                "description": "Add documentation comment for this symbol",
+                "examples": [
+                  "Add jsdoc to this method"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "fix",
+            "description": "Propose a fix for the problems in the selected code",
+            "disambiguation": [
+              {
+                "category": "fix",
+                "description": "Propose a fix for the problems in the selected code",
+                "examples": [
+                  "There is a problem in this code. Rewrite the code to show it with the bug fixed."
+                ]
+              }
+            ]
+          },
+          {
+            "name": "explain",
+            "description": "Explain how the code in your active editor works",
+            "disambiguation": [
+              {
+                "category": "explain",
+                "description": "Explain how the code in your active editor works",
+                "examples": [
+                  "Write an explanation for the code above as paragraphs of text."
+                ]
+              }
+            ]
+          },
+          {
+            "name": "tests",
+            "description": "Generate unit tests for the selected code",
+            "disambiguation": [
+              {
+                "category": "tests",
+                "description": "Generate unit tests for the selected code. The user does not want to fix their existing tests.",
+                "examples": [
+                  "Write a set of detailed unit test functions for the code above."
+                ]
+              }
+            ]
+          }
+        ],
+        "disambiguation": [
+          {
+            "category": "unknown",
+            "description": "Intent of this command is unclear or is not related to information technologies",
+            "examples": [
+              "Add a dog to this comment."
+            ]
+          }
+        ]
+      },
+      "contentReferences": [],
+      "codeCitations": [],
+      "timestamp": 1760441015279,
+      "modelId": "copilot/gpt-4.1"
+    }
+  ],
+  "sessionId": "25891943-5a99-49fc-b9af-d989a55041ac",
+  "creationDate": 1760441009253,
+  "isImported": false,
+  "lastMessageDate": 1760441015279
+}

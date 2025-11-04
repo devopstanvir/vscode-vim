@@ -1,0 +1,653 @@
+{
+  "version": 3,
+  "requesterUsername": "devopstanvir",
+  "requesterAvatarIconUri": {
+    "$mid": 1,
+    "path": "/u/237455656",
+    "scheme": "https",
+    "authority": "avatars.githubusercontent.com",
+    "query": "v=4"
+  },
+  "responderUsername": "GitHub Copilot",
+  "responderAvatarIconUri": {
+    "id": "copilot"
+  },
+  "initialLocation": "panel",
+  "requests": [
+    {
+      "requestId": "request_c80b4546-adbd-415e-a982-843868467273",
+      "message": {
+        "text": "fix this code  it to open those apps if not open and  focus them if they're out of focus",
+        "parts": [
+          {
+            "range": {
+              "start": 0,
+              "endExclusive": 88
+            },
+            "editorRange": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 1,
+              "endColumn": 89
+            },
+            "text": "fix this code  it to open those apps if not open and  focus them if they're out of focus",
+            "kind": "text"
+          }
+        ]
+      },
+      "variableData": {
+        "variables": [
+          {
+            "kind": "file",
+            "id": "vscode.implicit.file",
+            "name": "file:capslock_esc_swap.ahk",
+            "value": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\WALTON\\Documents\\capslock_esc_swap.ahk",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/WALTON/Documents/capslock_esc_swap.ahk",
+              "path": "/C:/Users/WALTON/Documents/capslock_esc_swap.ahk",
+              "scheme": "file"
+            },
+            "modelDescription": "User's active file"
+          }
+        ]
+      },
+      "response": [
+        {
+          "value": "Here's a revised version of your script. This will **launch the app if not running**, and **focus its window if running but not active**. If the window is already active, it does nothing.\n\n````ahk\n",
+          "supportThemeIcons": false,
+          "supportHtml": false
+        },
+        {
+          "kind": "codeblockUri",
+          "uri": {
+            "$mid": 1,
+            "fsPath": "c:\\Users\\WALTON\\Documents\\capslock_esc_swap.ahk",
+            "_sep": 1,
+            "external": "file:///c%3A/Users/WALTON/Documents/capslock_esc_swap.ahk",
+            "path": "/C:/Users/WALTON/Documents/capslock_esc_swap.ahk",
+            "scheme": "file"
+          }
+        },
+        {
+          "value": "; ======================================================\n; Universal App Launcher / Focus Switcher\n; Press your defined hotkeys to launch or activate apps\n; ======================================================\n\n; ---------------------\n; Example Hotkeys\n; ---------------------\n#r::RunOrFocusApp(\"Comet Browser\", \"CometBrowser.exe\", \"C:\\Program Files\\Comet\\CometBrowser.exe\")\n#e::RunOrFocusApp(\"Everything\", \"Everything.exe\", \"C:\\Program Files\\Everything\\Everything.exe\")\n#c::RunOrFocusApp(\"Calculator\", \"Calculator.exe\", \"calc.exe\")\n#n::RunOrFocusApp(\"Notepad\", \"Notepad.exe\", \"notepad.exe\")\n\n; ---------------------\n; Function Definition\n; ---------------------\nRunOrFocusApp(winTitle, exeName, exePath)\n{\n    win := WinExist(\"ahk_exe \" exeName)\n    if win {\n        if !WinActive(\"ahk_id \" win) {\n            WinActivate(\"ahk_id \" win)\n        }\n        ; If already active, do nothing\n        return\n    }\n    ; If not running, launch it\n    try {\n        Run exePath\n    } catch as err {\n        MsgBox \"Failed to launch \" exeName \"`nError: \" err.Message\n    }\n}\n````\n\n**Key changes:**\n- Checks for an existing window with `WinExist`.\n- If found and not active, activates it.\n- If not found, launches the app.\n- No minimize/toggle logic—just focus or launch.",
+          "supportThemeIcons": false,
+          "supportHtml": false
+        }
+      ],
+      "responseId": "response_c5051c10-e447-4fb2-935a-694c4f6ac61c",
+      "result": {
+        "timings": {
+          "firstProgress": 1010,
+          "totalElapsed": 6840
+        },
+        "metadata": {
+          "codeBlocks": [
+            {
+              "code": "; ======================================================\n; Universal App Launcher / Focus Switcher\n; Press your defined hotkeys to launch or activate apps\n; ======================================================\n\n; ---------------------\n; Example Hotkeys\n; ---------------------\n#r::RunOrFocusApp(\"Comet Browser\", \"CometBrowser.exe\", \"C:\\Program Files\\Comet\\CometBrowser.exe\")\n#e::RunOrFocusApp(\"Everything\", \"Everything.exe\", \"C:\\Program Files\\Everything\\Everything.exe\")\n#c::RunOrFocusApp(\"Calculator\", \"Calculator.exe\", \"calc.exe\")\n#n::RunOrFocusApp(\"Notepad\", \"Notepad.exe\", \"notepad.exe\")\n\n; ---------------------\n; Function Definition\n; ---------------------\nRunOrFocusApp(winTitle, exeName, exePath)\n{\n    win := WinExist(\"ahk_exe \" exeName)\n    if win {\n        if !WinActive(\"ahk_id \" win) {\n            WinActivate(\"ahk_id \" win)\n        }\n        ; If already active, do nothing\n        return\n    }\n    ; If not running, launch it\n    try {\n        Run exePath\n    } catch as err {\n        MsgBox \"Failed to launch \" exeName \"`nError: \" err.Message\n    }\n}\n",
+              "resource": {
+                "$mid": 1,
+                "path": "/c:/Users/WALTON/Documents/capslock_esc_swap.ahk",
+                "scheme": "file"
+              },
+              "language": "ahk",
+              "markdownBeforeBlock": "Here's a revised version of your script. This will **launch the app if not running**, and **focus its window if running but not active**. If the window is already active, it does nothing.\n\n"
+            }
+          ],
+          "toolCallRounds": [
+            {
+              "response": "Here's a revised version of your script. This will **launch the app if not running**, and **focus its window if running but not active**. If the window is already active, it does nothing.\n\n````ahk\n// filepath: c:\\Users\\WALTON\\Documents\\capslock_esc_swap.ahk\n; ======================================================\n; Universal App Launcher / Focus Switcher\n; Press your defined hotkeys to launch or activate apps\n; ======================================================\n\n; ---------------------\n; Example Hotkeys\n; ---------------------\n#r::RunOrFocusApp(\"Comet Browser\", \"CometBrowser.exe\", \"C:\\Program Files\\Comet\\CometBrowser.exe\")\n#e::RunOrFocusApp(\"Everything\", \"Everything.exe\", \"C:\\Program Files\\Everything\\Everything.exe\")\n#c::RunOrFocusApp(\"Calculator\", \"Calculator.exe\", \"calc.exe\")\n#n::RunOrFocusApp(\"Notepad\", \"Notepad.exe\", \"notepad.exe\")\n\n; ---------------------\n; Function Definition\n; ---------------------\nRunOrFocusApp(winTitle, exeName, exePath)\n{\n    win := WinExist(\"ahk_exe \" exeName)\n    if win {\n        if !WinActive(\"ahk_id \" win) {\n            WinActivate(\"ahk_id \" win)\n        }\n        ; If already active, do nothing\n        return\n    }\n    ; If not running, launch it\n    try {\n        Run exePath\n    } catch as err {\n        MsgBox \"Failed to launch \" exeName \"`nError: \" err.Message\n    }\n}\n````\n\n**Key changes:**\n- Checks for an existing window with `WinExist`.\n- If found and not active, activates it.\n- If not found, launches the app.\n- No minimize/toggle logic—just focus or launch.",
+              "toolCalls": [],
+              "toolInputRetry": 0,
+              "id": "59e2981a-ca0a-4e3f-a5c9-8078eb40f117"
+            }
+          ],
+          "modelMessageId": "0d07f332-9efb-46cb-9817-e66591915768",
+          "responseId": "f61c1e9f-d5f0-4c1e-a18d-9fb5591197d4",
+          "sessionId": "e3e70351-196b-49c9-bc2a-f8f095b2eed4",
+          "agentId": "github.copilot.default"
+        },
+        "details": "GPT-4.1 • 1x"
+      },
+      "responseMarkdownInfo": [
+        {
+          "suggestionId": "sgt-b616d292-c423-4c07-8231-8d25f94bcc6b"
+        }
+      ],
+      "followups": [],
+      "isCanceled": false,
+      "agent": {
+        "extensionId": {
+          "value": "GitHub.copilot-chat",
+          "_lower": "github.copilot-chat"
+        },
+        "extensionVersion": "0.32.0",
+        "publisherDisplayName": "GitHub",
+        "extensionPublisherId": "GitHub",
+        "extensionDisplayName": "GitHub Copilot Chat",
+        "id": "github.copilot.default",
+        "description": "Ask or edit in context",
+        "metadata": {
+          "themeIcon": {
+            "id": "copilot"
+          },
+          "hasFollowups": false,
+          "helpTextPrefix": "You can ask me general programming questions, or chat with the following participants which have specialized expertise and can perform actions:",
+          "helpTextPostfix": {
+            "value": "To have a great conversation, ask me questions as if I was a real programmer:\n\n* **Show me the code** you want to talk about by having the files open and selecting the most important lines.\n* **Make refinements** by asking me follow-up questions, adding clarifications, providing errors, etc.\n* **Review my suggested code** and tell me about issues or improvements, so I can iterate on it.\n\nYou can also ask me questions about your editor selection by [starting an inline chat session](command:inlineChat.start).\n\nLearn more about [GitHub Copilot](https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted) in [Visual Studio Code](https://code.visualstudio.com/docs/copilot/overview). Or explore the [Copilot walkthrough](command:github.copilot.open.walkthrough).",
+            "isTrusted": {
+              "enabledCommands": [
+                "inlineChat.start",
+                "github.copilot.open.walkthrough"
+              ]
+            },
+            "supportThemeIcons": false,
+            "supportHtml": false,
+            "uris": {
+              "command:inlineChat.start": {
+                "$mid": 1,
+                "path": "inlineChat.start",
+                "scheme": "command"
+              },
+              "https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted": {
+                "$mid": 1,
+                "path": "/copilot/using-github-copilot/getting-started-with-github-copilot",
+                "scheme": "https",
+                "authority": "docs.github.com",
+                "query": "tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted"
+              },
+              "https://code.visualstudio.com/docs/copilot/overview": {
+                "$mid": 1,
+                "path": "/docs/copilot/overview",
+                "scheme": "https",
+                "authority": "code.visualstudio.com"
+              },
+              "command:github.copilot.open.walkthrough": {
+                "$mid": 1,
+                "path": "github.copilot.open.walkthrough",
+                "scheme": "command"
+              }
+            }
+          },
+          "supportIssueReporting": false,
+          "requester": {
+            "name": "devopstanvir",
+            "icon": {
+              "$mid": 1,
+              "path": "/u/237455656",
+              "scheme": "https",
+              "authority": "avatars.githubusercontent.com",
+              "query": "v=4"
+            }
+          }
+        },
+        "name": "GitHubCopilot",
+        "fullName": "GitHub Copilot",
+        "isDefault": true,
+        "locations": [
+          "panel"
+        ],
+        "modes": [
+          "ask"
+        ],
+        "slashCommands": [],
+        "disambiguation": [
+          {
+            "category": "generate_code_sample",
+            "description": "The user wants to generate code snippets without referencing the contents of the current workspace. This category does not include generating entire projects.",
+            "examples": [
+              "Write an example of computing a SHA256 hash."
+            ]
+          },
+          {
+            "category": "add_feature_to_file",
+            "description": "The user wants to change code in a file that is provided in their request, without referencing the contents of the current workspace. This category does not include generating entire projects.",
+            "examples": [
+              "Add a refresh button to the table widget."
+            ]
+          },
+          {
+            "category": "question_about_specific_files",
+            "description": "The user has a question about a specific file or code snippet that they have provided as part of their query, and the question does not require additional workspace context to answer.",
+            "examples": [
+              "What does this file do?"
+            ]
+          }
+        ]
+      },
+      "contentReferences": [
+        {
+          "kind": "reference",
+          "reference": {
+            "$mid": 1,
+            "fsPath": "c:\\Users\\WALTON\\Documents\\capslock_esc_swap.ahk",
+            "_sep": 1,
+            "external": "file:///c%3A/Users/WALTON/Documents/capslock_esc_swap.ahk",
+            "path": "/C:/Users/WALTON/Documents/capslock_esc_swap.ahk",
+            "scheme": "file"
+          }
+        }
+      ],
+      "codeCitations": [],
+      "timestamp": 1760435195644,
+      "modelId": "copilot/gpt-4.1"
+    },
+    {
+      "requestId": "request_3e8d16f4-ec37-4232-86b3-6b13c17186ac",
+      "message": {
+        "text": "; ======================================================\r\n; Universal App Launcher / Focus Switcher\r\n; Press your defined hotkeys to launch or activate apps\r\n; ======================================================\r\n\r\n; ---------------------\r\n; Example Hotkeys\r\n; ---------------------\r\n#r::RunOrFocusApp(\"Comet Browser\", \"CometBrowser.exe\", \"C:\\Program Files\\Comet\\CometBrowser.exe\")\r\n#e::RunOrFocusApp(\"Everything\", \"Everything.exe\", \"C:\\Program Files\\Everything\\Everything.exe\")\r\n#c::RunOrFocusApp(\"Calculator\", \"Calculator.exe\", \"calc.exe\")\r\n#n::RunOrFocusApp(\"Notepad\", \"Notepad.exe\", \"notepad.exe\")\r\n\r\n; ---------------------\r\n; Function Definition\r\n; ---------------------\r\nRunOrFocusApp(winTitle, exeName, exePath)\r\n{\r\n    ; Check if the process is running\r\n    if !ProcessExist(exeName) {\r\n        try {\r\n            Run exePath\r\n        } catch as err {\r\n            MsgBox \"Failed to launch \" exeName \"`nError: \" err.Message\r\n        }\r\n        return\r\n    }\r\n\r\n    ; Get all windows for this process\r\n    winList := []\r\n    WinGetList(\"ahk_exe \" exeName, &winList)\r\n\r\n    if winList.Length = 0 {\r\n        ; If no window found, try running again\r\n        Run exePath\r\n        return\r\n    }\r\n\r\n    ; Find the currently active window in the list\r\n    activeWin := WinActive(\"ahk_exe \" exeName)\r\n    idx := 0\r\n    if activeWin {\r\n        ; Find index of active window in winList\r\n        for i, winId in winList {\r\n            if winId = activeWin {\r\n                idx := i\r\n                break\r\n            }\r\n        }\r\n    }\r\n\r\n    ; Cycle to next window (wrap around)\r\n    nextIdx := idx + 1\r\n    if nextIdx > winList.Length\r\n        nextIdx := 1\r\n\r\n    WinActivate(\"ahk_id \" winList[nextIdx])\r\n}\r\n",
+        "parts": [
+          {
+            "range": {
+              "start": 0,
+              "endExclusive": 1714
+            },
+            "editorRange": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 59,
+              "endColumn": 1
+            },
+            "text": "; ======================================================\r\n; Universal App Launcher / Focus Switcher\r\n; Press your defined hotkeys to launch or activate apps\r\n; ======================================================\r\n\r\n; ---------------------\r\n; Example Hotkeys\r\n; ---------------------\r\n#r::RunOrFocusApp(\"Comet Browser\", \"CometBrowser.exe\", \"C:\\Program Files\\Comet\\CometBrowser.exe\")\r\n#e::RunOrFocusApp(\"Everything\", \"Everything.exe\", \"C:\\Program Files\\Everything\\Everything.exe\")\r\n#c::RunOrFocusApp(\"Calculator\", \"Calculator.exe\", \"calc.exe\")\r\n#n::RunOrFocusApp(\"Notepad\", \"Notepad.exe\", \"notepad.exe\")\r\n\r\n; ---------------------\r\n; Function Definition\r\n; ---------------------\r\nRunOrFocusApp(winTitle, exeName, exePath)\r\n{\r\n    ; Check if the process is running\r\n    if !ProcessExist(exeName) {\r\n        try {\r\n            Run exePath\r\n        } catch as err {\r\n            MsgBox \"Failed to launch \" exeName \"`nError: \" err.Message\r\n        }\r\n        return\r\n    }\r\n\r\n    ; Get all windows for this process\r\n    winList := []\r\n    WinGetList(\"ahk_exe \" exeName, &winList)\r\n\r\n    if winList.Length = 0 {\r\n        ; If no window found, try running again\r\n        Run exePath\r\n        return\r\n    }\r\n\r\n    ; Find the currently active window in the list\r\n    activeWin := WinActive(\"ahk_exe \" exeName)\r\n    idx := 0\r\n    if activeWin {\r\n        ; Find index of active window in winList\r\n        for i, winId in winList {\r\n            if winId = activeWin {\r\n                idx := i\r\n                break\r\n            }\r\n        }\r\n    }\r\n\r\n    ; Cycle to next window (wrap around)\r\n    nextIdx := idx + 1\r\n    if nextIdx > winList.Length\r\n        nextIdx := 1\r\n\r\n    WinActivate(\"ahk_id \" winList[nextIdx])\r\n}\r\n",
+            "kind": "text"
+          }
+        ]
+      },
+      "variableData": {
+        "variables": [
+          {
+            "kind": "file",
+            "id": "vscode.implicit.file",
+            "name": "file:capslock_esc_swap.ahk",
+            "value": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\WALTON\\Documents\\capslock_esc_swap.ahk",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/WALTON/Documents/capslock_esc_swap.ahk",
+              "path": "/C:/Users/WALTON/Documents/capslock_esc_swap.ahk",
+              "scheme": "file"
+            },
+            "modelDescription": "User's active file"
+          }
+        ]
+      },
+      "response": [
+        {
+          "value": "Here’s a fixed version of your code. It will **launch the app if not running**, **focus its window if running but not active**, and **activate the first window if multiple are open**. It does not cycle through windows, but always focuses the first found window.\n\n````ahk\n",
+          "supportThemeIcons": false,
+          "supportHtml": false
+        },
+        {
+          "kind": "codeblockUri",
+          "uri": {
+            "$mid": 1,
+            "fsPath": "c:\\Users\\WALTON\\Documents\\capslock_esc_swap.ahk",
+            "_sep": 1,
+            "external": "file:///c%3A/Users/WALTON/Documents/capslock_esc_swap.ahk",
+            "path": "/C:/Users/WALTON/Documents/capslock_esc_swap.ahk",
+            "scheme": "file"
+          }
+        },
+        {
+          "value": "#Requires AutoHotkey v2.0\n#SingleInstance Force\n#+r::Reload  ; Edit script\n#+e::Edit   ; Edit script\n#q::WinClose(\"A\")  ; Closes the active window\nCapsLock::Esc ; CapsLock to Escape\n; Esc::Return ; Disable Escape\n; Esc::CapsLock ; Escape to capslock\n\n; ======================================================\n; Universal App Launcher / Focus Switcher\n; Press your defined hotkeys to launch or activate apps\n; ======================================================\n\n#r::RunOrFocusApp(\"CometBrowser.exe\", \"C:\\Program Files\\Comet\\CometBrowser.exe\")\n#e::RunOrFocusApp(\"Everything.exe\", \"C:\\Program Files\\Everything\\Everything.exe\")\n#c::RunOrFocusApp(\"Calculator.exe\", \"calc.exe\")\n#n::RunOrFocusApp(\"Notepad.exe\", \"notepad.exe\")\n\nRunOrFocusApp(exeName, exePath) {\n    if !ProcessExist(exeName) {\n        try {\n            Run exePath\n        } catch as err {\n            MsgBox \"Failed to launch \" exeName \"`nError: \" err.Message\n        }\n        return\n    }\n    winList := []\n    WinGetList(\"ahk_exe \" exeName, &winList)\n    if winList.Length = 0 {\n        Run exePath\n        return\n    }\n    ; If not active, activate the first window\n    if !WinActive(\"ahk_id \" winList[1]) {\n        WinActivate(\"ahk_id \" winList[1])\n    }\n}\n````\n\n**How it works:**\n- If the process isn’t running, it launches the app.\n- If running, it finds all windows for the process.\n- If any window is found and not active, it activates the first window.\n- If already active, does nothing.\n\nLet me know if you want cycling through multiple windows!",
+          "supportThemeIcons": false,
+          "supportHtml": false
+        }
+      ],
+      "responseId": "response_72449704-d94d-48c0-b249-37eda9568b58",
+      "result": {
+        "timings": {
+          "firstProgress": 808,
+          "totalElapsed": 6509
+        },
+        "metadata": {
+          "codeBlocks": [
+            {
+              "code": "#Requires AutoHotkey v2.0\n#SingleInstance Force\n#+r::Reload  ; Edit script\n#+e::Edit   ; Edit script\n#q::WinClose(\"A\")  ; Closes the active window\nCapsLock::Esc ; CapsLock to Escape\n; Esc::Return ; Disable Escape\n; Esc::CapsLock ; Escape to capslock\n\n; ======================================================\n; Universal App Launcher / Focus Switcher\n; Press your defined hotkeys to launch or activate apps\n; ======================================================\n\n#r::RunOrFocusApp(\"CometBrowser.exe\", \"C:\\Program Files\\Comet\\CometBrowser.exe\")\n#e::RunOrFocusApp(\"Everything.exe\", \"C:\\Program Files\\Everything\\Everything.exe\")\n#c::RunOrFocusApp(\"Calculator.exe\", \"calc.exe\")\n#n::RunOrFocusApp(\"Notepad.exe\", \"notepad.exe\")\n\nRunOrFocusApp(exeName, exePath) {\n    if !ProcessExist(exeName) {\n        try {\n            Run exePath\n        } catch as err {\n            MsgBox \"Failed to launch \" exeName \"`nError: \" err.Message\n        }\n        return\n    }\n    winList := []\n    WinGetList(\"ahk_exe \" exeName, &winList)\n    if winList.Length = 0 {\n        Run exePath\n        return\n    }\n    ; If not active, activate the first window\n    if !WinActive(\"ahk_id \" winList[1]) {\n        WinActivate(\"ahk_id \" winList[1])\n    }\n}\n",
+              "resource": {
+                "$mid": 1,
+                "path": "/c:/Users/WALTON/Documents/capslock_esc_swap.ahk",
+                "scheme": "file"
+              },
+              "language": "ahk",
+              "markdownBeforeBlock": "Here’s a fixed version of your code. It will **launch the app if not running**, **focus its window if running but not active**, and **activate the first window if multiple are open**. It does not cycle through windows, but always focuses the first found window.\n\n"
+            }
+          ],
+          "toolCallRounds": [
+            {
+              "response": "Here’s a fixed version of your code. It will **launch the app if not running**, **focus its window if running but not active**, and **activate the first window if multiple are open**. It does not cycle through windows, but always focuses the first found window.\n\n````ahk\n// filepath: c:\\Users\\WALTON\\Documents\\capslock_esc_swap.ahk\n#Requires AutoHotkey v2.0\n#SingleInstance Force\n#+r::Reload  ; Edit script\n#+e::Edit   ; Edit script\n#q::WinClose(\"A\")  ; Closes the active window\nCapsLock::Esc ; CapsLock to Escape\n; Esc::Return ; Disable Escape\n; Esc::CapsLock ; Escape to capslock\n\n; ======================================================\n; Universal App Launcher / Focus Switcher\n; Press your defined hotkeys to launch or activate apps\n; ======================================================\n\n#r::RunOrFocusApp(\"CometBrowser.exe\", \"C:\\Program Files\\Comet\\CometBrowser.exe\")\n#e::RunOrFocusApp(\"Everything.exe\", \"C:\\Program Files\\Everything\\Everything.exe\")\n#c::RunOrFocusApp(\"Calculator.exe\", \"calc.exe\")\n#n::RunOrFocusApp(\"Notepad.exe\", \"notepad.exe\")\n\nRunOrFocusApp(exeName, exePath) {\n    if !ProcessExist(exeName) {\n        try {\n            Run exePath\n        } catch as err {\n            MsgBox \"Failed to launch \" exeName \"`nError: \" err.Message\n        }\n        return\n    }\n    winList := []\n    WinGetList(\"ahk_exe \" exeName, &winList)\n    if winList.Length = 0 {\n        Run exePath\n        return\n    }\n    ; If not active, activate the first window\n    if !WinActive(\"ahk_id \" winList[1]) {\n        WinActivate(\"ahk_id \" winList[1])\n    }\n}\n````\n\n**How it works:**\n- If the process isn’t running, it launches the app.\n- If running, it finds all windows for the process.\n- If any window is found and not active, it activates the first window.\n- If already active, does nothing.\n\nLet me know if you want cycling through multiple windows!",
+              "toolCalls": [],
+              "toolInputRetry": 0,
+              "id": "90b37551-e64e-47c8-a4ef-12b387c8074d"
+            }
+          ],
+          "modelMessageId": "e25bff45-6d9a-4b6a-8faf-6b855e655c96",
+          "responseId": "9d354498-d45d-4904-b27d-1ada9567da91",
+          "sessionId": "e3e70351-196b-49c9-bc2a-f8f095b2eed4",
+          "agentId": "github.copilot.default"
+        },
+        "details": "GPT-4.1 • 1x"
+      },
+      "responseMarkdownInfo": [
+        {
+          "suggestionId": "sgt-716f3f52-ac0e-4d23-89a1-843a5b4dd227"
+        }
+      ],
+      "followups": [],
+      "isCanceled": false,
+      "agent": {
+        "extensionId": {
+          "value": "GitHub.copilot-chat",
+          "_lower": "github.copilot-chat"
+        },
+        "extensionVersion": "0.32.0",
+        "publisherDisplayName": "GitHub",
+        "extensionPublisherId": "GitHub",
+        "extensionDisplayName": "GitHub Copilot Chat",
+        "id": "github.copilot.default",
+        "description": "Ask or edit in context",
+        "metadata": {
+          "themeIcon": {
+            "id": "copilot"
+          },
+          "hasFollowups": false,
+          "helpTextPrefix": "You can ask me general programming questions, or chat with the following participants which have specialized expertise and can perform actions:",
+          "helpTextPostfix": {
+            "value": "To have a great conversation, ask me questions as if I was a real programmer:\n\n* **Show me the code** you want to talk about by having the files open and selecting the most important lines.\n* **Make refinements** by asking me follow-up questions, adding clarifications, providing errors, etc.\n* **Review my suggested code** and tell me about issues or improvements, so I can iterate on it.\n\nYou can also ask me questions about your editor selection by [starting an inline chat session](command:inlineChat.start).\n\nLearn more about [GitHub Copilot](https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted) in [Visual Studio Code](https://code.visualstudio.com/docs/copilot/overview). Or explore the [Copilot walkthrough](command:github.copilot.open.walkthrough).",
+            "isTrusted": {
+              "enabledCommands": [
+                "inlineChat.start",
+                "github.copilot.open.walkthrough"
+              ]
+            },
+            "supportThemeIcons": false,
+            "supportHtml": false,
+            "uris": {
+              "command:inlineChat.start": {
+                "$mid": 1,
+                "path": "inlineChat.start",
+                "scheme": "command"
+              },
+              "https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted": {
+                "$mid": 1,
+                "path": "/copilot/using-github-copilot/getting-started-with-github-copilot",
+                "scheme": "https",
+                "authority": "docs.github.com",
+                "query": "tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted"
+              },
+              "https://code.visualstudio.com/docs/copilot/overview": {
+                "$mid": 1,
+                "path": "/docs/copilot/overview",
+                "scheme": "https",
+                "authority": "code.visualstudio.com"
+              },
+              "command:github.copilot.open.walkthrough": {
+                "$mid": 1,
+                "path": "github.copilot.open.walkthrough",
+                "scheme": "command"
+              }
+            }
+          },
+          "supportIssueReporting": false,
+          "requester": {
+            "name": "devopstanvir",
+            "icon": {
+              "$mid": 1,
+              "path": "/u/237455656",
+              "scheme": "https",
+              "authority": "avatars.githubusercontent.com",
+              "query": "v=4"
+            }
+          }
+        },
+        "name": "GitHubCopilot",
+        "fullName": "GitHub Copilot",
+        "isDefault": true,
+        "locations": [
+          "panel"
+        ],
+        "modes": [
+          "ask"
+        ],
+        "slashCommands": [],
+        "disambiguation": [
+          {
+            "category": "generate_code_sample",
+            "description": "The user wants to generate code snippets without referencing the contents of the current workspace. This category does not include generating entire projects.",
+            "examples": [
+              "Write an example of computing a SHA256 hash."
+            ]
+          },
+          {
+            "category": "add_feature_to_file",
+            "description": "The user wants to change code in a file that is provided in their request, without referencing the contents of the current workspace. This category does not include generating entire projects.",
+            "examples": [
+              "Add a refresh button to the table widget."
+            ]
+          },
+          {
+            "category": "question_about_specific_files",
+            "description": "The user has a question about a specific file or code snippet that they have provided as part of their query, and the question does not require additional workspace context to answer.",
+            "examples": [
+              "What does this file do?"
+            ]
+          }
+        ]
+      },
+      "contentReferences": [
+        {
+          "kind": "reference",
+          "reference": {
+            "$mid": 1,
+            "fsPath": "c:\\Users\\WALTON\\Documents\\capslock_esc_swap.ahk",
+            "_sep": 1,
+            "external": "file:///c%3A/Users/WALTON/Documents/capslock_esc_swap.ahk",
+            "path": "/C:/Users/WALTON/Documents/capslock_esc_swap.ahk",
+            "scheme": "file"
+          }
+        }
+      ],
+      "codeCitations": [],
+      "timestamp": 1760435849554,
+      "modelId": "copilot/gpt-4.1"
+    },
+    {
+      "requestId": "request_6b65867a-b147-4c8b-96a8-6f80434c2c1c",
+      "message": {
+        "text": "and also cycle through different instances of same app if multiple is running",
+        "parts": [
+          {
+            "range": {
+              "start": 0,
+              "endExclusive": 77
+            },
+            "editorRange": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 1,
+              "endColumn": 78
+            },
+            "text": "and also cycle through different instances of same app if multiple is running",
+            "kind": "text"
+          }
+        ]
+      },
+      "variableData": {
+        "variables": []
+      },
+      "response": [
+        {
+          "value": "Here’s an updated version that **cycles through all open windows** of the app each time you press the hotkey. It remembers the last activated window for each app and activates the next one in the list.\n\n````ahk\n",
+          "supportThemeIcons": false,
+          "supportHtml": false
+        },
+        {
+          "kind": "codeblockUri",
+          "uri": {
+            "$mid": 1,
+            "fsPath": "c:\\Users\\WALTON\\Documents\\capslock_esc_swap.ahk",
+            "_sep": 1,
+            "external": "file:///c%3A/Users/WALTON/Documents/capslock_esc_swap.ahk",
+            "path": "/C:/Users/WALTON/Documents/capslock_esc_swap.ahk",
+            "scheme": "file"
+          }
+        },
+        {
+          "value": "#Requires AutoHotkey v2.0\n#SingleInstance Force\n#+r::Reload  ; Edit script\n#+e::Edit   ; Edit script\n#q::WinClose(\"A\")  ; Closes the active window\nCapsLock::Esc ; CapsLock to Escape\n; Esc::Return ; Disable Escape\n; Esc::CapsLock ; Escape to capslock\n\n; ======================================================\n; Universal App Launcher / Focus Switcher\n; Press your defined hotkeys to launch or activate apps\n; ======================================================\n\n#r::RunOrFocusApp(\"CometBrowser.exe\", \"C:\\Program Files\\Comet\\CometBrowser.exe\")\n#e::RunOrFocusApp(\"Everything.exe\", \"C:\\Program Files\\Everything\\Everything.exe\")\n#c::RunOrFocusApp(\"Calculator.exe\", \"calc.exe\")\n#n::RunOrFocusApp(\"Notepad.exe\", \"notepad.exe\")\n\nglobal lastWinIdx := Map() ; Stores last window index for each exe\n\nRunOrFocusApp(exeName, exePath) {\n    if !ProcessExist(exeName) {\n        try {\n            Run exePath\n        } catch as err {\n            MsgBox \"Failed to launch \" exeName \"`nError: \" err.Message\n        }\n        lastWinIdx[exeName] := 1\n        return\n    }\n    winList := []\n    WinGetList(\"ahk_exe \" exeName, &winList)\n    if winList.Length = 0 {\n        Run exePath\n        lastWinIdx[exeName] := 1\n        return\n    }\n    idx := lastWinIdx.Has(exeName) ? lastWinIdx[exeName] : 1\n    idx := idx + 1\n    if idx > winList.Length\n        idx := 1\n    WinActivate(\"ahk_id \" winList[idx])\n    lastWinIdx[exeName] := idx\n}\n````\n\n**How it works:**\n- Each hotkey cycles through all windows of the app.\n- Remembers the last activated window for each app.\n- Wraps around to the first window after the last.\n\nLet me know if you want further customization!",
+          "supportThemeIcons": false,
+          "supportHtml": false
+        }
+      ],
+      "responseId": "response_292d133d-8614-4a64-946c-8de0e3bda687",
+      "result": {
+        "timings": {
+          "firstProgress": 837,
+          "totalElapsed": 5225
+        },
+        "metadata": {
+          "codeBlocks": [
+            {
+              "code": "#Requires AutoHotkey v2.0\n#SingleInstance Force\n#+r::Reload  ; Edit script\n#+e::Edit   ; Edit script\n#q::WinClose(\"A\")  ; Closes the active window\nCapsLock::Esc ; CapsLock to Escape\n; Esc::Return ; Disable Escape\n; Esc::CapsLock ; Escape to capslock\n\n; ======================================================\n; Universal App Launcher / Focus Switcher\n; Press your defined hotkeys to launch or activate apps\n; ======================================================\n\n#r::RunOrFocusApp(\"CometBrowser.exe\", \"C:\\Program Files\\Comet\\CometBrowser.exe\")\n#e::RunOrFocusApp(\"Everything.exe\", \"C:\\Program Files\\Everything\\Everything.exe\")\n#c::RunOrFocusApp(\"Calculator.exe\", \"calc.exe\")\n#n::RunOrFocusApp(\"Notepad.exe\", \"notepad.exe\")\n\nglobal lastWinIdx := Map() ; Stores last window index for each exe\n\nRunOrFocusApp(exeName, exePath) {\n    if !ProcessExist(exeName) {\n        try {\n            Run exePath\n        } catch as err {\n            MsgBox \"Failed to launch \" exeName \"`nError: \" err.Message\n        }\n        lastWinIdx[exeName] := 1\n        return\n    }\n    winList := []\n    WinGetList(\"ahk_exe \" exeName, &winList)\n    if winList.Length = 0 {\n        Run exePath\n        lastWinIdx[exeName] := 1\n        return\n    }\n    idx := lastWinIdx.Has(exeName) ? lastWinIdx[exeName] : 1\n    idx := idx + 1\n    if idx > winList.Length\n        idx := 1\n    WinActivate(\"ahk_id \" winList[idx])\n    lastWinIdx[exeName] := idx\n}\n",
+              "resource": {
+                "$mid": 1,
+                "path": "/c:/Users/WALTON/Documents/capslock_esc_swap.ahk",
+                "scheme": "file"
+              },
+              "language": "ahk",
+              "markdownBeforeBlock": "Here’s an updated version that **cycles through all open windows** of the app each time you press the hotkey. It remembers the last activated window for each app and activates the next one in the list.\n\n"
+            }
+          ],
+          "toolCallRounds": [
+            {
+              "response": "Here’s an updated version that **cycles through all open windows** of the app each time you press the hotkey. It remembers the last activated window for each app and activates the next one in the list.\n\n````ahk\n// filepath: c:\\Users\\WALTON\\Documents\\capslock_esc_swap.ahk\n#Requires AutoHotkey v2.0\n#SingleInstance Force\n#+r::Reload  ; Edit script\n#+e::Edit   ; Edit script\n#q::WinClose(\"A\")  ; Closes the active window\nCapsLock::Esc ; CapsLock to Escape\n; Esc::Return ; Disable Escape\n; Esc::CapsLock ; Escape to capslock\n\n; ======================================================\n; Universal App Launcher / Focus Switcher\n; Press your defined hotkeys to launch or activate apps\n; ======================================================\n\n#r::RunOrFocusApp(\"CometBrowser.exe\", \"C:\\Program Files\\Comet\\CometBrowser.exe\")\n#e::RunOrFocusApp(\"Everything.exe\", \"C:\\Program Files\\Everything\\Everything.exe\")\n#c::RunOrFocusApp(\"Calculator.exe\", \"calc.exe\")\n#n::RunOrFocusApp(\"Notepad.exe\", \"notepad.exe\")\n\nglobal lastWinIdx := Map() ; Stores last window index for each exe\n\nRunOrFocusApp(exeName, exePath) {\n    if !ProcessExist(exeName) {\n        try {\n            Run exePath\n        } catch as err {\n            MsgBox \"Failed to launch \" exeName \"`nError: \" err.Message\n        }\n        lastWinIdx[exeName] := 1\n        return\n    }\n    winList := []\n    WinGetList(\"ahk_exe \" exeName, &winList)\n    if winList.Length = 0 {\n        Run exePath\n        lastWinIdx[exeName] := 1\n        return\n    }\n    idx := lastWinIdx.Has(exeName) ? lastWinIdx[exeName] : 1\n    idx := idx + 1\n    if idx > winList.Length\n        idx := 1\n    WinActivate(\"ahk_id \" winList[idx])\n    lastWinIdx[exeName] := idx\n}\n````\n\n**How it works:**\n- Each hotkey cycles through all windows of the app.\n- Remembers the last activated window for each app.\n- Wraps around to the first window after the last.\n\nLet me know if you want further customization!",
+              "toolCalls": [],
+              "toolInputRetry": 0,
+              "id": "5485261a-0632-43a8-a124-521d5e583517"
+            }
+          ],
+          "modelMessageId": "6e63f380-268a-43fb-984c-1095f6649133",
+          "responseId": "b3b99b4d-239b-43f2-b107-a2fff8706e78",
+          "sessionId": "e3e70351-196b-49c9-bc2a-f8f095b2eed4",
+          "agentId": "github.copilot.default"
+        },
+        "details": "GPT-4.1 • 1x"
+      },
+      "responseMarkdownInfo": [
+        {
+          "suggestionId": "sgt-57738030-3ab8-439f-8c80-79597d61e514"
+        }
+      ],
+      "followups": [],
+      "isCanceled": false,
+      "agent": {
+        "extensionId": {
+          "value": "GitHub.copilot-chat",
+          "_lower": "github.copilot-chat"
+        },
+        "extensionVersion": "0.32.0",
+        "publisherDisplayName": "GitHub",
+        "extensionPublisherId": "GitHub",
+        "extensionDisplayName": "GitHub Copilot Chat",
+        "id": "github.copilot.default",
+        "description": "Ask or edit in context",
+        "metadata": {
+          "themeIcon": {
+            "id": "copilot"
+          },
+          "hasFollowups": false,
+          "helpTextPrefix": "You can ask me general programming questions, or chat with the following participants which have specialized expertise and can perform actions:",
+          "helpTextPostfix": {
+            "value": "To have a great conversation, ask me questions as if I was a real programmer:\n\n* **Show me the code** you want to talk about by having the files open and selecting the most important lines.\n* **Make refinements** by asking me follow-up questions, adding clarifications, providing errors, etc.\n* **Review my suggested code** and tell me about issues or improvements, so I can iterate on it.\n\nYou can also ask me questions about your editor selection by [starting an inline chat session](command:inlineChat.start).\n\nLearn more about [GitHub Copilot](https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted) in [Visual Studio Code](https://code.visualstudio.com/docs/copilot/overview). Or explore the [Copilot walkthrough](command:github.copilot.open.walkthrough).",
+            "isTrusted": {
+              "enabledCommands": [
+                "inlineChat.start",
+                "github.copilot.open.walkthrough"
+              ]
+            },
+            "supportThemeIcons": false,
+            "supportHtml": false,
+            "uris": {
+              "command:inlineChat.start": {
+                "$mid": 1,
+                "path": "inlineChat.start",
+                "scheme": "command"
+              },
+              "https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted": {
+                "$mid": 1,
+                "path": "/copilot/using-github-copilot/getting-started-with-github-copilot",
+                "scheme": "https",
+                "authority": "docs.github.com",
+                "query": "tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted"
+              },
+              "https://code.visualstudio.com/docs/copilot/overview": {
+                "$mid": 1,
+                "path": "/docs/copilot/overview",
+                "scheme": "https",
+                "authority": "code.visualstudio.com"
+              },
+              "command:github.copilot.open.walkthrough": {
+                "$mid": 1,
+                "path": "github.copilot.open.walkthrough",
+                "scheme": "command"
+              }
+            }
+          },
+          "supportIssueReporting": false,
+          "requester": {
+            "name": "devopstanvir",
+            "icon": {
+              "$mid": 1,
+              "path": "/u/237455656",
+              "scheme": "https",
+              "authority": "avatars.githubusercontent.com",
+              "query": "v=4"
+            }
+          }
+        },
+        "name": "GitHubCopilot",
+        "fullName": "GitHub Copilot",
+        "isDefault": true,
+        "locations": [
+          "panel"
+        ],
+        "modes": [
+          "ask"
+        ],
+        "slashCommands": [],
+        "disambiguation": [
+          {
+            "category": "generate_code_sample",
+            "description": "The user wants to generate code snippets without referencing the contents of the current workspace. This category does not include generating entire projects.",
+            "examples": [
+              "Write an example of computing a SHA256 hash."
+            ]
+          },
+          {
+            "category": "add_feature_to_file",
+            "description": "The user wants to change code in a file that is provided in their request, without referencing the contents of the current workspace. This category does not include generating entire projects.",
+            "examples": [
+              "Add a refresh button to the table widget."
+            ]
+          },
+          {
+            "category": "question_about_specific_files",
+            "description": "The user has a question about a specific file or code snippet that they have provided as part of their query, and the question does not require additional workspace context to answer.",
+            "examples": [
+              "What does this file do?"
+            ]
+          }
+        ]
+      },
+      "contentReferences": [],
+      "codeCitations": [],
+      "timestamp": 1760435910089,
+      "modelId": "copilot/gpt-4.1"
+    }
+  ],
+  "sessionId": "7387772d-25dc-4107-ac8f-951da8bd159b",
+  "creationDate": 1760434486783,
+  "isImported": false,
+  "lastMessageDate": 1760435910089,
+  "customTitle": "Fixing AutoHotkey app launcher script"
+}

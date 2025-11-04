@@ -1,0 +1,389 @@
+{
+  "version": 3,
+  "requesterUsername": "devopstanvir",
+  "requesterAvatarIconUri": {
+    "$mid": 1,
+    "path": "/u/237455656",
+    "scheme": "https",
+    "authority": "avatars.githubusercontent.com",
+    "query": "v=4"
+  },
+  "responderUsername": "GitHub Copilot",
+  "responderAvatarIconUri": {
+    "id": "copilot"
+  },
+  "initialLocation": "editor",
+  "requests": [
+    {
+      "requestId": "request_dd8265c8-78e3-4c4e-97d8-0f010be3137b",
+      "message": {
+        "parts": [
+          {
+            "range": {
+              "start": 0,
+              "endExclusive": 165
+            },
+            "editorRange": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 5,
+              "endColumn": 10
+            },
+            "text": "add excel and word\r\n\"C:\\Program Files\\Microsoft Office\\root\\Office16\\EXCEL.EXE\"\r\n\"C:\\Program Files\\Microsoft Office\\root\\Office16\\WINWORD.EXE\"\r\nwindows+e,\r\nwindows+w",
+            "kind": "text"
+          }
+        ],
+        "text": "add excel and word\r\n\"C:\\Program Files\\Microsoft Office\\root\\Office16\\EXCEL.EXE\"\r\n\"C:\\Program Files\\Microsoft Office\\root\\Office16\\WINWORD.EXE\"\r\nwindows+e,\r\nwindows+w"
+      },
+      "variableData": {
+        "variables": []
+      },
+      "response": [
+        {
+          "kind": "textEditGroup",
+          "uri": {
+            "$mid": 1,
+            "fsPath": "c:\\Users\\WALTON\\Downloads\\ahk-enhanced-script.ahk",
+            "_sep": 1,
+            "external": "file:///c%3A/Users/WALTON/Downloads/ahk-enhanced-script.ahk",
+            "path": "/C:/Users/WALTON/Downloads/ahk-enhanced-script.ahk",
+            "scheme": "file"
+          },
+          "edits": [
+            [
+              {
+                "text": "    },",
+                "range": {
+                  "startLineNumber": 32,
+                  "startColumn": 1,
+                  "endLineNumber": 32,
+                  "endColumn": 6
+                }
+              }
+            ],
+            [
+              {
+                "text": "    \"excel\", {",
+                "range": {
+                  "startLineNumber": 33,
+                  "startColumn": 1,
+                  "endLineNumber": 33,
+                  "endColumn": 2
+                }
+              }
+            ],
+            [
+              {
+                "text": "        title: \"Excel\",",
+                "range": {
+                  "startLineNumber": 34,
+                  "startColumn": 1,
+                  "endLineNumber": 34,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "        exe: \"EXCEL.EXE\",",
+                "range": {
+                  "startLineNumber": 35,
+                  "startColumn": 1,
+                  "endLineNumber": 35,
+                  "endColumn": 43
+                }
+              }
+            ],
+            [
+              {
+                "text": "        path: \"C:\\Program Files\\Microsoft Office\\root\\Office16\\EXCEL.EXE\"",
+                "range": {
+                  "startLineNumber": 36,
+                  "startColumn": 1,
+                  "endLineNumber": 36,
+                  "endColumn": 17
+                }
+              }
+            ],
+            [
+              {
+                "text": "    },",
+                "range": {
+                  "startLineNumber": 37,
+                  "startColumn": 1,
+                  "endLineNumber": 37,
+                  "endColumn": 43
+                }
+              }
+            ],
+            [
+              {
+                "text": "    \"word\", {",
+                "range": {
+                  "startLineNumber": 38,
+                  "startColumn": 1,
+                  "endLineNumber": 38,
+                  "endColumn": 20
+                }
+              }
+            ],
+            [
+              {
+                "text": "        title: \"Word\",",
+                "range": {
+                  "startLineNumber": 39,
+                  "startColumn": 1,
+                  "endLineNumber": 39,
+                  "endColumn": 18
+                }
+              }
+            ],
+            [
+              {
+                "text": "        exe: \"WINWORD.EXE\",",
+                "range": {
+                  "startLineNumber": 40,
+                  "startColumn": 1,
+                  "endLineNumber": 40,
+                  "endColumn": 23
+                }
+              }
+            ],
+            [
+              {
+                "text": "        path: \"C:\\Program Files\\Microsoft Office\\root\\Office16\\WINWORD.EXE\"",
+                "range": {
+                  "startLineNumber": 41,
+                  "startColumn": 1,
+                  "endLineNumber": 41,
+                  "endColumn": 14
+                }
+              }
+            ],
+            [
+              {
+                "text": "    }",
+                "range": {
+                  "startLineNumber": 42,
+                  "startColumn": 1,
+                  "endLineNumber": 42,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": ")",
+                "range": {
+                  "startLineNumber": 43,
+                  "startColumn": 1,
+                  "endLineNumber": 43,
+                  "endColumn": 43
+                }
+              }
+            ],
+            [
+              {
+                "text": "",
+                "range": {
+                  "startLineNumber": 44,
+                  "startColumn": 1,
+                  "endLineNumber": 44,
+                  "endColumn": 16
+                }
+              }
+            ],
+            [
+              {
+                "text": "#e::RunOrFocusApp(APP_CONFIG[\"excel\"])",
+                "range": {
+                  "startLineNumber": 45,
+                  "startColumn": 1,
+                  "endLineNumber": 45,
+                  "endColumn": 43
+                }
+              }
+            ],
+            [
+              {
+                "text": "#w::RunOrFocusApp(APP_CONFIG[\"word\"])",
+                "range": {
+                  "startLineNumber": 46,
+                  "startColumn": 1,
+                  "endLineNumber": 46,
+                  "endColumn": 14
+                }
+              }
+            ],
+            [
+              {
+                "text": "",
+                "range": {
+                  "startLineNumber": 47,
+                  "startColumn": 1,
+                  "endLineNumber": 338,
+                  "endColumn": 2
+                }
+              }
+            ],
+            []
+          ],
+          "state": {
+            "sha1": "f1e066accf51400e1cd31f362e6550ea733ae4ef",
+            "applied": 1
+          }
+        }
+      ],
+      "responseId": "response_a1aef7f6-43cc-48f7-abd5-c42be464770e",
+      "result": {
+        "timings": {
+          "totalElapsed": 4867
+        },
+        "metadata": {
+          "codeBlocks": [],
+          "toolCallRounds": [
+            {
+              "response": "```plaintext\nglobal APP_CONFIG := Map(\n    \"notepad\", {\n        title: \"Notepad\",\n        exe: \"notepad.exe\",\n        path: \"notepad.exe\"\n    },\n    \"vscode\", {\n        title: \"Visual Studio Code\",\n        exe: \"Code.exe\",\n        path: \"C:\\Users\\WALTON\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe\"\n    },\n    \"explorer\", {\n        title: \"File Explorer\",\n        exe: \"explorer.exe\",\n        path: \"explorer.exe\"\n    },\n    \"terminal\", {\n        title: \"Windows Terminal\",\n        exe: \"WindowsTerminal.exe\",\n        path: \"wt.exe\"\n    },\n    \"chrome\", {\n        title: \"Google Chrome\",\n        exe: \"chrome.exe\",\n        path: \"C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe\"\n    },\n    \"excel\", {\n        title: \"Excel\",\n        exe: \"EXCEL.EXE\",\n        path: \"C:\\Program Files\\Microsoft Office\\root\\Office16\\EXCEL.EXE\"\n    },\n    \"word\", {\n        title: \"Word\",\n        exe: \"WINWORD.EXE\",\n        path: \"C:\\Program Files\\Microsoft Office\\root\\Office16\\WINWORD.EXE\"\n    }\n)\n\n#e::RunOrFocusApp(APP_CONFIG[\"excel\"])\n#w::RunOrFocusApp(APP_CONFIG[\"word\"])\n```",
+              "toolCalls": [],
+              "toolInputRetry": 0,
+              "id": "7244c16a-b750-4f43-a41c-9eb9255ed69a"
+            }
+          ],
+          "modelMessageId": "eaa539b7-92e2-4ce4-8f8f-732d453b62e2",
+          "responseId": "491d53eb-44a2-4070-8f1f-dbc68b46a5ea",
+          "sessionId": "9a3cb3b5-1c82-4d08-b943-58b16f4ec720",
+          "agentId": "github.copilot.editor"
+        },
+        "details": "GPT-4.1 • 1x"
+      },
+      "followups": [],
+      "isCanceled": false,
+      "agent": {
+        "extensionId": {
+          "value": "GitHub.copilot-chat",
+          "_lower": "github.copilot-chat"
+        },
+        "extensionVersion": "0.32.0",
+        "publisherDisplayName": "GitHub",
+        "extensionPublisherId": "GitHub",
+        "extensionDisplayName": "GitHub Copilot Chat",
+        "id": "github.copilot.editor",
+        "description": "Ask or edit in context",
+        "when": "!config.inlineChat.enableV2 && !config.github.copilot.chat.advanced.inlineChat2",
+        "metadata": {
+          "themeIcon": {
+            "id": "copilot"
+          },
+          "hasFollowups": false,
+          "supportIssueReporting": false
+        },
+        "name": "Copilot",
+        "fullName": "GitHub Copilot",
+        "isDefault": true,
+        "locations": [
+          "editor"
+        ],
+        "modes": [
+          "ask"
+        ],
+        "slashCommands": [
+          {
+            "name": "generate",
+            "description": "Generate new code",
+            "disambiguation": [
+              {
+                "category": "generate",
+                "description": "Generate new code",
+                "examples": [
+                  "Add a function that returns the sum of two numbers"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "edit",
+            "description": "Edit the selected code in your active editor",
+            "disambiguation": [
+              {
+                "category": "edit",
+                "description": "Make changes to existing code",
+                "examples": [
+                  "Change this method to use async/await"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "doc",
+            "description": "Add documentation comment for this symbol",
+            "disambiguation": [
+              {
+                "category": "doc",
+                "description": "Add documentation comment for this symbol",
+                "examples": [
+                  "Add jsdoc to this method"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "fix",
+            "description": "Propose a fix for the problems in the selected code",
+            "disambiguation": [
+              {
+                "category": "fix",
+                "description": "Propose a fix for the problems in the selected code",
+                "examples": [
+                  "There is a problem in this code. Rewrite the code to show it with the bug fixed."
+                ]
+              }
+            ]
+          },
+          {
+            "name": "explain",
+            "description": "Explain how the code in your active editor works",
+            "disambiguation": [
+              {
+                "category": "explain",
+                "description": "Explain how the code in your active editor works",
+                "examples": [
+                  "Write an explanation for the code above as paragraphs of text."
+                ]
+              }
+            ]
+          },
+          {
+            "name": "tests",
+            "description": "Generate unit tests for the selected code",
+            "disambiguation": [
+              {
+                "category": "tests",
+                "description": "Generate unit tests for the selected code. The user does not want to fix their existing tests.",
+                "examples": [
+                  "Write a set of detailed unit test functions for the code above."
+                ]
+              }
+            ]
+          }
+        ],
+        "disambiguation": [
+          {
+            "category": "unknown",
+            "description": "Intent of this command is unclear or is not related to information technologies",
+            "examples": [
+              "Add a dog to this comment."
+            ]
+          }
+        ]
+      },
+      "contentReferences": [],
+      "codeCitations": [],
+      "timestamp": 1760440538605,
+      "modelId": "copilot/gpt-4.1"
+    }
+  ],
+  "sessionId": "2e55cda3-41a6-4b6a-be03-ee886f5fc45b",
+  "creationDate": 1760440533455,
+  "isImported": false,
+  "lastMessageDate": 1760440538605
+}

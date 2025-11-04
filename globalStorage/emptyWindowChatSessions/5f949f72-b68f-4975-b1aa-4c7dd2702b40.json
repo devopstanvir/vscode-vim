@@ -1,0 +1,290 @@
+{
+  "version": 3,
+  "requesterUsername": "devopstanvir",
+  "requesterAvatarIconUri": {
+    "$mid": 1,
+    "path": "/u/237455656",
+    "scheme": "https",
+    "authority": "avatars.githubusercontent.com",
+    "query": "v=4"
+  },
+  "responderUsername": "GitHub Copilot",
+  "responderAvatarIconUri": {
+    "id": "copilot"
+  },
+  "initialLocation": "panel",
+  "requests": [
+    {
+      "requestId": "request_53cec7fb-c361-4249-b8bc-ea2ff28aee25",
+      "message": {
+        "parts": [
+          {
+            "range": {
+              "start": 0,
+              "endExclusive": 96
+            },
+            "editorRange": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 1,
+              "endColumn": 97
+            },
+            "text": "create a keymap for lazyvim when i press it will save and run the python code in toggle terminal",
+            "kind": "text"
+          }
+        ],
+        "text": "create a keymap for lazyvim when i press it will save and run the python code in toggle terminal"
+      },
+      "variableData": {
+        "variables": []
+      },
+      "response": [
+        {
+          "kind": "progressMessage",
+          "content": {
+            "value": "Refining question to improve search accuracy.",
+            "uris": {}
+          }
+        },
+        {
+          "kind": "progressMessage",
+          "content": {
+            "value": "Searching command and setting index....",
+            "uris": {}
+          }
+        },
+        {
+          "kind": "progressMessage",
+          "content": {
+            "value": "Refining question to improve search accuracy.",
+            "uris": {}
+          }
+        },
+        {
+          "kind": "toolInvocationSerialized",
+          "invocationMessage": "Using \"Search Extensions\"",
+          "isConfirmed": {
+            "type": 1
+          },
+          "isComplete": true,
+          "source": {
+            "type": "internal",
+            "label": "Built-In"
+          },
+          "resultDetails": {
+            "input": "{\"keywords\":[\"multi command\",\"macros\",\"macro keybindings\"]}",
+            "output": [
+              {
+                "type": "embed",
+                "isText": true,
+                "value": "[\"eamodio.gitlens\",\"msjsdiag.vscode-react-native\",\"pleiades.java-extension-pack-jdk\",\"msjsdiag.cordova-tools\",\"gamunu.vscode-yarn\",\"slevesque.vscode-multiclip\",\"ryuta46.multi-command\",\"rioj7.command-variable\",\"sysoev.vscode-open-in-github\",\"fabiospampinato.vscode-terminals\",\"goessner.mdmath\",\"local-smart.excel-live-server\",\"geddski.macros\",\"ctf0.macros\",\"jabacchetta.vscode-essentials\",\"intersystems-community.vscode-objectscript\",\"intersystems.language-server\",\"matijao.vue-nuxt-snippets\",\"agutierrezr.vscode-essentials\",\"usernamehw.commands\",\"isorp.macro-executor\",\"tshino.kb-macro\",\"broadcommfd.hlasm-language-support\",\"istareatscreens.masm-runner\",\"napa-ltd.napamacro-debug\",\"alfredbirk.git-add-commit-push\",\"jeff-hykin.macro-commander\"]"
+              }
+            ]
+          },
+          "toolCallId": "6d07a2a0-6967-4e9a-a917-471f31dbe223",
+          "toolId": "vscode_searchExtensions_internal"
+        },
+        {
+          "value": "1. Install an extension to sequence commands (recommended: multi-command).\nUse the Search marketplace command to find it.\n",
+          "supportThemeIcons": false,
+          "supportHtml": false
+        },
+        {
+          "kind": "command",
+          "command": {
+            "$ident": "workbench.extensions.search /11",
+            "id": "__vscbb9f32b9-118f-4de6-af1e-03e73c43dd56",
+            "title": "Search Extension Marketplace",
+            "arguments": [
+              "workbench.extensions.search /11"
+            ]
+          }
+        },
+        {
+          "value": "2. Add a multi-command that saves the file, toggles the terminal, then runs the file in the Python terminal.\nSet the **multiCommand.commands** setting to define the sequence. This setting references the commands: workbench.action.files.save, workbench.action.terminal.toggleTerminal, python.execInTerminal.\n",
+          "supportThemeIcons": false,
+          "supportHtml": false
+        },
+        {
+          "kind": "command",
+          "command": {
+            "$ident": "workbench.action.openSettings /12",
+            "id": "__vscbb9f32b9-118f-4de6-af1e-03e73c43dd56",
+            "title": "Show in Settings Editor",
+            "arguments": [
+              "workbench.action.openSettings /12"
+            ]
+          }
+        },
+        {
+          "value": "3. Bind a key to the multi-command in keybindings.json.\nAdd an entry (example uses Ctrl+Alt+R; change as you like). This keybinding calls the command you defined above.\n- Keybinding snippet to add to keybindings.json:\n{\n  \"key\": \"ctrl+alt+r\",\n  \"command\": \"multiCommand.saveAndRun\",\n  \"when\": \"editorTextFocus\"\n}\n\n4. (Referenced commands) If you want to run or test each command individually, these are the commands used in the sequence:\nUse the command to save the file.\n",
+          "supportThemeIcons": false,
+          "supportHtml": false
+        },
+        {
+          "kind": "command",
+          "command": {
+            "$ident": "workbench.action.quickOpen /13",
+            "id": "__vscbb9f32b9-118f-4de6-af1e-03e73c43dd56",
+            "title": "Show in Command Palette",
+            "arguments": [
+              "workbench.action.quickOpen /13"
+            ]
+          }
+        },
+        {
+          "value": "Use the command to show/hide the integrated terminal.\n",
+          "supportThemeIcons": false,
+          "supportHtml": false
+        },
+        {
+          "kind": "command",
+          "command": {
+            "$ident": "workbench.action.quickOpen /14",
+            "id": "__vscbb9f32b9-118f-4de6-af1e-03e73c43dd56",
+            "title": "Show in Command Palette",
+            "arguments": [
+              "workbench.action.quickOpen /14"
+            ]
+          }
+        },
+        {
+          "value": "Use the Python extension command that executes the active file in the terminal.\n\n```json\n[\n\t{\n\t\t\"type\": \"command\",\n\t\t\"details\": {\n\t\t\t\"key\": \"python.execInTerminal\"\n\t\t}\n\t}\n]\n```\nNotes:\n- If you prefer a single-extension alternative, search the marketplace for \"macros\" or \"keyboard macro\" and use the extension command to run a saved macro. Use the Search marketplace command with that query if you want.\n- Change the keybinding to match your LazyVim / Neovim workflow if needed.",
+          "supportThemeIcons": false,
+          "supportHtml": false
+        }
+      ],
+      "responseId": "response_941e0179-dc09-4a1e-a0da-78992851a417",
+      "result": {
+        "timings": {
+          "firstProgress": 121161,
+          "totalElapsed": 129862
+        },
+        "metadata": {
+          "codeBlocks": [
+            {
+              "code": "[\n\t{\n\t\t\"type\": \"command\",\n\t\t\"details\": {\n\t\t\t\"key\": \"python.execInTerminal\"\n\t\t}\n\t}\n]\n",
+              "language": "json",
+              "markdownBeforeBlock": "1. Install an extension to sequence commands (recommended: multi-command).\nUse the Search marketplace command to find it.\n2. Add a multi-command that saves the file, toggles the terminal, then runs the file in the Python terminal.\nSet the **multiCommand.commands** setting to define the sequence. This setting references the commands: workbench.action.files.save, workbench.action.terminal.toggleTerminal, python.execInTerminal.\n3. Bind a key to the multi-command in keybindings.json.\nAdd an entry (example uses Ctrl+Alt+R; change as you like). This keybinding calls the command you defined above.\n- Keybinding snippet to add to keybindings.json:\n{\n  \"key\": \"ctrl+alt+r\",\n  \"command\": \"multiCommand.saveAndRun\",\n  \"when\": \"editorTextFocus\"\n}\n\n4. (Referenced commands) If you want to run or test each command individually, these are the commands used in the sequence:\nUse the command to save the file.\nUse the command to show/hide the integrated terminal.\nUse the Python extension command that executes the active file in the terminal.\n\n"
+            }
+          ],
+          "toolCallRounds": [
+            {
+              "response": "",
+              "toolCalls": [
+                {
+                  "name": "vscode_searchExtensions_internal",
+                  "arguments": "{\"keywords\":[\"multi command\",\"macros\",\"macro keybindings\"]}",
+                  "id": "call_46WHYNmFSs9vqgYMjPs7tJ6h__vscode-1760778686949"
+                }
+              ],
+              "toolInputRetry": 0,
+              "id": "e6651e95-0cec-4ee9-a19f-63e9a45d8342"
+            },
+            {
+              "response": "1. Install an extension to sequence commands (recommended: multi-command).\nUse the Search marketplace command to find it.\n```json\n[\n\t{\n\t\t\"type\": \"command\",\n\t\t\"details\": {\n\t\t\t\"key\": \"workbench.extensions.search\",\n\t\t\t\"value\": \"multi-command\"\n\t\t}\n\t}\n]\n```\n```vscode-extensions\nryuta46.multi-command,ctf0.macros\n```\n\n2. Add a multi-command that saves the file, toggles the terminal, then runs the file in the Python terminal.\nSet the **multiCommand.commands** setting to define the sequence. This setting references the commands: workbench.action.files.save, workbench.action.terminal.toggleTerminal, python.execInTerminal.\n```json\n[\n\t{\n\t\t\"type\": \"setting\",\n\t\t\"details\": {\n\t\t\t\"key\": \"multiCommand.commands\",\n\t\t\t\"value\": \"[{\\\"command\\\":\\\"multiCommand.saveAndRun\\\",\\\"sequence\\\":[\\\"workbench.action.files.save\\\",\\\"workbench.action.terminal.toggleTerminal\\\",\\\"python.execInTerminal\\\"]}]\"\n\t\t}\n\t}\n]\n```\n\n3. Bind a key to the multi-command in keybindings.json.\nAdd an entry (example uses Ctrl+Alt+R; change as you like). This keybinding calls the command you defined above.\n- Keybinding snippet to add to keybindings.json:\n{\n  \"key\": \"ctrl+alt+r\",\n  \"command\": \"multiCommand.saveAndRun\",\n  \"when\": \"editorTextFocus\"\n}\n\n4. (Referenced commands) If you want to run or test each command individually, these are the commands used in the sequence:\nUse the command to save the file.\n```json\n[\n\t{\n\t\t\"type\": \"command\",\n\t\t\"details\": {\n\t\t\t\"key\": \"workbench.action.files.save\"\n\t\t}\n\t}\n]\n```\nUse the command to show/hide the integrated terminal.\n```json\n[\n\t{\n\t\t\"type\": \"command\",\n\t\t\"details\": {\n\t\t\t\"key\": \"workbench.action.terminal.toggleTerminal\"\n\t\t}\n\t}\n]\n```\nUse the Python extension command that executes the active file in the terminal.\n```json\n[\n\t{\n\t\t\"type\": \"command\",\n\t\t\"details\": {\n\t\t\t\"key\": \"python.execInTerminal\"\n\t\t}\n\t}\n]\n```\n\nNotes:\n- If you prefer a single-extension alternative, search the marketplace for \"macros\" or \"keyboard macro\" and use the extension command to run a saved macro. Use the Search marketplace command with that query if you want.\n- Change the keybinding to match your LazyVim / Neovim workflow if needed.",
+              "toolCalls": [],
+              "toolInputRetry": 0,
+              "id": "2fba77b1-cf76-41e8-a4e7-ced526eba720"
+            }
+          ],
+          "toolCallResults": {
+            "call_46WHYNmFSs9vqgYMjPs7tJ6h__vscode-1760778686949": {
+              "$mid": 20,
+              "content": [
+                {
+                  "$mid": 21,
+                  "value": "Here are the list of extensions:\n[{\"id\":\"eamodio.gitlens\",\"name\":\"GitLens — Git supercharged\",\"description\":\"Supercharge Git within VS Code — Visualize code authorship at a glance via Git blame annotations and CodeLens, seamlessly navigate and explore Git repositories, gain valuable insights via rich visualizations and powerful comparison commands, and so much more\",\"installed\":false,\"installCount\":44587269,\"rating\":3.5352272987365723,\"categories\":[\"SCM Providers\"],\"tags\":[\"__web_extension\",\"annotation\",\"blame\",\"git\",\"gitlens\",\"keybindings\",\"log\",\"multi-root ready\"]},{\"id\":\"msjsdiag.vscode-react-native\",\"name\":\"React Native Tools\",\"description\":\"Debugging and integrated commands for React Native\",\"installed\":false,\"installCount\":5689904,\"rating\":4.145833333333333,\"categories\":[\"Debuggers\"],\"tags\":[\"debuggers\",\"expo\",\"javascript\",\"multi-root ready\",\"react-native\"]},{\"id\":\"pleiades.java-extension-pack-jdk\",\"name\":\"Extension Pack for Java Auto Config\",\"description\":\"JDK Auto-Configuration + Extension Pack for Java + Spring Boot Extension Pack\",\"installed\":false,\"installCount\":514605,\"rating\":4.4285712242126465,\"categories\":[\"Programming Languages\",\"Linters\",\"Debuggers\",\"Formatters\",\"Extension Packs\",\"Language Packs\"],\"tags\":[\"__sponsor_extension\",\"asdf\",\"auto\",\"bash\",\"boot\",\"chinese\",\"chocolatey\",\"cmd\",\"command\",\"config\",\"configuration\",\"debug\",\"eclipse\",\"encoding\",\"gradle\",\"highlight\",\"homebrew\",\"ide\",\"intellij\",\"jabba\",\"jakarta\",\"japanese\",\"java\",\"JAVA_HOME\",\"jdk\",\"jenv\",\"junit\",\"lombok\",\"LSP\",\"maven\",\"mise\",\"multiple\",\"path\",\"PlantUML\",\"portuguese\",\"runtime\",\"runtimes\",\"russian\",\"salesforce\",\"scala\",\"scoop\",\"sdkman\",\"server\",\"setting\",\"settings\",\"spanish\",\"spring\",\"spring-boot\",\"terminal\",\"tomcat\",\"uml\",\"vfox\",\"xml\",\"zowe\",\"zsh\"]},{\"id\":\"msjsdiag.cordova-tools\",\"name\":\"Cordova Tools\",\"description\":\"Code-hinting, debugging and integrated commands for Apache Cordova (PhoneGap). With added support for the Ionic framework.\",\"installed\":false,\"installCount\":511995,\"rating\":4.363636493682861,\"categories\":[\"Snippets\",\"Debuggers\"],\"tags\":[\"cordova\",\"debuggers\",\"ionic\",\"keybindings\",\"multi-root ready\"]},{\"id\":\"gamunu.vscode-yarn\",\"name\":\"yarn\",\"description\":\"Yarn commands for VSCode\",\"installed\":false,\"installCount\":497936,\"rating\":4.666666507720947,\"categories\":[\"Other\"],\"tags\":[\"keybindings\",\"multi-root ready\"]},{\"id\":\"slevesque.vscode-multiclip\",\"name\":\"Multiple clipboards for VSCode\",\"description\":\"Override the regular Copy and Cut commands to keep selections in a clipboard ring\",\"installed\":false,\"installCount\":417745,\"rating\":4.235294342041016,\"categories\":[\"Other\"],\"tags\":[\"clipboard\",\"copy\",\"keybindings\",\"multiple\",\"vscode\"]},{\"id\":\"ryuta46.multi-command\",\"name\":\"multi-command\",\"description\":\"Invoke multiple commands as one command.\",\"installed\":false,\"installCount\":161063,\"rating\":4.914893627166748,\"categories\":[\"Other\"],\"tags\":[]},{\"id\":\"rioj7.command-variable\",\"name\":\"Command Variable\",\"description\":\"Calculate command variables for launch.json and tasks.json\",\"installed\":false,\"installCount\":117367,\"rating\":5,\"categories\":[\"Other\"],\"tags\":[\"__web_extension\",\"clipboard\",\"command\",\"date\",\"file\",\"key\",\"launch\",\"multi-root ready\",\"number\",\"pick\",\"remember\",\"tasks\",\"uuid\",\"value\",\"variable\"]},{\"id\":\"sysoev.vscode-open-in-github\",\"name\":\"Open In GitHub\",\"description\":\"Provides commands to quickly view the current file on GitHub.\",\"installed\":false,\"installCount\":73576,\"rating\":4.833333492279053,\"categories\":[\"Other\"],\"tags\":[\"bitbucket\",\"git\",\"github\",\"multi-root ready\",\"vscode\"]},{\"id\":\"fabiospampinato.vscode-terminals\",\"name\":\"Terminals Manager\",\"description\":\"An extension for setting-up multiple terminals at once, or just running some commands\",\"installed\":false,\"installCount\":66585,\"rating\":4.740740776062012,\"categories\":[\"Other\"],\"tags\":[\"command\",\"keybindings\",\"manager\",\"restore\",\"setup\",\"startup\",\"terminals\"]},{\"id\":\"goessner.mdmath\",\"name\":\"Markdown+Math\",\"description\":\"LaTeX Math for Markdown ... with macros and more\",\"installed\":false,\"installCount\":381529,\"rating\":4.551723957061768,\"categories\":[\"Programming Languages\"],\"tags\":[\"__ext_md\",\"katex\",\"keybindings\",\"latex\",\"markdown\",\"markdown-it\",\"math\",\"multi-root ready\",\"source.markdown.math\",\"TeX\"]},{\"id\":\"local-smart.excel-live-server\",\"name\":\"XVBA - Live Server VBA\",\"description\":\"Edit VBA files from Excel/Access In VSCode with Intellisense,Live Server, and Create Ribbons. You can use Snippets, Autocomplete (Language Server), run Macros from VSCode, add namespace to your vba files etc..  \",\"installed\":false,\"installCount\":206204,\"rating\":3.7090909481048584,\"categories\":[\"Programming Languages\",\"Snippets\",\"Debuggers\",\"Formatters\",\"Language Packs\",\"Visualization\",\"Testing\"],\"tags\":[\"__ext_bas\",\"__ext_catscript\",\"__ext_cls\",\"__ext_frm\",\"__ext_vbs\",\"Access\",\"CATScript\",\"excel\",\"live Server\",\"macro\",\"vb\",\"vba\",\"vbs\",\"Visual Basic Application\",\"Xvba\"]},{\"id\":\"geddski.macros\",\"name\":\"macros\",\"description\":\"automate repetitive actions with custom macros\",\"installed\":false,\"installCount\":127668,\"rating\":4.657894611358643,\"categories\":[\"Other\"],\"tags\":[]},{\"id\":\"ctf0.macros\",\"name\":\"macros\",\"description\":\"automate repetitive actions with custom macros\",\"installed\":false,\"installCount\":118627,\"rating\":5,\"categories\":[\"Other\"],\"tags\":[]},{\"id\":\"jabacchetta.vscode-essentials\",\"name\":\"VSCode Essentials\",\"description\":\"Turn VSCode into a supercharged IDE.\",\"installed\":false,\"installCount\":93220,\"rating\":5,\"categories\":[\"Extension Packs\"],\"tags\":[\"__web_extension\",\"acejump\",\"ai-assisted development\",\"all autocomplete\",\"bookmarks\",\"call\",\"chat\",\"clipboard ring\",\"code discussion\",\"code runner\",\"code screenshots\",\"code spell checker\",\"codestream\",\"collaboration\",\"comment wrapping\",\"control snippets\",\"cursor navigation\",\"customize ui\",\"customize vscode stylesheets\",\"delete indentation\",\"delete whitespace\",\"dim code\",\"dim text\",\"disable snippets\",\"display pdf\",\"dotenv\",\"easy snippet\",\"env\",\"environment variables\",\"explorer exclude\",\"explorer hidden files\",\"fixme\",\"format in context menus\",\"format multiple files\",\"gists\",\"git\",\"git blame annotations\",\"git commits\",\"git compare\",\"git diff\",\"git graph\",\"git history\",\"git search\",\"github gists\",\"github pull requests\",\"gitignore\",\"gitlens\",\"go to character\",\"gremlins\",\"highlight code block\",\"highlight comments\",\"highlight todo\",\"hungry delete\",\"ide\",\"increment selection\",\"indent guides\",\"integrated development environment\",\"intellisense from all files\",\"interactive playground\",\"invisible characters\",\"jumpy\",\"list hidden files\",\"live share\",\"live share audio\",\"live share chat\",\"live share whiteboard\",\"log\",\"log file syntax highlighting\",\"macros\",\"manage hidden files\",\"metago\",\"monkey patch\",\"multi-line increment\",\"multple clipboards\",\"no-break spaces\",\"non-printing character\",\"note\",\"notes\",\"open files intellisense\",\"output colorizer\",\"peacock\",\"polacode\",\"project manager\",\"project-wide intellisense\",\"random theme generator\",\"remote sharing\",\"review code\",\"rewrap\",\"run code\",\"scope guide\",\"scope line\",\"screenshot\",\"settings cycler\",\"share code\",\"share settings\",\"slack\",\"snippet generator\",\"snippet manager\",\"snippets\",\"spell checker\",\"spelling\",\"switch projects\",\"tasklist\",\"text pastry\",\"todo\",\"todo manager\",\"todo tree\",\"toggle excluded files\",\"toggle hidden files\",\"toggle settings\",\"unique theme\",\"visual studio intellicode\",\"vscode essentials\",\"vscode ide\",\"vscode must-have extensions\",\"vscode pdf\",\"whitespace characters\",\"window colors\",\"workspace colors\",\"wrap comments\",\"zero-width spaces\"]},{\"id\":\"intersystems-community.vscode-objectscript\",\"name\":\"InterSystems ObjectScript\",\"description\":\"InterSystems ObjectScript language support for Visual Studio Code\",\"installed\":false,\"installCount\":82144,\"rating\":4.666666507720947,\"categories\":[\"Programming Languages\",\"Snippets\",\"Debuggers\",\"Formatters\"],\"tags\":[\"__ext_cls\",\"__ext_csp\",\"__ext_csr\",\"__ext_inc\",\"__ext_int\",\"__ext_mac\",\"__web_extension\",\"debug\",\"debuggers\",\"intersystems\",\"keybindings\",\"objectscript\",\"ObjectScript Class\",\"ObjectScript CSP\",\"ObjectScript Include\",\"ObjectScript INT\",\"objectscript-class\",\"objectscript-class-injection\",\"objectscript-csp\",\"objectscript-injection\",\"objectscript-int\",\"objectscript-macros\",\"snippet\",\"vscode-objectscript-output\",\"xml\"]},{\"id\":\"intersystems.language-server\",\"name\":\"InterSystems Language Server\",\"description\":\"A language server for InterSystems ObjectScript.\",\"installed\":false,\"installCount\":63524,\"rating\":5,\"categories\":[\"Programming Languages\",\"Linters\",\"Formatters\"],\"tags\":[\"color-theme\",\"IntelliSense\",\"intersystems\",\"multi-root ready\",\"objectscript\",\"objectscript-class\",\"objectscript-csp\",\"objectscript-int\",\"objectscript-macros\",\"theme\"]},{\"id\":\"matijao.vue-nuxt-snippets\",\"name\":\"Vue Ecosystem Snippets\",\"description\":\"Snippets for the modern Vue ecosystem - including Nuxt 3, Pinia, VueUse, Vue Router & Vue Macros.\",\"installed\":false,\"installCount\":39601,\"rating\":5,\"categories\":[\"Snippets\"],\"tags\":[\"__web_extension\",\"Composition API\",\"Nuxt\",\"Nuxt 3\",\"Nuxt Snippets\",\"Pinia\",\"snippet\",\"snippets\",\"TypeScript\",\"Volar\",\"Vue\",\"Vue 3\",\"Vue Snippets\",\"VueUse\"]},{\"id\":\"agutierrezr.vscode-essentials\",\"name\":\"VSCode Essentials\",\"description\":\"\",\"installed\":false,\"installCount\":29801,\"rating\":5,\"categories\":[\"Extension Packs\"],\"tags\":[\"__web_extension\",\"auto close tag\",\"auto rename tag\",\"better comments\",\"change case\",\"change color format\",\"code runner\",\"comment anchors\",\"copy json path\",\"cssrem\",\"directory files\",\"dotenv\",\"easy snippet\",\"editorconfig\",\"emmet keybindings\",\"gi\",\"gistfs\",\"githistory\",\"gitlens\",\"goto member\",\"html end tag labels\",\"hungry delete\",\"javascript booster\",\"javascriptsnippets\",\"liveserver\",\"macros\",\"markdown all in one\",\"mdx\",\"partial diff\",\"path intellisense\",\"prettier vscode\",\"sort lines\",\"tabout\",\"toggle\",\"vscode checkpoints\",\"vscode duplicate\",\"vscode edge devtools\",\"vscode faker\",\"vscode graphql\",\"vscode html css\",\"vscode jumpy\",\"vscode markdownlint\",\"vscode scss\",\"vscode scss formatter\",\"vscode sort json\",\"vscode surround\",\"vscode svgviewer\",\"vscode toggle quotes\",\"vscode yaml\",\"vsliveshare\"]},{\"id\":\"usernamehw.commands\",\"name\":\"Commands\",\"description\":\"Run one/multiple commands with arguments from Tree View / Status Bar / Quick Pick.\",\"installed\":false,\"installCount\":17963,\"rating\":4.869565010070801,\"categories\":[\"Other\"],\"tags\":[\"__web_extension\",\"args\",\"arguments\",\"command\",\"commands\",\"delay\",\"execute\",\"json\",\"keybinding\",\"macros\",\"multi\",\"multiple\",\"run\",\"shortcut\",\"status bar\",\"toggle setting\",\"tree view\"]},{\"id\":\"isorp.macro-executor\",\"name\":\"Macro Executor Language\",\"description\":\"Fanuc Macro-Executor Programming Language\",\"installed\":false,\"installCount\":34197,\"rating\":5,\"categories\":[\"Programming Languages\",\"Snippets\"],\"tags\":[\"__ext_def\",\"__ext_lnk\",\"__ext_src\",\"CNC\",\"Fanuc\",\"keybindings\",\"macro\",\"Macro Compiler\",\"Macro Executor\",\"multi-root ready\",\"NC\",\"snippet\"]},{\"id\":\"tshino.kb-macro\",\"name\":\"Keyboard Macro Beta\",\"description\":\"Recordable keyboard macro for Visual Studio Code\",\"installed\":false,\"installCount\":31307,\"rating\":5,\"categories\":[\"Keymaps\"],\"tags\":[\"__web_extension\",\"keybindings\",\"keyboard macro\",\"macro\",\"macro recording\",\"recordable macro\"]},{\"id\":\"broadcommfd.hlasm-language-support\",\"name\":\"HLASM Language Support\",\"description\":\"Code4z rich language support and macro tracing extension for High Level Assembler code\",\"installed\":false,\"installCount\":26826,\"rating\":5,\"categories\":[\"Programming Languages\",\"Snippets\",\"Linters\"],\"tags\":[\"__ext_asm\",\"__ext_asmmac\",\"__ext_asmpgm\",\"__ext_bms\",\"__ext_hlasm\",\"__ext_listing\",\"__ext_lst\",\"__ext_mac\",\"__ext_map\",\"__web_extension\",\"Assembler\",\"Code4z\",\"debuggers\",\"endevor\",\"High Level Assembler\",\"HLASM\",\"hlasmListing\",\"json\",\"keybindings\",\"LSP\",\"Mainframe\",\"multi-root ready\",\"z/OS\",\"zowe\"]},{\"id\":\"istareatscreens.masm-runner\",\"name\":\"MASM Runner\",\"description\":\"Extension for compiling and running MASM (Microsoft Macro Assembly Language)\",\"installed\":false,\"installCount\":16882,\"rating\":5,\"categories\":[\"Programming Languages\",\"Snippets\"],\"tags\":[\"__ext_asm\",\"asm\",\"assembly\",\"compiler\",\"keybindings\",\"masm\",\"MASM (No Highlighting)\",\"masm-plain\",\"Microsft Macro Assembly\",\"microsoft macro assembly language\",\"snippet\"]},{\"id\":\"napa-ltd.napamacro-debug\",\"name\":\"NAPA Macro Support\",\"description\":\"NAPA macro debug and language support for VS Code.\",\"installed\":false,\"installCount\":14531,\"rating\":5,\"categories\":[\"Debuggers\"],\"tags\":[\"__ext_nb\",\"debuggers\",\"keybindings\",\"NAPA Macro\",\"napamacro\",\"snippet\"]},{\"id\":\"alfredbirk.git-add-commit-push\",\"name\":\"Git add commit push\",\"description\":\"Three git commands in one easy shortcut!\",\"installed\":false,\"installCount\":13483,\"rating\":5,\"categories\":[\"Other\"],\"tags\":[\"add\",\"auto\",\"commit\",\"git\",\"hotkey\",\"keybindings\",\"macro\",\"push\",\"shortcut\"]},{\"id\":\"jeff-hykin.macro-commander\",\"name\":\"macro-commander (Command Runner)\",\"description\":\"Keybindings to commandline scripts, along with any VS Code command\",\"installed\":false,\"installCount\":9489,\"rating\":4.818181991577148,\"categories\":[\"Other\"],\"tags\":[\"actions\",\"automate\",\"command\",\"commands\",\"keybinding\",\"macro\",\"run\"]}]\n. Important: Use the following format to display extensions to the user because there is a renderer available to parse these extensions in this format and display them with all details. So, do not describe about the extensions to the user.\n```vscode-extensions\nextensionId1,extensionId2\n```\n."
+                }
+              ]
+            }
+          },
+          "modelMessageId": "391df3c7-0bff-4e6c-a9a4-e7f2c6193bde",
+          "responseId": "895a2e21-3474-4540-b978-d2d40feb31f6",
+          "sessionId": "afc767e3-04de-4e24-bd6a-569c19662344",
+          "agentId": "github.copilot.vscode"
+        },
+        "details": "GPT-5 mini • 0.9x"
+      },
+      "responseMarkdownInfo": [
+        {
+          "suggestionId": "sgt-bb4eb396-d2cc-49ba-b9f8-a00c58db752a"
+        }
+      ],
+      "followups": [],
+      "isCanceled": false,
+      "agent": {
+        "extensionId": {
+          "value": "GitHub.copilot-chat",
+          "_lower": "github.copilot-chat"
+        },
+        "extensionVersion": "0.32.1",
+        "publisherDisplayName": "GitHub",
+        "extensionPublisherId": "GitHub",
+        "extensionDisplayName": "GitHub Copilot Chat",
+        "id": "github.copilot.vscode",
+        "description": "Ask questions about VS Code",
+        "when": "!github.copilot.interactiveSession.disabled",
+        "metadata": {
+          "sampleRequest": "What is the command to open the integrated terminal?",
+          "themeIcon": {
+            "id": "vscode"
+          },
+          "hasFollowups": false,
+          "supportIssueReporting": false
+        },
+        "name": "vscode",
+        "fullName": "VS Code",
+        "locations": [
+          "panel"
+        ],
+        "modes": [
+          "agent",
+          "ask",
+          "edit"
+        ],
+        "slashCommands": [
+          {
+            "name": "search",
+            "description": "Generate query parameters for workspace search",
+            "sampleRequest": "Search for 'foo' in all files under my 'src' directory"
+          },
+          {
+            "name": "startDebugging",
+            "description": "Generate launch config and start debugging in VS Code (Experimental)",
+            "sampleRequest": "Attach to node app at port 9229",
+            "when": "config.github.copilot.chat.startDebugging.enabled"
+          }
+        ],
+        "disambiguation": [
+          {
+            "category": "vscode_configuration_questions",
+            "description": "The user wants to learn about, use, or configure the Visual Studio Code. Use this category if the users question is specifically about commands, settings, keybindings, extensions and other features available in Visual Studio Code. Do not use this category to answer questions about generating code or creating new projects including Visual Studio Code extensions.",
+            "examples": [
+              "Switch to light mode.",
+              "Keyboard shortcut to toggle terminal visibility.",
+              "Settings to enable minimap.",
+              "Whats new in the latest release?"
+            ]
+          },
+          {
+            "category": "configure_python_environment",
+            "description": "The user wants to set up their Python environment.",
+            "examples": [
+              "Create a virtual environment for my project."
+            ]
+          }
+        ]
+      },
+      "contentReferences": [],
+      "codeCitations": [],
+      "timestamp": 1760778762854,
+      "modelId": "copilot/auto"
+    }
+  ],
+  "sessionId": "5f949f72-b68f-4975-b1aa-4c7dd2702b40",
+  "creationDate": 1760778708585,
+  "isImported": false,
+  "lastMessageDate": 1760778762855,
+  "customTitle": "Keymap for saving and running Python code"
+}

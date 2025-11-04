@@ -1,0 +1,106 @@
+{
+  "version": 3,
+  "requesterUsername": "",
+  "responderUsername": "",
+  "initialLocation": "panel",
+  "requests": [
+    {
+      "requestId": "request_6cf46576-41dd-44e7-933d-dc28dd91a81d",
+      "message": {
+        "parts": [
+          {
+            "range": {
+              "start": 0,
+              "endExclusive": 5
+            },
+            "editorRange": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 1,
+              "endColumn": 6
+            },
+            "text": "hello",
+            "kind": "text"
+          }
+        ],
+        "text": "hello"
+      },
+      "variableData": {
+        "variables": []
+      },
+      "response": [
+        {
+          "kind": "progressMessage",
+          "content": {
+            "value": "Getting chat ready...",
+            "isTrusted": false,
+            "supportThemeIcons": false,
+            "supportHtml": false
+          }
+        },
+        {
+          "kind": "progressMessage",
+          "content": {
+            "value": "Chat is almost ready...",
+            "isTrusted": false,
+            "supportThemeIcons": false,
+            "supportHtml": false
+          }
+        },
+        {
+          "kind": "warning",
+          "content": {
+            "value": "Chat took too long to get ready. Please ensure you are signed in to GitHub and that the extension `GitHub.copilot-chat` is installed and enabled.",
+            "isTrusted": false,
+            "supportThemeIcons": false,
+            "supportHtml": false
+          }
+        }
+      ],
+      "responseId": "response_b9e2c387-a41c-48e2-9f49-4f77ca598696",
+      "result": {},
+      "followups": [],
+      "isCanceled": false,
+      "agent": {
+        "id": "setup.agent",
+        "name": "GitHub Copilot",
+        "isDefault": true,
+        "isCore": true,
+        "modes": [
+          "agent"
+        ],
+        "when": "config.chat.agent.enabled && !previewFeaturesDisabled",
+        "slashCommands": [],
+        "disambiguation": [],
+        "locations": [
+          "panel"
+        ],
+        "metadata": {
+          "helpTextPrefix": {
+            "value": "You need to set up GitHub Copilot and be signed in to use Chat.",
+            "isTrusted": false,
+            "supportThemeIcons": false,
+            "supportHtml": false
+          },
+          "themeIcon": {
+            "id": "tools"
+          }
+        },
+        "description": "Provide instructions.",
+        "extensionId": {
+          "value": "nullExtensionDescription",
+          "_lower": "nullextensiondescription"
+        },
+        "extensionDisplayName": "Null Extension Description",
+        "extensionPublisherId": "vscode"
+      },
+      "contentReferences": [],
+      "codeCitations": [],
+      "timestamp": 1761635380686
+    }
+  ],
+  "sessionId": "c2119f9c-e63a-4a39-b81d-c97fbc0362bd",
+  "creationDate": 1761635378743,
+  "isImported": false,
+  "lastMessageDate": 1761635380687
+}

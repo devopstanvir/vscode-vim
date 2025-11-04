@@ -1,0 +1,36 @@
+{
+  "environment": {
+    "executable": "c:\\python313\\python.exe",
+    "prefix": "c:\\python313",
+    "version": "3.13.1.final.0",
+    "is64Bit": true,
+    "symlinks": [
+      "C:\\ProgramData\\chocolatey\\bin\\python3.13.exe",
+      "c:\\python313\\python.exe"
+    ]
+  },
+  "symlinks": [
+    [
+      "C:\\ProgramData\\chocolatey\\bin\\python3.13.exe",
+      {
+        "secs_since_epoch": 1736092920,
+        "nanos_since_epoch": 820328000
+      },
+      {
+        "secs_since_epoch": 1736092920,
+        "nanos_since_epoch": 819341500
+      }
+    ],
+    [
+      "c:\\python313\\python.exe",
+      {
+        "secs_since_epoch": 1733237892,
+        "nanos_since_epoch": 0
+      },
+      {
+        "secs_since_epoch": 1733237892,
+        "nanos_since_epoch": 0
+      }
+    ]
+  ]
+}

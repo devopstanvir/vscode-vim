@@ -1,0 +1,411 @@
+{
+  "version": 3,
+  "requesterUsername": "devopstanvir",
+  "requesterAvatarIconUri": {
+    "$mid": 1,
+    "path": "/u/237455656",
+    "scheme": "https",
+    "authority": "avatars.githubusercontent.com",
+    "query": "v=4"
+  },
+  "responderUsername": "GitHub Copilot",
+  "responderAvatarIconUri": {
+    "id": "copilot"
+  },
+  "initialLocation": "editor",
+  "requests": [
+    {
+      "requestId": "request_a0c18a0a-0881-49f5-bdae-f6e9cc7d66fb",
+      "message": {
+        "parts": [
+          {
+            "range": {
+              "start": 0,
+              "endExclusive": 199
+            },
+            "editorRange": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 1,
+              "endColumn": 200
+            },
+            "text": "still doing the same thing i want it to cycle through different instance of the same app if muliple instance of the same app is running but it is minimizing the active app currently if it is in focus",
+            "kind": "text"
+          }
+        ],
+        "text": "still doing the same thing i want it to cycle through different instance of the same app if muliple instance of the same app is running but it is minimizing the active app currently if it is in focus"
+      },
+      "variableData": {
+        "variables": []
+      },
+      "response": [
+        {
+          "kind": "textEditGroup",
+          "uri": {
+            "$mid": 1,
+            "fsPath": "c:\\Users\\WALTON\\Documents\\capslock_esc_swap.ahk",
+            "_sep": 1,
+            "external": "file:///c%3A/Users/WALTON/Documents/capslock_esc_swap.ahk",
+            "path": "/C:/Users/WALTON/Documents/capslock_esc_swap.ahk",
+            "scheme": "file"
+          },
+          "edits": [
+            [
+              {
+                "text": "    idx := 0",
+                "range": {
+                  "startLineNumber": 50,
+                  "startColumn": 1,
+                  "endLineNumber": 50,
+                  "endColumn": 38
+                }
+              }
+            ],
+            [
+              {
+                "text": "    if activeWin {",
+                "range": {
+                  "startLineNumber": 51,
+                  "startColumn": 1,
+                  "endLineNumber": 51,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "        ; Find index of active window in winList",
+                "range": {
+                  "startLineNumber": 52,
+                  "startColumn": 1,
+                  "endLineNumber": 52,
+                  "endColumn": 41
+                }
+              }
+            ],
+            [
+              {
+                "text": "        for i, winId in winList {",
+                "range": {
+                  "startLineNumber": 53,
+                  "startColumn": 1,
+                  "endLineNumber": 53,
+                  "endColumn": 35
+                }
+              }
+            ],
+            [
+              {
+                "text": "            if winId = activeWin {",
+                "range": {
+                  "startLineNumber": 54,
+                  "startColumn": 1,
+                  "endLineNumber": 54,
+                  "endColumn": 32
+                }
+              }
+            ],
+            [
+              {
+                "text": "                idx := i",
+                "range": {
+                  "startLineNumber": 55,
+                  "startColumn": 1,
+                  "endLineNumber": 55,
+                  "endColumn": 21
+                }
+              }
+            ],
+            [
+              {
+                "text": "                break",
+                "range": {
+                  "startLineNumber": 56,
+                  "startColumn": 1,
+                  "endLineNumber": 56,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "            }",
+                "range": {
+                  "startLineNumber": 57,
+                  "startColumn": 1,
+                  "endLineNumber": 57,
+                  "endColumn": 44
+                }
+              }
+            ],
+            [
+              {
+                "text": "        }",
+                "range": {
+                  "startLineNumber": 58,
+                  "startColumn": 1,
+                  "endLineNumber": 58,
+                  "endColumn": 2
+                }
+              }
+            ],
+            [
+              {
+                "text": "\n    }",
+                "range": {
+                  "startLineNumber": 58,
+                  "startColumn": 10,
+                  "endLineNumber": 58,
+                  "endColumn": 10
+                }
+              }
+            ],
+            [
+              {
+                "text": "\n",
+                "range": {
+                  "startLineNumber": 59,
+                  "startColumn": 6,
+                  "endLineNumber": 59,
+                  "endColumn": 6
+                }
+              }
+            ],
+            [
+              {
+                "text": "\n    ; Cycle to next window (wrap around)",
+                "range": {
+                  "startLineNumber": 60,
+                  "startColumn": 1,
+                  "endLineNumber": 60,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\n    nextIdx := idx + 1",
+                "range": {
+                  "startLineNumber": 61,
+                  "startColumn": 41,
+                  "endLineNumber": 61,
+                  "endColumn": 41
+                }
+              }
+            ],
+            [
+              {
+                "text": "\n    if nextIdx > winList.Length",
+                "range": {
+                  "startLineNumber": 62,
+                  "startColumn": 23,
+                  "endLineNumber": 62,
+                  "endColumn": 23
+                }
+              }
+            ],
+            [
+              {
+                "text": "\n        nextIdx := 1",
+                "range": {
+                  "startLineNumber": 63,
+                  "startColumn": 32,
+                  "endLineNumber": 63,
+                  "endColumn": 32
+                }
+              }
+            ],
+            [
+              {
+                "text": "\n",
+                "range": {
+                  "startLineNumber": 64,
+                  "startColumn": 21,
+                  "endLineNumber": 64,
+                  "endColumn": 21
+                }
+              }
+            ],
+            [
+              {
+                "text": "\n    WinActivate(\"ahk_id \" winList[nextIdx])",
+                "range": {
+                  "startLineNumber": 65,
+                  "startColumn": 1,
+                  "endLineNumber": 65,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "\n}",
+                "range": {
+                  "startLineNumber": 66,
+                  "startColumn": 44,
+                  "endLineNumber": 66,
+                  "endColumn": 44
+                }
+              }
+            ],
+            []
+          ],
+          "state": {
+            "sha1": "894b9d9ff51bf6a9bcee6dfa987892d65ecc11f1",
+            "applied": 1
+          }
+        }
+      ],
+      "responseId": "response_0887543c-bd33-497c-9320-4e1725e231ed",
+      "result": {
+        "timings": {
+          "totalElapsed": 4102
+        },
+        "metadata": {
+          "codeBlocks": [],
+          "toolCallRounds": [
+            {
+              "response": "```plaintext\n; ======================================================\n; Universal App Launcher / Focus Switcher\n; Press your defined hotkeys to launch or activate apps\n; ======================================================\n\n; ---------------------\n; Example Hotkeys\n; ---------------------\n#r::RunOrFocusApp(\"Comet Browser\", \"CometBrowser.exe\", \"C:\\Program Files\\Comet\\CometBrowser.exe\")\n#e::RunOrFocusApp(\"Everything\", \"Everything.exe\", \"C:\\Program Files\\Everything\\Everything.exe\")\n#c::RunOrFocusApp(\"Calculator\", \"Calculator.exe\", \"calc.exe\")\n#n::RunOrFocusApp(\"Notepad\", \"Notepad.exe\", \"notepad.exe\")\n\n; ---------------------\n; Function Definition\n; ---------------------\nRunOrFocusApp(winTitle, exeName, exePath)\n{\n    ; Check if the process is running\n    if !ProcessExist(exeName) {\n        try {\n            Run exePath\n        } catch as err {\n            MsgBox \"Failed to launch \" exeName \"`nError: \" err.Message\n        }\n        return\n    }\n\n    ; Get all windows for this process\n    winList := []\n    WinGetList(\"ahk_exe \" exeName, &winList)\n\n    if winList.Length = 0 {\n        ; If no window found, try running again\n        Run exePath\n        return\n    }\n\n    ; Find the currently active window in the list\n    activeWin := WinActive(\"ahk_exe \" exeName)\n    idx := 0\n    if activeWin {\n        ; Find index of active window in winList\n        for i, winId in winList {\n            if winId = activeWin {\n                idx := i\n                break\n            }\n        }\n    }\n\n    ; Cycle to next window (wrap around)\n    nextIdx := idx + 1\n    if nextIdx > winList.Length\n        nextIdx := 1\n\n    WinActivate(\"ahk_id \" winList[nextIdx])\n}\n```\nThis version avoids minimizing the active window and cycles to the",
+              "toolCalls": [],
+              "toolInputRetry": 0,
+              "id": "af08782e-41fc-44c8-95d5-ce2f83791e41"
+            }
+          ],
+          "modelMessageId": "452cd23e-4a4b-4f10-bdc9-9e56cdb623e0",
+          "responseId": "98daae6f-0f4d-408a-bff1-b0cc6659e6cc",
+          "sessionId": "c4243651-1c4b-488f-a410-d8e86a35b7f1",
+          "agentId": "github.copilot.editor"
+        },
+        "details": "GPT-4.1 • 1x"
+      },
+      "followups": [],
+      "isCanceled": false,
+      "agent": {
+        "extensionId": {
+          "value": "GitHub.copilot-chat",
+          "_lower": "github.copilot-chat"
+        },
+        "extensionVersion": "0.32.0",
+        "publisherDisplayName": "GitHub",
+        "extensionPublisherId": "GitHub",
+        "extensionDisplayName": "GitHub Copilot Chat",
+        "id": "github.copilot.editor",
+        "description": "Ask or edit in context",
+        "when": "!config.inlineChat.enableV2 && !config.github.copilot.chat.advanced.inlineChat2",
+        "metadata": {
+          "themeIcon": {
+            "id": "copilot"
+          },
+          "hasFollowups": false,
+          "supportIssueReporting": false
+        },
+        "name": "Copilot",
+        "fullName": "GitHub Copilot",
+        "isDefault": true,
+        "locations": [
+          "editor"
+        ],
+        "modes": [
+          "ask"
+        ],
+        "slashCommands": [
+          {
+            "name": "generate",
+            "description": "Generate new code",
+            "disambiguation": [
+              {
+                "category": "generate",
+                "description": "Generate new code",
+                "examples": [
+                  "Add a function that returns the sum of two numbers"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "edit",
+            "description": "Edit the selected code in your active editor",
+            "disambiguation": [
+              {
+                "category": "edit",
+                "description": "Make changes to existing code",
+                "examples": [
+                  "Change this method to use async/await"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "doc",
+            "description": "Add documentation comment for this symbol",
+            "disambiguation": [
+              {
+                "category": "doc",
+                "description": "Add documentation comment for this symbol",
+                "examples": [
+                  "Add jsdoc to this method"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "fix",
+            "description": "Propose a fix for the problems in the selected code",
+            "disambiguation": [
+              {
+                "category": "fix",
+                "description": "Propose a fix for the problems in the selected code",
+                "examples": [
+                  "There is a problem in this code. Rewrite the code to show it with the bug fixed."
+                ]
+              }
+            ]
+          },
+          {
+            "name": "explain",
+            "description": "Explain how the code in your active editor works",
+            "disambiguation": [
+              {
+                "category": "explain",
+                "description": "Explain how the code in your active editor works",
+                "examples": [
+                  "Write an explanation for the code above as paragraphs of text."
+                ]
+              }
+            ]
+          },
+          {
+            "name": "tests",
+            "description": "Generate unit tests for the selected code",
+            "disambiguation": [
+              {
+                "category": "tests",
+                "description": "Generate unit tests for the selected code. The user does not want to fix their existing tests.",
+                "examples": [
+                  "Write a set of detailed unit test functions for the code above."
+                ]
+              }
+            ]
+          }
+        ],
+        "disambiguation": [
+          {
+            "category": "unknown",
+            "description": "Intent of this command is unclear or is not related to information technologies",
+            "examples": [
+              "Add a dog to this comment."
+            ]
+          }
+        ]
+      },
+      "contentReferences": [],
+      "codeCitations": [],
+      "timestamp": 1760435797471,
+      "modelId": "copilot/gpt-4.1"
+    }
+  ],
+  "sessionId": "cbc7cf24-3f57-4e76-8223-ae385c286103",
+  "creationDate": 1760435702577,
+  "isImported": false,
+  "lastMessageDate": 1760435797471
+}

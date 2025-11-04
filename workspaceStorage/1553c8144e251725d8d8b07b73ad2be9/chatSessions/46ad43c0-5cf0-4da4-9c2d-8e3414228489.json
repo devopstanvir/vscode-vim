@@ -1,0 +1,501 @@
+{
+  "version": 3,
+  "requesterUsername": "devopstanvir",
+  "requesterAvatarIconUri": {
+    "$mid": 1,
+    "path": "/u/237455656",
+    "scheme": "https",
+    "authority": "avatars.githubusercontent.com",
+    "query": "v=4"
+  },
+  "responderUsername": "GitHub Copilot",
+  "responderAvatarIconUri": {
+    "id": "copilot"
+  },
+  "initialLocation": "panel",
+  "requests": [
+    {
+      "requestId": "request_2f4fd3c6-c53d-4729-87af-887ff178a542",
+      "message": {
+        "text": "where should i save this file in my vscode i saved it in settings.json but it  don't work",
+        "parts": [
+          {
+            "range": {
+              "start": 0,
+              "endExclusive": 89
+            },
+            "editorRange": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 1,
+              "endColumn": 90
+            },
+            "text": "where should i save this file in my vscode i saved it in settings.json but it  don't work",
+            "kind": "text"
+          }
+        ]
+      },
+      "variableData": {
+        "variables": [
+          {
+            "kind": "file",
+            "id": "vscode.implicit.file",
+            "name": "file:settings.json",
+            "value": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\WALTON\\Downloads\\settings.json",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/WALTON/Downloads/settings.json",
+              "path": "/C:/Users/WALTON/Downloads/settings.json",
+              "scheme": "file"
+            },
+            "modelDescription": "User's active file"
+          }
+        ]
+      },
+      "response": [
+        {
+          "kind": "progressMessage",
+          "content": {
+            "value": "Refining question to improve search accuracy.",
+            "uris": {}
+          }
+        },
+        {
+          "kind": "progressMessage",
+          "content": {
+            "value": "Searching command and setting index....",
+            "uris": {}
+          }
+        },
+        {
+          "value": "You should save your custom VSCode settings in the following location for them to take effect:\n\n1. Open VS Code.\n2. Go to **File > Preferences > Settings** or press `Ctrl + ,`.\n3. Click the **Open Settings (JSON)** icon in the top right corner of the Settings tab.\n4. This opens the correct `settings.json` file for your user profile, usually located at:\n   \n```\n   C:\\Users\\<YourUsername>\\AppData\\Roaming\\Code\\User\\settings.json\n   ```\n5. Copy your settings into this file and save.\n\nIf you want workspace-specific settings, use the `.vscode/settings.json` file inside your project folder.\n\nTo open the user settings JSON file directly, use the **Preferences: Open User Settings (JSON)** command.\n\n",
+          "supportThemeIcons": false,
+          "supportHtml": false
+        },
+        {
+          "kind": "command",
+          "command": {
+            "$ident": "workbench.action.quickOpen /3",
+            "id": "__vsca17abb53-d7de-4b0c-bbc0-777df3b45b59",
+            "title": "Show in Command Palette",
+            "arguments": [
+              "workbench.action.quickOpen /3"
+            ]
+          }
+        }
+      ],
+      "responseId": "response_94eccae8-7247-4bf4-bd9d-bd93702f0dd3",
+      "result": {
+        "timings": {
+          "firstProgress": 8376,
+          "totalElapsed": 14485
+        },
+        "metadata": {
+          "codeBlocks": [],
+          "toolCallRounds": [
+            {
+              "response": "You should save your custom VSCode settings in the following location for them to take effect:\n\n1. Open VS Code.\n2. Go to **File > Preferences > Settings** or press `Ctrl + ,`.\n3. Click the **Open Settings (JSON)** icon in the top right corner of the Settings tab.\n4. This opens the correct `settings.json` file for your user profile, usually located at:\n   ```\n   C:\\Users\\<YourUsername>\\AppData\\Roaming\\Code\\User\\settings.json\n   ```\n5. Copy your settings into this file and save.\n\nIf you want workspace-specific settings, use the `.vscode/settings.json` file inside your project folder.\n\nTo open the user settings JSON file directly, use the **Preferences: Open User Settings (JSON)** command.\n\n```json\n[\n\t{\n\t\t\"type\": \"command\",\n\t\t\"details\": {\n\t\t\t\"key\": \"workbench.action.openSettingsJson\"\n\t\t}\n\t}\n]\n```\n",
+              "toolCalls": [],
+              "toolInputRetry": 0,
+              "id": "5d7da857-7ee4-4ee9-8802-6c7bfebda2a5"
+            }
+          ],
+          "modelMessageId": "ded93f9e-6962-48e9-82ac-c054361645af",
+          "responseId": "b9dfc90b-a74f-4e09-897d-895738fe2712",
+          "sessionId": "96a370ca-9738-482d-90ff-65f0c6345615",
+          "agentId": "github.copilot.vscode"
+        },
+        "details": "GPT-4.1 • 1x"
+      },
+      "responseMarkdownInfo": [
+        {
+          "suggestionId": "sgt-1d1b0d39-900e-44fa-bc68-c295bbb1bcfc"
+        }
+      ],
+      "followups": [],
+      "isCanceled": false,
+      "agent": {
+        "extensionId": {
+          "value": "GitHub.copilot-chat",
+          "_lower": "github.copilot-chat"
+        },
+        "extensionVersion": "0.32.0",
+        "publisherDisplayName": "GitHub",
+        "extensionPublisherId": "GitHub",
+        "extensionDisplayName": "GitHub Copilot Chat",
+        "id": "github.copilot.vscode",
+        "description": "Ask questions about VS Code",
+        "when": "!github.copilot.interactiveSession.disabled",
+        "metadata": {
+          "sampleRequest": "What is the command to open the integrated terminal?",
+          "themeIcon": {
+            "id": "vscode"
+          },
+          "hasFollowups": false,
+          "supportIssueReporting": false
+        },
+        "name": "vscode",
+        "fullName": "VS Code",
+        "locations": [
+          "panel"
+        ],
+        "modes": [
+          "agent",
+          "ask",
+          "edit"
+        ],
+        "slashCommands": [
+          {
+            "name": "search",
+            "description": "Generate query parameters for workspace search",
+            "sampleRequest": "Search for 'foo' in all files under my 'src' directory"
+          },
+          {
+            "name": "startDebugging",
+            "description": "Generate launch config and start debugging in VS Code (Experimental)",
+            "sampleRequest": "Attach to node app at port 9229",
+            "when": "config.github.copilot.chat.startDebugging.enabled"
+          }
+        ],
+        "disambiguation": [
+          {
+            "category": "vscode_configuration_questions",
+            "description": "The user wants to learn about, use, or configure the Visual Studio Code. Use this category if the users question is specifically about commands, settings, keybindings, extensions and other features available in Visual Studio Code. Do not use this category to answer questions about generating code or creating new projects including Visual Studio Code extensions.",
+            "examples": [
+              "Switch to light mode.",
+              "Keyboard shortcut to toggle terminal visibility.",
+              "Settings to enable minimap.",
+              "Whats new in the latest release?"
+            ]
+          },
+          {
+            "category": "configure_python_environment",
+            "description": "The user wants to set up their Python environment.",
+            "examples": [
+              "Create a virtual environment for my project."
+            ]
+          }
+        ]
+      },
+      "contentReferences": [
+        {
+          "kind": "reference",
+          "reference": {
+            "$mid": 1,
+            "fsPath": "c:\\Users\\WALTON\\Downloads\\settings.json",
+            "_sep": 1,
+            "external": "file:///c%3A/Users/WALTON/Downloads/settings.json",
+            "path": "/C:/Users/WALTON/Downloads/settings.json",
+            "scheme": "file"
+          }
+        }
+      ],
+      "codeCitations": [],
+      "timestamp": 1760431058543,
+      "modelId": "copilot/gpt-4.1"
+    },
+    {
+      "requestId": "request_d9ae02a3-a6f1-4c1c-bd21-24a527717070",
+      "message": {
+        "parts": [
+          {
+            "range": {
+              "start": 0,
+              "endExclusive": 136
+            },
+            "editorRange": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 2,
+              "endColumn": 29
+            },
+            "text": "Unable to sync settings because the content in the file is not valid. Please open the file and correct it.\r\nit says this when i saved it",
+            "kind": "text"
+          }
+        ],
+        "text": "Unable to sync settings because the content in the file is not valid. Please open the file and correct it.\r\nit says this when i saved it"
+      },
+      "variableData": {
+        "variables": [
+          {
+            "kind": "file",
+            "id": "vscode.implicit.file",
+            "name": "file:settings.json",
+            "value": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\WALTON\\Downloads\\settings.json",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/WALTON/Downloads/settings.json",
+              "path": "/C:/Users/WALTON/Downloads/settings.json",
+              "scheme": "file"
+            },
+            "modelDescription": "User's active file"
+          }
+        ]
+      },
+      "response": [
+        {
+          "value": "Your file is not valid JSON. VSCode settings must be in strict JSON format, which means:\n\n- The file must start and end with `{}`.\n- All keys and values must be inside this object.\n- No trailing commas.\n- No comments (`// ...`).\n\nHere's how to fix your file:\n\n````json\n",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/Debian/home/t/.local/share/nvim/lazy/dashboard-nvim/",
+            "scheme": "file",
+            "authority": "wsl.localhost"
+          }
+        },
+        {
+          "kind": "codeblockUri",
+          "uri": {
+            "$mid": 1,
+            "external": "file:///c%3A/Users/WALTON/AppData/Roaming/Code/User/settings.json",
+            "path": "/C:/Users/WALTON/AppData/Roaming/Code/User/settings.json",
+            "scheme": "file"
+          }
+        },
+        {
+          "value": "{\n  \"vim.showMarksInGutter\": false,\n  \"vim.foldfix\": true,\n  \"vim.surround\": true,\n  \"vim.easymotion\": true,\n  \"vim.easymotionKeys\": \"asdghklqwertyuiopzxcvbnmfj\",\n  \"vim.leader\":",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/Debian/home/t/.local/share/nvim/lazy/dashboard-nvim/",
+            "scheme": "file",
+            "authority": "wsl.localhost"
+          }
+        },
+        {
+          "kind": "markdownVuln",
+          "content": {
+            "value": " \"<",
+            "supportThemeIcons": false,
+            "supportHtml": false,
+            "uris": {}
+          },
+          "vulnerabilities": [
+            {
+              "title": "hardcoded-credentials",
+              "description": "Embedding credentials in source code risks unauthorized access"
+            }
+          ]
+        },
+        {
+          "value": "space>\",\n  \"vim.normalModeKeyBindingsNonRecursive\": [\n    {\n      \"before\": [\":\", \"w\", \"<CR>\"],\n      \"commands\": [\"workbench.action.files.save\"]\n    },\n    {\n      \"before\": [\"<leader>\", \"w\"],\n      \"commands\": [\"workbench.action.files.save\"]\n    },\n    {\n      \"before\": [\"<leader>\", \"q\"],\n      \"commands\": [\"workbench.action.closeWindow\"],\n      \"when\": \"workbench.action.closeWindow\"\n    },\n    {\n      \"before\": [\"s\"],\n      \"after\": [\"<leader>\", \"<leader>\", \"/\"]\n    },\n    {\n      \"before\": [\"S\"],\n      \"after\": [\"<leader>\", \"<leader>\", \"<leader>\", \"j\"]\n    }\n  ],\n  \"vim.normalModeKeyBindings\": [\n    {\n      \"before\": [\"<C-h>\"],\n      \"after\": [\"<C-W>\", \"h\"]\n    },\n    {\n      \"before\": [\"<C-j>\"],\n      \"after\": [\"<C-W>\", \"j\"]\n    },\n    {\n      \"before\": [\"<C-k>\"],\n      \"after\": [\"<C-W>\", \"k\"]\n    },\n    {\n      \"before\": [\"<C-l>\"],\n      \"after\": [\"<C-W>\", \"l\"]\n    },\n    {\n      \"before\": [\"<C-Up>\"],\n      \"commands\": [\"workbench.action.increaseViewHeight\"]\n    },\n    {\n      \"before\": [\"<C-Up>\"],\n      \"commands\": [\"workbench.action.decreaseViewHeight\"]\n    },\n    {\n      \"before\": [\"<C-left>\"],\n      \"commands\": [\"workbench.action.decreaseViewWidth\"]\n    },\n    {\n      \"before\": [\"<C-Right>\"],\n      \"commands\": [\"workbench.action.increaseViewWidth\"]\n    },\n    {\n      \"before\": [\"<A-j>\"],\n      \"commands\": [\"editor.action.moveLinesDownAction\"]\n    },\n    {\n      \"before\": [\"<A-k>\"],\n      \"commands\": [\"editor.action.moveLinesUpAction\"]\n    },\n    {\n      \"before\": [\"<S-h>\"],\n      \"commands\": [\":bprev\"]\n    },\n    {\n      \"before\": [\"<S-l>\"],\n      \"commands\": [\":bnext\"]\n    },\n    {\n      \"before\": [\"[\", \"b\"],\n      \"commands\": [\":bprev\"]\n    },\n    {\n      \"before\": [\"]\", \"b\"],\n      \"commands\": [\":bnext\"]\n    },\n    {\n      \"before\": [\"<leader>\", \"u\", \"r\"],\n      \"commands\": [\"workbench.action.reloadWindow\"]\n    },\n    {\n      \"before\": [\"g\", \"w\"],\n      \"after\": [\"*\"]\n    },\n    {\n      \"before\": [\"<leader>\", \"l\"],\n      \"commands\": [\"workbench.view.extensions\"]\n    },\n    {\n      \"before\": [\"<leader>\", \"f\", \"n\"],\n      \"commands\": [\"workbench.action.files.newUntitledFile\"]\n    },\n    {\n      \"before\": [\"<leader>\", \"u\", \"w\"],\n      \"commands\": [\"editor.action.toggleWordWrap\"]\n    },\n    {\n      \"before\": [\"<leader>\", \"g\", \"g\"],\n      \"commands\": [\"workbench.view.scm\"],\n      \"when\": \"workbench.scm.active\"\n    },\n    {\n      \"before\": [\"<leader>\", \"g\", \"G\"],\n      \"commands\": [\"workbench.view.scm\"],\n      \"when\": \"workbench.scm.active\"\n    },\n    {\n      \"before\": [\"<leader>\", \"q\", \"q\"],\n      \"commands\": [\"workbench.action.quit\"]\n    },\n    {\n      \"before\": [\"<leader>\", \"L\"],\n      \"commands\": [\"update.showCurrentReleaseNotes\"]\n    },\n    {\n      \"before\": [\"<leader>\", \"f\", \"t\"],\n      \"commands\": [\"workbench.action.createTerminalEditor\"],\n      \"when\": \"terminal.active\"\n    },\n    {\n      \"before\": [\"<leader>\", \"f\", \"T\"],\n      \"commands\": [\"workbench.action.createTerminalEditor\"],\n      \"when\": \"terminal.active\"\n    },\n    {\n      \"before\": [\"<leader>\", \"fe\"],\n      \"commands\": [\"workbench.files.action.showActiveFileInExplorer\"]\n    },\n    {\n      \"before\": [\"<leader>\", \"fE\"],\n      \"commands\": [\"workbench.explorer.fileView.toggleVisibility\"]\n    },\n    {\n      \"before\": [\"<leader>\", \"e\"],\n      \"commands\": [\"workbench.files.action.showActiveFileInExplorer\"]\n    },\n    {\n      \"before\": [\"<leader>\", \"E\"],\n      \"commands\": [\"workbench.explorer.fileView.toggleVisibility\"]\n    },\n    {\n      \"before\": [\"<leader>\", \"s\", \"n\", \"l\"],\n      \"commands\": [\"workbench.action.output.toggleOutput\"],\n      \"when\": \"workbench.panel.output.active\"\n    },\n    {\n      \"before\": [\"<leader>\", \"s\", \"n\", \"h\"],\n      \"commands\": [\"workbench.action.output.toggleOutput\"],\n      \"when\": \"workbench.panel.output.active\"\n    },\n    {\n      \"before\": [\"<leader>\", \"s\", \"n\", \"a\"],\n      \"commands\": [\"workbench.action.output.toggleOutput\"],\n      \"when\": \"workbench.panel.output.active\"\n    },\n    {\n      \"before\": [\"<leader>\", \"s\", \"r\"],\n      \"commands\": [\"editor.action.startFindReplaceAction\"],\n      \"when\": \"editorFocus || editorIsOpen\"\n    },\n    {\n      \"before\": [\"<leader>\", \"/\"],\n      \"commands\": [\"workbench.action.findInFiles\"]\n    },\n    {\n      \"before\": [\"<leader>\", \"<space>\"],\n      \"commands\": [\"workbench.action.quickOpen\"]\n    },\n    {\n      \"before\": [\"<leader>\", \"f\", \"b\"],\n      \"commands\": [\"workbench.action.quickOpen\"]\n    },\n    {\n      \"before\": [\"<leader>\", \"f\", \"f\"],\n      \"commands\": [\"workbench.action.quickOpen\"]\n    },\n    {\n      \"before\": [\"<leader>\", \"f\", \"F\"],\n      \"commands\": [\"workbench.action.quickOpen\"]\n    },\n    {\n      \"before\": [\"<leader>\", \"f\", \"r\"],\n      \"commands\": [\"workbench.action.quickOpen\"]\n    },\n    {\n      \"before\": [\"<leader>\", \"f\", \"R\"],\n      \"commands\": [\"workbench.action.quickOpen\"]\n    },\n    {\n      \"before\": [\"<leader>\", \"g\", \"c\"],\n      \"commands\": [\"workbench.view.scm\"],\n      \"when\": \"workbench.scm.active\"\n    },\n    {\n      \"before\": [\"<leader>\", \"g\", \"s\"],\n      \"commands\": [\"workbench.view.scm\"],\n      \"when\": \"workbench.scm.active\"\n    },\n    {\n      \"before\": [\"<leader>\", \"s\", \"b\"],\n      \"commands\": [\"editor.action.startFindReplaceAction\"],\n      \"when\": \"editorFocus || editorIsOpen\"\n    },\n    {\n      \"before\": [\"<leader>\", \"s\", \"C\"],\n      \"commands\": [\"workbench.action.showCommands\"]\n    },\n    {\n      \"before\": [\"<leader>\", \"s\", \"d\"],\n      \"commands\": [\"workbench.actions.view.problems\"],\n      \"when\": \"workbench.panel.markers.view.active\"\n    },\n    {\n      \"before\": [\"<leader>\", \"s\", \"D\"],\n      \"commands\": [\"workbench.actions.view.problems\"],\n      \"when\": \"workbench.panel.markers.view.active\"\n    },\n    {\n      \"before\": [\"<leader>\", \"s\", \"g\"],\n      \"commands\": [\"workbench.action.findInFiles\"]\n    },\n    {\n      \"before\": [\"<leader>\", \"s\", \"G\"],\n      \"commands\": [\"workbench.action.findInFiles\"]\n    },\n    {\n      \"before\": [\"<leader>\", \"s\", \"h\"],\n      \"commands\": [\"workbench.action.openDocumentationUrl\"]\n    },\n    {\n      \"before\": [\"<leader>\", \"s\", \"k\"],\n      \"commands\": [\"workbench.action.showCommands\"]\n    },\n    {\n      \"before\": [\"<leader>\", \"u\", \"C\"],\n      \"commands\": [\"workbench.action.selectTheme\"]\n    }\n  ],\n  \"vim.visualModeKeyBindings\": [\n    {\n      \"before\": [\"<\"],\n      \"after\": [\"<\", \"g\", \"v\"]\n    },\n    {\n      \"before\": [\">\"],\n      \"after\": [\">\", \"g\", \"v\"]\n    }\n  ],\n  \"vim.insertModeKeyBindings\": [],\n  \"editor.lineNumbers\": \"relative\"\n}\n````\n\n**How to fix:**\n1. Copy the above code.\n2. Open VSCode's settings JSON:  \n   `Ctrl + Shift + P` → type `Preferences: Open User Settings (JSON)` → Enter.\n3. Paste the code and save.\n\n**Note:**  \nDo **not** save your settings in ",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/Debian/home/t/.local/share/nvim/lazy/dashboard-nvim/",
+            "scheme": "file",
+            "authority": "wsl.localhost"
+          }
+        },
+        {
+          "kind": "inlineReference",
+          "inlineReference": {
+            "$mid": 1,
+            "fsPath": "c:\\Users\\WALTON\\Downloads\\settings.json",
+            "_sep": 1,
+            "external": "file:///c%3A/Users/WALTON/Downloads/settings.json",
+            "path": "/C:/Users/WALTON/Downloads/settings.json",
+            "scheme": "file"
+          }
+        },
+        {
+          "value": ".  \nVSCode only reads settings from the correct location:\n```\nC:\\Users\\WALTON\\AppData\\Roaming\\Code\\User\\settings.json\n```\nor  \n`<your project>/.vscode/settings.json` for workspace settings.\n\nIf you need more keybindings, add them inside the arrays, but always keep valid JSON syntax.",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/Debian/home/t/.local/share/nvim/lazy/dashboard-nvim/",
+            "scheme": "file",
+            "authority": "wsl.localhost"
+          }
+        }
+      ],
+      "responseId": "response_5f5928ad-a716-4265-8b00-7acbf0e95582",
+      "result": {
+        "timings": {
+          "firstProgress": 2001,
+          "totalElapsed": 45194
+        },
+        "metadata": {
+          "codeBlocks": [
+            {
+              "code": "{\n  \"vim.showMarksInGutter\": false,\n  \"vim.foldfix\": true,\n  \"vim.surround\": true,\n  \"vim.easymotion\": true,\n  \"vim.easymotionKeys\": \"asdghklqwertyuiopzxcvbnmfj\",\n  \"vim.leader\": \"<space>\",\n  \"vim.normalModeKeyBindingsNonRecursive\": [\n    {\n      \"before\": [\":\", \"w\", \"<CR>\"],\n      \"commands\": [\"workbench.action.files.save\"]\n    },\n    {\n      \"before\": [\"<leader>\", \"w\"],\n      \"commands\": [\"workbench.action.files.save\"]\n    },\n    {\n      \"before\": [\"<leader>\", \"q\"],\n      \"commands\": [\"workbench.action.closeWindow\"],\n      \"when\": \"workbench.action.closeWindow\"\n    },\n    {\n      \"before\": [\"s\"],\n      \"after\": [\"<leader>\", \"<leader>\", \"/\"]\n    },\n    {\n      \"before\": [\"S\"],\n      \"after\": [\"<leader>\", \"<leader>\", \"<leader>\", \"j\"]\n    }\n  ],\n  \"vim.normalModeKeyBindings\": [\n    {\n      \"before\": [\"<C-h>\"],\n      \"after\": [\"<C-W>\", \"h\"]\n    },\n    {\n      \"before\": [\"<C-j>\"],\n      \"after\": [\"<C-W>\", \"j\"]\n    },\n    {\n      \"before\": [\"<C-k>\"],\n      \"after\": [\"<C-W>\", \"k\"]\n    },\n    {\n      \"before\": [\"<C-l>\"],\n      \"after\": [\"<C-W>\", \"l\"]\n    },\n    {\n      \"before\": [\"<C-Up>\"],\n      \"commands\": [\"workbench.action.increaseViewHeight\"]\n    },\n    {\n      \"before\": [\"<C-Up>\"],\n      \"commands\": [\"workbench.action.decreaseViewHeight\"]\n    },\n    {\n      \"before\": [\"<C-left>\"],\n      \"commands\": [\"workbench.action.decreaseViewWidth\"]\n    },\n    {\n      \"before\": [\"<C-Right>\"],\n      \"commands\": [\"workbench.action.increaseViewWidth\"]\n    },\n    {\n      \"before\": [\"<A-j>\"],\n      \"commands\": [\"editor.action.moveLinesDownAction\"]\n    },\n    {\n      \"before\": [\"<A-k>\"],\n      \"commands\": [\"editor.action.moveLinesUpAction\"]\n    },\n    {\n      \"before\": [\"<S-h>\"],\n      \"commands\": [\":bprev\"]\n    },\n    {\n      \"before\": [\"<S-l>\"],\n      \"commands\": [\":bnext\"]\n    },\n    {\n      \"before\": [\"[\", \"b\"],\n      \"commands\": [\":bprev\"]\n    },\n    {\n      \"before\": [\"]\", \"b\"],\n      \"commands\": [\":bnext\"]\n    },\n    {\n      \"before\": [\"<leader>\", \"u\", \"r\"],\n      \"commands\": [\"workbench.action.reloadWindow\"]\n    },\n    {\n      \"before\": [\"g\", \"w\"],\n      \"after\": [\"*\"]\n    },\n    {\n      \"before\": [\"<leader>\", \"l\"],\n      \"commands\": [\"workbench.view.extensions\"]\n    },\n    {\n      \"before\": [\"<leader>\", \"f\", \"n\"],\n      \"commands\": [\"workbench.action.files.newUntitledFile\"]\n    },\n    {\n      \"before\": [\"<leader>\", \"u\", \"w\"],\n      \"commands\": [\"editor.action.toggleWordWrap\"]\n    },\n    {\n      \"before\": [\"<leader>\", \"g\", \"g\"],\n      \"commands\": [\"workbench.view.scm\"],\n      \"when\": \"workbench.scm.active\"\n    },\n    {\n      \"before\": [\"<leader>\", \"g\", \"G\"],\n      \"commands\": [\"workbench.view.scm\"],\n      \"when\": \"workbench.scm.active\"\n    },\n    {\n      \"before\": [\"<leader>\", \"q\", \"q\"],\n      \"commands\": [\"workbench.action.quit\"]\n    },\n    {\n      \"before\": [\"<leader>\", \"L\"],\n      \"commands\": [\"update.showCurrentReleaseNotes\"]\n    },\n    {\n      \"before\": [\"<leader>\", \"f\", \"t\"],\n      \"commands\": [\"workbench.action.createTerminalEditor\"],\n      \"when\": \"terminal.active\"\n    },\n    {\n      \"before\": [\"<leader>\", \"f\", \"T\"],\n      \"commands\": [\"workbench.action.createTerminalEditor\"],\n      \"when\": \"terminal.active\"\n    },\n    {\n      \"before\": [\"<leader>\", \"fe\"],\n      \"commands\": [\"workbench.files.action.showActiveFileInExplorer\"]\n    },\n    {\n      \"before\": [\"<leader>\", \"fE\"],\n      \"commands\": [\"workbench.explorer.fileView.toggleVisibility\"]\n    },\n    {\n      \"before\": [\"<leader>\", \"e\"],\n      \"commands\": [\"workbench.files.action.showActiveFileInExplorer\"]\n    },\n    {\n      \"before\": [\"<leader>\", \"E\"],\n      \"commands\": [\"workbench.explorer.fileView.toggleVisibility\"]\n    },\n    {\n      \"before\": [\"<leader>\", \"s\", \"n\", \"l\"],\n      \"commands\": [\"workbench.action.output.toggleOutput\"],\n      \"when\": \"workbench.panel.output.active\"\n    },\n    {\n      \"before\": [\"<leader>\", \"s\", \"n\", \"h\"],\n      \"commands\": [\"workbench.action.output.toggleOutput\"],\n      \"when\": \"workbench.panel.output.active\"\n    },\n    {\n      \"before\": [\"<leader>\", \"s\", \"n\", \"a\"],\n      \"commands\": [\"workbench.action.output.toggleOutput\"],\n      \"when\": \"workbench.panel.output.active\"\n    },\n    {\n      \"before\": [\"<leader>\", \"s\", \"r\"],\n      \"commands\": [\"editor.action.startFindReplaceAction\"],\n      \"when\": \"editorFocus || editorIsOpen\"\n    },\n    {\n      \"before\": [\"<leader>\", \"/\"],\n      \"commands\": [\"workbench.action.findInFiles\"]\n    },\n    {\n      \"before\": [\"<leader>\", \"<space>\"],\n      \"commands\": [\"workbench.action.quickOpen\"]\n    },\n    {\n      \"before\": [\"<leader>\", \"f\", \"b\"],\n      \"commands\": [\"workbench.action.quickOpen\"]\n    },\n    {\n      \"before\": [\"<leader>\", \"f\", \"f\"],\n      \"commands\": [\"workbench.action.quickOpen\"]\n    },\n    {\n      \"before\": [\"<leader>\", \"f\", \"F\"],\n      \"commands\": [\"workbench.action.quickOpen\"]\n    },\n    {\n      \"before\": [\"<leader>\", \"f\", \"r\"],\n      \"commands\": [\"workbench.action.quickOpen\"]\n    },\n    {\n      \"before\": [\"<leader>\", \"f\", \"R\"],\n      \"commands\": [\"workbench.action.quickOpen\"]\n    },\n    {\n      \"before\": [\"<leader>\", \"g\", \"c\"],\n      \"commands\": [\"workbench.view.scm\"],\n      \"when\": \"workbench.scm.active\"\n    },\n    {\n      \"before\": [\"<leader>\", \"g\", \"s\"],\n      \"commands\": [\"workbench.view.scm\"],\n      \"when\": \"workbench.scm.active\"\n    },\n    {\n      \"before\": [\"<leader>\", \"s\", \"b\"],\n      \"commands\": [\"editor.action.startFindReplaceAction\"],\n      \"when\": \"editorFocus || editorIsOpen\"\n    },\n    {\n      \"before\": [\"<leader>\", \"s\", \"C\"],\n      \"commands\": [\"workbench.action.showCommands\"]\n    },\n    {\n      \"before\": [\"<leader>\", \"s\", \"d\"],\n      \"commands\": [\"workbench.actions.view.problems\"],\n      \"when\": \"workbench.panel.markers.view.active\"\n    },\n    {\n      \"before\": [\"<leader>\", \"s\", \"D\"],\n      \"commands\": [\"workbench.actions.view.problems\"],\n      \"when\": \"workbench.panel.markers.view.active\"\n    },\n    {\n      \"before\": [\"<leader>\", \"s\", \"g\"],\n      \"commands\": [\"workbench.action.findInFiles\"]\n    },\n    {\n      \"before\": [\"<leader>\", \"s\", \"G\"],\n      \"commands\": [\"workbench.action.findInFiles\"]\n    },\n    {\n      \"before\": [\"<leader>\", \"s\", \"h\"],\n      \"commands\": [\"workbench.action.openDocumentationUrl\"]\n    },\n    {\n      \"before\": [\"<leader>\", \"s\", \"k\"],\n      \"commands\": [\"workbench.action.showCommands\"]\n    },\n    {\n      \"before\": [\"<leader>\", \"u\", \"C\"],\n      \"commands\": [\"workbench.action.selectTheme\"]\n    }\n  ],\n  \"vim.visualModeKeyBindings\": [\n    {\n      \"before\": [\"<\"],\n      \"after\": [\"<\", \"g\", \"v\"]\n    },\n    {\n      \"before\": [\">\"],\n      \"after\": [\">\", \"g\", \"v\"]\n    }\n  ],\n  \"vim.insertModeKeyBindings\": [],\n  \"editor.lineNumbers\": \"relative\"\n}\n",
+              "resource": {
+                "$mid": 1,
+                "path": "/C:/Users/WALTON/AppData/Roaming/Code/User/settings.json",
+                "scheme": "file"
+              },
+              "language": "json",
+              "markdownBeforeBlock": "Your file is not valid JSON. VSCode settings must be in strict JSON format, which means:\n\n- The file must start and end with `{}`.\n- All keys and values must be inside this object.\n- No trailing commas.\n- No comments (`// ...`).\n\nHere's how to fix your file:\n\n"
+            },
+            {
+              "code": "C:\\Users\\WALTON\\AppData\\Roaming\\Code\\User\\settings.json\n",
+              "language": "",
+              "markdownBeforeBlock": "\n**How to fix:**\n1. Copy the above code.\n2. Open VSCode's settings JSON:  \n   `Ctrl + Shift + P` → type `Preferences: Open User Settings (JSON)` → Enter.\n3. Paste the code and save.\n\n**Note:**  \nDo **not** save your settings in .  \nVSCode only reads settings from the correct location:\n"
+            }
+          ],
+          "toolCallRounds": [
+            {
+              "response": "Your file is not valid JSON. VSCode settings must be in strict JSON format, which means:\n\n- The file must start and end with `{}`.\n- All keys and values must be inside this object.\n- No trailing commas.\n- No comments (`// ...`).\n\nHere's how to fix your file:\n\n````json\n// filepath: C:\\Users\\WALTON\\AppData\\Roaming\\Code\\User\\settings.json\n{\n  \"vim.showMarksInGutter\": false,\n  \"vim.foldfix\": true,\n  \"vim.surround\": true,\n  \"vim.easymotion\": true,\n  \"vim.easymotionKeys\": \"asdghklqwertyuiopzxcvbnmfj\",\n  \"vim.leader\": \"<space>\",\n  \"vim.normalModeKeyBindingsNonRecursive\": [\n    {\n      \"before\": [\":\", \"w\", \"<CR>\"],\n      \"commands\": [\"workbench.action.files.save\"]\n    },\n    {\n      \"before\": [\"<leader>\", \"w\"],\n      \"commands\": [\"workbench.action.files.save\"]\n    },\n    {\n      \"before\": [\"<leader>\", \"q\"],\n      \"commands\": [\"workbench.action.closeWindow\"],\n      \"when\": \"workbench.action.closeWindow\"\n    },\n    {\n      \"before\": [\"s\"],\n      \"after\": [\"<leader>\", \"<leader>\", \"/\"]\n    },\n    {\n      \"before\": [\"S\"],\n      \"after\": [\"<leader>\", \"<leader>\", \"<leader>\", \"j\"]\n    }\n  ],\n  \"vim.normalModeKeyBindings\": [\n    {\n      \"before\": [\"<C-h>\"],\n      \"after\": [\"<C-W>\", \"h\"]\n    },\n    {\n      \"before\": [\"<C-j>\"],\n      \"after\": [\"<C-W>\", \"j\"]\n    },\n    {\n      \"before\": [\"<C-k>\"],\n      \"after\": [\"<C-W>\", \"k\"]\n    },\n    {\n      \"before\": [\"<C-l>\"],\n      \"after\": [\"<C-W>\", \"l\"]\n    },\n    {\n      \"before\": [\"<C-Up>\"],\n      \"commands\": [\"workbench.action.increaseViewHeight\"]\n    },\n    {\n      \"before\": [\"<C-Up>\"],\n      \"commands\": [\"workbench.action.decreaseViewHeight\"]\n    },\n    {\n      \"before\": [\"<C-left>\"],\n      \"commands\": [\"workbench.action.decreaseViewWidth\"]\n    },\n    {\n      \"before\": [\"<C-Right>\"],\n      \"commands\": [\"workbench.action.increaseViewWidth\"]\n    },\n    {\n      \"before\": [\"<A-j>\"],\n      \"commands\": [\"editor.action.moveLinesDownAction\"]\n    },\n    {\n      \"before\": [\"<A-k>\"],\n      \"commands\": [\"editor.action.moveLinesUpAction\"]\n    },\n    {\n      \"before\": [\"<S-h>\"],\n      \"commands\": [\":bprev\"]\n    },\n    {\n      \"before\": [\"<S-l>\"],\n      \"commands\": [\":bnext\"]\n    },\n    {\n      \"before\": [\"[\", \"b\"],\n      \"commands\": [\":bprev\"]\n    },\n    {\n      \"before\": [\"]\", \"b\"],\n      \"commands\": [\":bnext\"]\n    },\n    {\n      \"before\": [\"<leader>\", \"u\", \"r\"],\n      \"commands\": [\"workbench.action.reloadWindow\"]\n    },\n    {\n      \"before\": [\"g\", \"w\"],\n      \"after\": [\"*\"]\n    },\n    {\n      \"before\": [\"<leader>\", \"l\"],\n      \"commands\": [\"workbench.view.extensions\"]\n    },\n    {\n      \"before\": [\"<leader>\", \"f\", \"n\"],\n      \"commands\": [\"workbench.action.files.newUntitledFile\"]\n    },\n    {\n      \"before\": [\"<leader>\", \"u\", \"w\"],\n      \"commands\": [\"editor.action.toggleWordWrap\"]\n    },\n    {\n      \"before\": [\"<leader>\", \"g\", \"g\"],\n      \"commands\": [\"workbench.view.scm\"],\n      \"when\": \"workbench.scm.active\"\n    },\n    {\n      \"before\": [\"<leader>\", \"g\", \"G\"],\n      \"commands\": [\"workbench.view.scm\"],\n      \"when\": \"workbench.scm.active\"\n    },\n    {\n      \"before\": [\"<leader>\", \"q\", \"q\"],\n      \"commands\": [\"workbench.action.quit\"]\n    },\n    {\n      \"before\": [\"<leader>\", \"L\"],\n      \"commands\": [\"update.showCurrentReleaseNotes\"]\n    },\n    {\n      \"before\": [\"<leader>\", \"f\", \"t\"],\n      \"commands\": [\"workbench.action.createTerminalEditor\"],\n      \"when\": \"terminal.active\"\n    },\n    {\n      \"before\": [\"<leader>\", \"f\", \"T\"],\n      \"commands\": [\"workbench.action.createTerminalEditor\"],\n      \"when\": \"terminal.active\"\n    },\n    {\n      \"before\": [\"<leader>\", \"fe\"],\n      \"commands\": [\"workbench.files.action.showActiveFileInExplorer\"]\n    },\n    {\n      \"before\": [\"<leader>\", \"fE\"],\n      \"commands\": [\"workbench.explorer.fileView.toggleVisibility\"]\n    },\n    {\n      \"before\": [\"<leader>\", \"e\"],\n      \"commands\": [\"workbench.files.action.showActiveFileInExplorer\"]\n    },\n    {\n      \"before\": [\"<leader>\", \"E\"],\n      \"commands\": [\"workbench.explorer.fileView.toggleVisibility\"]\n    },\n    {\n      \"before\": [\"<leader>\", \"s\", \"n\", \"l\"],\n      \"commands\": [\"workbench.action.output.toggleOutput\"],\n      \"when\": \"workbench.panel.output.active\"\n    },\n    {\n      \"before\": [\"<leader>\", \"s\", \"n\", \"h\"],\n      \"commands\": [\"workbench.action.output.toggleOutput\"],\n      \"when\": \"workbench.panel.output.active\"\n    },\n    {\n      \"before\": [\"<leader>\", \"s\", \"n\", \"a\"],\n      \"commands\": [\"workbench.action.output.toggleOutput\"],\n      \"when\": \"workbench.panel.output.active\"\n    },\n    {\n      \"before\": [\"<leader>\", \"s\", \"r\"],\n      \"commands\": [\"editor.action.startFindReplaceAction\"],\n      \"when\": \"editorFocus || editorIsOpen\"\n    },\n    {\n      \"before\": [\"<leader>\", \"/\"],\n      \"commands\": [\"workbench.action.findInFiles\"]\n    },\n    {\n      \"before\": [\"<leader>\", \"<space>\"],\n      \"commands\": [\"workbench.action.quickOpen\"]\n    },\n    {\n      \"before\": [\"<leader>\", \"f\", \"b\"],\n      \"commands\": [\"workbench.action.quickOpen\"]\n    },\n    {\n      \"before\": [\"<leader>\", \"f\", \"f\"],\n      \"commands\": [\"workbench.action.quickOpen\"]\n    },\n    {\n      \"before\": [\"<leader>\", \"f\", \"F\"],\n      \"commands\": [\"workbench.action.quickOpen\"]\n    },\n    {\n      \"before\": [\"<leader>\", \"f\", \"r\"],\n      \"commands\": [\"workbench.action.quickOpen\"]\n    },\n    {\n      \"before\": [\"<leader>\", \"f\", \"R\"],\n      \"commands\": [\"workbench.action.quickOpen\"]\n    },\n    {\n      \"before\": [\"<leader>\", \"g\", \"c\"],\n      \"commands\": [\"workbench.view.scm\"],\n      \"when\": \"workbench.scm.active\"\n    },\n    {\n      \"before\": [\"<leader>\", \"g\", \"s\"],\n      \"commands\": [\"workbench.view.scm\"],\n      \"when\": \"workbench.scm.active\"\n    },\n    {\n      \"before\": [\"<leader>\", \"s\", \"b\"],\n      \"commands\": [\"editor.action.startFindReplaceAction\"],\n      \"when\": \"editorFocus || editorIsOpen\"\n    },\n    {\n      \"before\": [\"<leader>\", \"s\", \"C\"],\n      \"commands\": [\"workbench.action.showCommands\"]\n    },\n    {\n      \"before\": [\"<leader>\", \"s\", \"d\"],\n      \"commands\": [\"workbench.actions.view.problems\"],\n      \"when\": \"workbench.panel.markers.view.active\"\n    },\n    {\n      \"before\": [\"<leader>\", \"s\", \"D\"],\n      \"commands\": [\"workbench.actions.view.problems\"],\n      \"when\": \"workbench.panel.markers.view.active\"\n    },\n    {\n      \"before\": [\"<leader>\", \"s\", \"g\"],\n      \"commands\": [\"workbench.action.findInFiles\"]\n    },\n    {\n      \"before\": [\"<leader>\", \"s\", \"G\"],\n      \"commands\": [\"workbench.action.findInFiles\"]\n    },\n    {\n      \"before\": [\"<leader>\", \"s\", \"h\"],\n      \"commands\": [\"workbench.action.openDocumentationUrl\"]\n    },\n    {\n      \"before\": [\"<leader>\", \"s\", \"k\"],\n      \"commands\": [\"workbench.action.showCommands\"]\n    },\n    {\n      \"before\": [\"<leader>\", \"u\", \"C\"],\n      \"commands\": [\"workbench.action.selectTheme\"]\n    }\n  ],\n  \"vim.visualModeKeyBindings\": [\n    {\n      \"before\": [\"<\"],\n      \"after\": [\"<\", \"g\", \"v\"]\n    },\n    {\n      \"before\": [\">\"],\n      \"after\": [\">\", \"g\", \"v\"]\n    }\n  ],\n  \"vim.insertModeKeyBindings\": [],\n  \"editor.lineNumbers\": \"relative\"\n}\n````\n\n**How to fix:**\n1. Copy the above code.\n2. Open VSCode's settings JSON:  \n   `Ctrl + Shift + P` → type `Preferences: Open User Settings (JSON)` → Enter.\n3. Paste the code and save.\n\n**Note:**  \nDo **not** save your settings in `Downloads\\settings.json`.  \nVSCode only reads settings from the correct location:\n```\nC:\\Users\\WALTON\\AppData\\Roaming\\Code\\User\\settings.json\n```\nor  \n`<your project>/.vscode/settings.json` for workspace settings.\n\nIf you need more keybindings, add them inside the arrays, but always keep valid JSON syntax.",
+              "toolCalls": [],
+              "toolInputRetry": 0,
+              "id": "49486f20-0acb-4a2a-a009-faa3b84f9398"
+            }
+          ],
+          "modelMessageId": "1ab144f6-d15b-4d15-9e30-93702f38c870",
+          "responseId": "5d938cfc-24e2-4066-b606-157ed7c0444c",
+          "sessionId": "72416325-1a86-4fbf-9e2c-2b9ca94a27f1",
+          "agentId": "github.copilot.default"
+        },
+        "details": "GPT-4.1 • 1x"
+      },
+      "responseMarkdownInfo": [
+        {
+          "suggestionId": "sgt-083511d5-971b-4b24-a56d-65796f82b97a"
+        },
+        {
+          "suggestionId": "sgt-61a0e2c2-2b89-4f0c-ad68-1685d96e892a"
+        }
+      ],
+      "followups": [],
+      "isCanceled": false,
+      "agent": {
+        "extensionId": {
+          "value": "GitHub.copilot-chat",
+          "_lower": "github.copilot-chat"
+        },
+        "extensionVersion": "0.32.0",
+        "publisherDisplayName": "GitHub",
+        "extensionPublisherId": "GitHub",
+        "extensionDisplayName": "GitHub Copilot Chat",
+        "id": "github.copilot.default",
+        "description": "Ask or edit in context",
+        "metadata": {
+          "themeIcon": {
+            "id": "copilot"
+          },
+          "hasFollowups": false,
+          "helpTextPrefix": "You can ask me general programming questions, or chat with the following participants which have specialized expertise and can perform actions:",
+          "helpTextPostfix": {
+            "value": "To have a great conversation, ask me questions as if I was a real programmer:\n\n* **Show me the code** you want to talk about by having the files open and selecting the most important lines.\n* **Make refinements** by asking me follow-up questions, adding clarifications, providing errors, etc.\n* **Review my suggested code** and tell me about issues or improvements, so I can iterate on it.\n\nYou can also ask me questions about your editor selection by [starting an inline chat session](command:inlineChat.start).\n\nLearn more about [GitHub Copilot](https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted) in [Visual Studio Code](https://code.visualstudio.com/docs/copilot/overview). Or explore the [Copilot walkthrough](command:github.copilot.open.walkthrough).",
+            "isTrusted": {
+              "enabledCommands": [
+                "inlineChat.start",
+                "github.copilot.open.walkthrough"
+              ]
+            },
+            "supportThemeIcons": false,
+            "supportHtml": false,
+            "uris": {
+              "command:inlineChat.start": {
+                "$mid": 1,
+                "path": "inlineChat.start",
+                "scheme": "command"
+              },
+              "https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted": {
+                "$mid": 1,
+                "path": "/copilot/using-github-copilot/getting-started-with-github-copilot",
+                "scheme": "https",
+                "authority": "docs.github.com",
+                "query": "tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted"
+              },
+              "https://code.visualstudio.com/docs/copilot/overview": {
+                "$mid": 1,
+                "path": "/docs/copilot/overview",
+                "scheme": "https",
+                "authority": "code.visualstudio.com"
+              },
+              "command:github.copilot.open.walkthrough": {
+                "$mid": 1,
+                "path": "github.copilot.open.walkthrough",
+                "scheme": "command"
+              }
+            }
+          },
+          "supportIssueReporting": false,
+          "requester": {
+            "name": "devopstanvir",
+            "icon": {
+              "$mid": 1,
+              "path": "/u/237455656",
+              "scheme": "https",
+              "authority": "avatars.githubusercontent.com",
+              "query": "v=4"
+            }
+          }
+        },
+        "name": "GitHubCopilot",
+        "fullName": "GitHub Copilot",
+        "isDefault": true,
+        "locations": [
+          "panel"
+        ],
+        "modes": [
+          "ask"
+        ],
+        "slashCommands": [],
+        "disambiguation": [
+          {
+            "category": "generate_code_sample",
+            "description": "The user wants to generate code snippets without referencing the contents of the current workspace. This category does not include generating entire projects.",
+            "examples": [
+              "Write an example of computing a SHA256 hash."
+            ]
+          },
+          {
+            "category": "add_feature_to_file",
+            "description": "The user wants to change code in a file that is provided in their request, without referencing the contents of the current workspace. This category does not include generating entire projects.",
+            "examples": [
+              "Add a refresh button to the table widget."
+            ]
+          },
+          {
+            "category": "question_about_specific_files",
+            "description": "The user has a question about a specific file or code snippet that they have provided as part of their query, and the question does not require additional workspace context to answer.",
+            "examples": [
+              "What does this file do?"
+            ]
+          }
+        ]
+      },
+      "contentReferences": [
+        {
+          "kind": "reference",
+          "reference": {
+            "$mid": 1,
+            "fsPath": "c:\\Users\\WALTON\\Downloads\\settings.json",
+            "_sep": 1,
+            "external": "file:///c%3A/Users/WALTON/Downloads/settings.json",
+            "path": "/C:/Users/WALTON/Downloads/settings.json",
+            "scheme": "file"
+          }
+        }
+      ],
+      "codeCitations": [
+        {
+          "kind": "codeCitation",
+          "value": {
+            "$mid": 1,
+            "path": "/BruceChanJianLe/vim/tree/ffbb51ded7b6b60fc24004145fd041714f16c40a/README.md",
+            "scheme": "https",
+            "authority": "github.com"
+          },
+          "license": "unknown",
+          "snippet": "{\n      \"before\": [\"<\"],\n      \"after\": [\"<\", \"g\", \"v\"]\n    },\n    {\n      \"before\": [\">\"],\n      \"after\": [\">\", \"g\", \""
+        }
+      ],
+      "timestamp": 1760431234878,
+      "modelId": "copilot/gpt-4.1"
+    }
+  ],
+  "sessionId": "46ad43c0-5cf0-4da4-9c2d-8e3414228489",
+  "creationDate": 1760429124941,
+  "isImported": false,
+  "lastMessageDate": 1760431234878,
+  "customTitle": "Saving settings.json in VSCode correctly"
+}
